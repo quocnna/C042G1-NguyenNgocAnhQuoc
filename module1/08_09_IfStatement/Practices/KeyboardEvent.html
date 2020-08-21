@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: linear-gradient(to right,rgba(32, 14, 196, 0.5), rgba(32, 14, 196, 0));
+        }
+        #container{
+            width: 100%;
+            height: 800px;
+            margin: 0 auto;
+            position: relative;
+            text-align: center;
+        }
+        .section{
+            width: 100%;
+            position: absolute;
+            top: 15%;
+            transform: translateY(-50%);
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Keyboard Event</title>
+</head>
+<body onload="docReady()">
+<div id="container">
+    <div class="section">
+<img id="img" src="nobita.png"  height="512" width="326" style="position:absolute;left:35%; top:0;"/>
+    </div>
+</div>
+</body>
+<script>
+    let element = document.getElementById("img");
+    function upArrowPressed() {
+        element.style.top = parseInt(element.style.top) - 15 + 'px';
+    }
+
+    function downArrowPressed() {
+        element.style.top = parseInt(element.style.top) + 15 + 'px';
+    }
+
+    function leftArrowPressed() {
+        element.style.left = parseInt(element.style.left) - 15 + 'px';
+    }
+
+    function rightArrowPressed() {
+        element.style.left = parseInt(element.style.left) + 15 + 'px';
+    }
+
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+
+    function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
+</script>
+</html>

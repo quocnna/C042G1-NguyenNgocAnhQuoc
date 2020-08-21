@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a =[1,2,3,4,5];
+    let input = parseInt(prompt("Input a number:"));
+    // let flag=false;
+    // for (let i = 0; i < a.length; i++) {
+    //     if(i==input){
+    //         flag= true;
+    //         break;
+    //     }
+    // }
+    //alert(flag?`Find ${input} Exist`:`Find ${input} No Exist`);
+
+    let b = a.find(e=>{return e==input});
+    alert(b??`Find ${input} No Exist`);
+</script>
+</body>
+</html>

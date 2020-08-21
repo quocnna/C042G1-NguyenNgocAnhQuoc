@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mobile Class</title>
+    <style>
+        #container{
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        .nokia{
+            float: left;
+            text-align: right;
+            width: 48%;
+            height: 500px;
+        }
+        .nokia>div{
+            width: 250px;
+            float: right;
+            border: 1px solid blue;
+        }
+        .iphone{
+            float: right;
+            text-align: left;
+            width: 48%;
+            height: 500px;
+        }
+        .iphone>div{
+            width: 250px;
+            float: left;
+            border: 1px solid red;
+        }
+        input{
+            width: 160px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div class="nokia">
+        <div>
+            <div>Nokia number: <label id="nFrom">0708230984</label></div>
+            <div>Sent to:<input id="nTo" type="number" value="0935444628"><br></div>
+            <div><textarea id="nMessage" cols="18" rows="8"></textarea> </div>
+            <div><button id="nSend" onclick="send(document.getElementById('nFrom').textContent,document.getElementById('nTo').value,document.getElementById('nMessage').value)">Send</button></div>
+            <div id="q" style="display: none;color: #103FFB">Inbox</div>
+            <div id="nInbox">
+
+            </div>
+            <div id="u" style="display: none;color: red">Sent</div>
+            <div id="nSent">
+            </div>
+        </div>
+
+    </div>
+    <div class="iphone">
+        <div>
+            <div>Iphone number: <label id="iFrom">0935444628</label></div>
+            <div>Sent to:<input id="iTo" type="number" value="0708230984"><br></div>
+            <div><textarea id="iMessage" style="margin-left: 50px" cols="18" rows="8"></textarea> </div>
+            <div><button id="iSend" onclick="send(document.getElementById('iFrom').textContent,document.getElementById('iTo').value,document.getElementById('iMessage').value)">Send</button></div>
+            <div id="o" style="display: none;color: #103FFB">Inbox</div>
+            <div id="iInbox">
+            </div>
+            <div id="c" style="display: none;color: red">Sent</div>
+            <div id="iSent">
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    let a =[];
+    class Mobile{
+        constructor(fromNumber, toNumber, text) {
+            this.fromNumber = fromNumber;
+            this.toNumber = toNumber;
+            this.text = text;
+        }
+        sentMessage(o){
+            a.push(o);
+            checkMessage();
+        }
+    }
+
+    const checkMessage = ()=>{
+        let n = a.filter(e=>{
+           return e.fromNumber == "0708230984";
+        });
+
+        let ip = a.filter(e=>{
+            return e.toNumber == "0708230984";
+        });
+
+
+        const nSent= document.getElementById("nSent");
+        const iInbox = document.getElementById("iInbox");
+        const iSent = document.getElementById("iSent");
+        const nInbox = document.getElementById("nInbox");
+        const q = document.getElementById("q");
+        const u = document.getElementById("u");
+        const o = document.getElementById("o");
+        const c = document.getElementById("c");
+        nSent.innerHTML="";
+        iInbox.innerHTML="";
+        iSent.innerHTML="";
+        nInbox.innerHTML="";
+        for(let i=0;i<n.length;i++){
+            const nDiv = document.createElement("div");
+            const iDiv = document.createElement("div");
+            const nData = document.createTextNode(n[i].text);
+            const iData = document.createTextNode(n[i].text);
+            nDiv.append(nData);
+            iDiv.append(iData);
+            nSent.appendChild(nDiv);
+            iInbox.appendChild(iDiv);
+        }
+
+
+        for(let i=0;i<ip.length;i++){
+            const nDiv = document.createElement("div");
+            const iDiv = document.createElement("div");
+            const nData = document.createTextNode(ip[i].text);
+            const iData = document.createTextNode(ip[i].text);
+            nDiv.append(nData);
+            iDiv.append(iData);
+            iSent.appendChild(nDiv);
+            nInbox.appendChild(iDiv);
+        }
+
+        if(n.length>0){
+            u.style.display="block";
+            o.style.display="block";
+        }
+        if(ip.length>0){
+            q.style.display="block";
+            c.style.display="block";
+        }
+        document.getElementById("iMessage").value="";
+        document.getElementById("nMessage").value ="";
+    };
+
+    function send(f,t,m){
+        let mobile = new Mobile(f,t,m);
+        mobile.sentMessage(mobile);
+    }
+</script>
+</body>
+</html>

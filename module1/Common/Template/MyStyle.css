@@ -1,0 +1,23 @@
+#container{
+    margin: 0 auto;
+    width: 80%;
+    background-color: #0B29CF;
+    text-align: center;
+    height: 500px;
+}
+.secDisplay{
+    float: left;
+    width: 50%;
+    text-align: right;
+    background-color: #6f42c1;
+}
+.secDisplay label{
+    display: block;
+    color: black;
+}
+.secButton{
+    float: left;
+    width: 50%;
+    text-align: left;
+    background-color: #555555;
+}

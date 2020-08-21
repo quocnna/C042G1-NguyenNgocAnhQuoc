@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rectangle Class</title>
+</head>
+<body>
+<canvas style="border: 1px solid blue; display: none"></canvas>
+<script>
+    class Rectangle{
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        calculatePerimeter(){
+            return (this.width + this.height)*2
+        }
+        calculateArea(){
+            return this.width*this.height;
+        }
+        drawRec(){
+            const canvas= document.querySelector("canvas");
+            canvas.width =this.width;
+            canvas.height = this.height;
+            canvas.style.display ="block";
+        }
+    }
+
+    let rec = new Rectangle(100,50);
+    rec.drawRec();
+    document.write(`Perimeter is: ${rec.calculatePerimeter()} and Area is ${rec.calculateArea()}`);
+</script>
+</body>
+</html>

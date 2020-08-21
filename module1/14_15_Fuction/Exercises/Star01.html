@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Star 01</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left,rgba(28, 146, 210, 0.5), rgba(228, 229, 230, 0.3));
+        }
+
+        #container {
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            height: 500px;
+        }
+
+        #container>div{
+            padding: 15px 35px 20px 0px;
+        }
+        input{
+            margin-right: 12px;
+            width: 120px;
+            position: relative;
+        }
+
+        table {
+            display: inline-block;
+            border-collapse: collapse;
+            /*border-radius: 15px 15px 0px 0px;*/
+        }
+
+        table button{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+        table thead {
+            background: #1C6EA4;
+            background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+        }
+
+        table thead tr th:nth-child(2){
+            border-bottom: 0.03cm solid #8a8a8a;
+            border-radius: 15px 0px 0px 0px;
+        }
+        table td {
+            border: 1px solid black;
+            width: 180px;
+            height: 60px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div>
+        <input id="hf" style="display: none">
+        <label>Name: </label>
+        <input id="ipName" type="text">
+        <label>Email: </label>
+        <input id="ipEmail" type="email">
+        <label>Phone: </label>
+        <input id="ipPhone" type="number">
+        <button id="btAdd">Add</button>
+    </div>
+</div>
+<script>
+    class Customer {
+        constructor(id,name, email, phone) {
+            this.Id = id;
+            this.Name = name;
+            this.Email = email;
+            this.Phone = phone;
+        }
+
+        delCustomer(delCus) {
+            if(confirm("Are you sure to delete this customer")){
+                const t = lstCustomer.findIndex(e=>{
+                    return e.Id==delCus.Id;
+                });
+                lstCustomer.splice(t,1);
+                buildTable();
+            }
+        }
+
+        addCustomer(newCus) {
+            lstCustomer.push(newCus);
+            buildTable();
+        }
+
+        updateCustomer(editCus) {
+            lstCustomer.forEach(e=>{
+                if(e.Id==editCus.Id){
+                    e.Name=editCus.Name;
+                    e.Email = editCus.Email;
+                    e.Phone = editCus.Phone;
+                }
+            });
+            buildTable();
+        }
+    }
+    
+    let cus01 = new Customer(1,"quoc", "quoc@yahoo.com", "0708230984");
+    let cus02 = new Customer(2,"dung", "dung@gmail.com", "0230303332");
+    let cus03 = new Customer(3,"toan", "toan@gmail.com", "0339099321");
+    let cus04 = new Customer(4,"linh", "linh@gmail.com", "0339010021");
+    let cus05 = new Customer(5,"phong", "phong@gmail.com", "0989099321");
+    let lstCustomer = [cus01, cus02, cus03,cus04,cus05];
+
+    const name = document.getElementById("ipName");
+    const email = document.getElementById("ipEmail");
+    const phone = document.getElementById("ipPhone")
+    const btAdd = document.getElementById("btAdd");
+    const hf = document.getElementById("hf");
+
+    const buildTable = ()=>{
+        const table = document.querySelector("table");
+        if(table !== null){
+            table.remove();
+        }
+
+        const tbl = document.createElement("table");
+        const thead = document.createElement("thead");
+        const tbody = document.createElement("tbody");
+        for (let i = 0; i < lstCustomer.length; i++) {
+            const row = document.createElement("tr");
+            const thRow = document.createElement("tr");
+            for (let j = 0; j < Object.keys(lstCustomer[i]).length; j++) {
+                if (i == 0) {
+                    const th = document.createElement("th");
+                    const thText = document.createTextNode(Object.keys(lstCustomer[i])[j]);
+                    th.appendChild(thText);
+                    thRow.appendChild(th);
+                    thead.appendChild(thRow);
+
+                    if(j==0){
+                        th.style.setProperty("display","none");
+                    }
+                }
+                const cell = document.createElement("td");
+                const data = document.createTextNode(lstCustomer[i][Object.keys(lstCustomer[i])[j]]);
+                cell.appendChild(data);
+                row.appendChild(cell);
+
+                if(j==0){
+                    cell.style.setProperty("display","none");
+                }
+            }
+            const btEdit = document.createElement("button");
+            btEdit.addEventListener("click",e=>{
+                let t = lstCustomer.find(f=>{
+                    return f.Id == lstCustomer[i]["Id"];
+                });
+                hf.value = t.Id;
+                name.value = t.Name;
+                email.value = t.Email;
+                phone.value = t.Phone;
+                btAdd.textContent ="Update";
+            });
+            btEdit.textContent = "Edit";
+
+            const btDel = document.createElement("button");
+            btDel.addEventListener("click",e=>{
+                let delCus = new Customer(lstCustomer[i]["Id"],"delete", "delete@gmail.com", "0989099321");
+                delCus.delCustomer(delCus);
+            });
+            btDel.textContent = "Delete";
+            row.appendChild(btEdit);
+            row.appendChild(btDel);
+            tbody.appendChild(row);
+        }
+        tbl.appendChild(thead);
+        tbl.appendChild(tbody);
+
+        const container = document.querySelector("#container");
+        container.appendChild(tbl);
+    };
+    buildTable();
+
+    btAdd.addEventListener("click",e=>{
+        const ele = e.target;
+        if(ele.textContent=="Add"){
+            if(name.value=="undefined" || name.value==""){
+                alert("Please input your name");
+                return;
+            }
+            let IdAdd = lstCustomer.length +1;
+            let newCus = new Customer(IdAdd,name.value, email.value, phone.value);
+            newCus.addCustomer(newCus);
+            resetField();
+            alert("Add successful!")
+        }
+        else {
+            let editCus = new Customer(parseInt(hf.value),name.value,email.value,phone.value);
+            editCus.updateCustomer(editCus);
+            resetField();
+            alert("Update successful!")
+        }
+    });
+
+    const resetField = ()=>{
+        hf.value = "";
+        name.value ="";
+        email.value = "";
+        phone.value = "";
+        btAdd.textContent ="Add";
+    };
+</script>
+</body>
+</html>

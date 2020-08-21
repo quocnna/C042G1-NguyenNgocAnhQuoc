@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flash Lamp</title>
+</head>
+<body>
+<script>
+    class Battery{
+        constructor(energy) {
+            this.energy = energy;
+        }
+        set Energy(energy){
+            this.energy= energy;
+        }
+        get Energy(){
+            return this.energy;
+        }
+        deCreaseEnergy(){
+            if(this.energy>0)
+                this.energy--;
+        }
+    }
+
+    class FlashLamp{
+        constructor(status,battery) {
+            this.status = status;
+            this.battery = battery;
+        }
+
+        set Battery(battery){
+            this.battery = battery;
+        }
+        get Battery(){
+            return this.battery;
+        }
+        light(){
+            alert(this.status?"Lightning":"Not lighting");
+            this.battery.deCreaseEnergy();
+        }
+        turnOff(){
+            alert("Turn Off")
+            this.status= false;
+            this.battery.deCreaseEnergy();
+        }
+        turnOn(){
+            alert("Turn On");
+            this.status= true;
+            this.battery.deCreaseEnergy();
+        }
+    }
+
+    const battery = new Battery(10);
+    const flashLamp = new FlashLamp(false,battery);
+    document.write("Battery Info: " + flashLamp.Battery.energy);
+    flashLamp.light();
+    flashLamp.turnOn();
+    flashLamp.light();
+    flashLamp.turnOff();
+    document.write("Battery Info: " + flashLamp.Battery.energy);
+</script>
+</body>
+</html>

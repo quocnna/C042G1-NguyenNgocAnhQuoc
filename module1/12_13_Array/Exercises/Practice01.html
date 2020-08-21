@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practices</title>
+</head>
+
+<div id="container">
+    <input id="ipText" type="text">
+    <button id="Add" type="button">Add</button>
+    <button id="Sort" type="button">Sort</button><br/>
+    <label id="lbRes"></label>
+</div>
+<script>
+
+
+    //bai2
+    // let a = [];
+    // let res=[0,0];
+    // let i= 0;
+    // while (true){
+    //     if(a.length==10)
+    //         break;
+    //
+    //     let r= Math.floor(Math.random()*20);
+    //     let b=  a.find(e=>{
+    //         return e== r;
+    //     });
+    //     if(typeof b=="undefined"){
+    //         a[i]=r;
+    //         if(res[0]<a[i])
+    //         {
+    //             res[0]=a[i];
+    //             res[1]= i;
+    //         }
+    //         i++;
+    //     }
+    // }
+    // document.writeln(a.toString()+"<br/>");
+    // document.write(`Max value is ${res[0]}, index is ${res[1]}`);
+
+    //bai3
+    // let a= [];
+    // let max =0;
+    // let res=0;
+    // for (let i = 0; i < 10; i++) {
+    //     a[i]= Math.floor(Math.random()*10);
+    //     res += a[i];
+    //     if(max<a[i])
+    //         max= a[i];
+    // }
+    // alert(max);
+    // alert(res);
+
+    //bai4
+    // let a = prompt("Input a number");
+    // let b = a.split("").reverse();
+    // alert(b);
+
+    //bai5
+    // let a=[1,2,-5,-9,10,12];
+    // let count=0;
+    // let b= a.forEach(e=>{
+    //     if(e<0)
+    //         count++;
+    // })
+    // alert(count);
+
+    //bai6
+    // let a=[1,2,3,4,5,6,7]
+    // let input = parseInt(prompt("Input a number:"))
+    // let b = a.some(e=>{
+    //     return e==input;
+    // })
+    // alert(b);
+
+    //bai7
+    // let a = [1,2,3,4,5,6];
+    // let input =3;
+    // let b=  a.findIndex(e=>{
+    //     return e==input;
+    // })
+    // // let c = a.lastIndexOf(input);
+    // // alert(c);
+    // a.splice(b,1);
+    // alert(a);
+
+    //bai8
+    let label = document.querySelector("label");
+    const ipNumber = document.querySelector("input");
+    const container = document.querySelector("#container");
+    let a= [];
+    container.addEventListener("click",e=>{
+        let ele = e.target;
+        if(ele.textContent=="Add"){
+            a.push(ipNumber.value);
+            label.innerHTML += ipNumber.value+"<br/>";
+            ipNumber.value="";
+        }
+        else if(ele.textContent=="Sort"){
+            a.sort((a,b)=>{
+                return b-a;
+            });
+            a.forEach(e=>{
+                label.innerHTML += e+"<br/>";
+            });
+        }
+    });
+
+    //bai9
+    // let a= [1,2,3,4,5,6,7,8];
+    // let b =[9,10,11,12,13,14,15,16];
+    // let c = a.concat(b);
+    // alert(c);
+</script>
+</body>
+
+</html>

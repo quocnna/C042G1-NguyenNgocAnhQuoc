@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .info{
+            clear: both;
+            margin: 0 0 5px 0;
+            padding: 0 1% 1.1em 1%;
+            border-bottom: 1px dotted #ccc;
+            display: block;
+        }
+        .info h2 {
+            font-weight: normal;
+            font-size: 160%;
+            margin: 0 0 5px 0;
+            clear: left;
+        }
+        .info div {
+            font-size: 95%;
+            line-height: 135%;
+            color: #555;
+        }
+        input {
+            -webkit-writing-mode: horizontal-tb !important;
+            text-rendering: auto;
+            color: #555555;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            -webkit-appearance: textfield;
+            background-color: #555555;
+            -webkit-rtl-ordering: logical;
+            cursor: text;
+            margin: 0em;
+            font: 400 11px system-ui;
+            padding: 1px;
+            border-width: 2px;
+            border-style: inset;
+            border-color: initial;
+            border-image: initial;
+        }
+        form ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            display: block;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+            padding-left: 0;
+        }
+        form fieldset{
+            margin-inline-start: 2px;
+            margin-inline-end: 2px;
+            padding-block-start: 0.35em;
+            padding-inline-start: 0.75em;
+            padding-inline-end: 0.75em;
+            padding-block-end: 0.625em;
+            min-inline-size: min-content;
+            border-width: 2px;
+            border-style: groove;
+            border-color: threedface;
+            border-image: initial;
+            display: block;
+            border: none;
+            margin: 0;
+            padding: 0;
+        }
+        form li {
+            margin: 0;
+            padding: 6px 1% 9px 1%;
+            clear: both;
+            background-color: transparent;
+            position: relative;
+            -webkit-transition: background-color 350ms ease-out;
+            transition: background-color 350ms ease-out;
+            display: list-item;
+            text-align: -webkit-match-parent;}
+        form select {
+            -webkit-writing-mode: horizontal-tb !important;
+            text-rendering: auto;
+            color: #555555;
+            letter-spacing: normal;
+            word-spacing: normal;
+            text-transform: none;
+            text-indent: 0px;
+            text-shadow: none;
+            display: inline-block;
+            text-align: start;
+            -webkit-appearance: menulist;
+            box-sizing: border-box;
+            align-items: center;
+            white-space: pre;
+            -webkit-rtl-ordering: logical;
+            background-color: rgb(248, 248, 248);
+            cursor: default;
+            margin: 0em;
+            font: 400 11px system-ui;
+            border-radius: 5px;
+            border-width: 1px;
+            border-style: solid;
+            border-color: rgb(166, 166, 166);
+            border-image: initial;
+            font-size: 120% !important;
+            margin: 0 0 1px 0;
+            width: 50%;
+        }
+
+        form li span{
+            margin: 0 .3em 0 0;
+            padding: 0;
+            float: left;
+            color: #444;
+        }
+        form li div span {
+            display: block;
+            width: 100%;
+            float: left;
+            color: #444;
+            margin: 0 .3em 0 0;
+            padding: 0;
+        }
+
+        form li div label, form li span label {
+            margin: 0;
+            padding-top: 3px;
+            clear: both;
+            font-size: 85%;
+            line-height: 160%;
+            color: #444;
+            display: block;
+        }
+
+
+
+        span.symbol {
+            font-size: 120%;
+            line-height: 135%;
+            margin: 0 .3em 0 0;
+            padding: 0;
+            float: left;
+            color: #444;
+        }
+        input.checkbox, input.radio {
+            display: block;
+            margin: 4px 0 0 0;
+            padding: 0;
+            width: 13px;
+            height: 13px;
+        }
+
+        input[type="radio" i] {
+            background-color: initial;
+            cursor: default;
+            -webkit-appearance: radio;
+            box-sizing: border-box;
+            margin: 3px 0.5ex;
+            padding: initial;
+            border: initial;
+        }
+
+        input.text, textarea.textarea {
+            border-top: 1px solid #7c7c7c;
+            border-left: 1px solid #c3c3c3;
+            border-right: 1px solid #c3c3c3;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+        }
+        label.choice {
+            display: block;
+            cursor: pointer;
+            font-size: 100%;
+            line-height: 150%;
+            margin: -17px 0 0 23px;
+            padding: 0 0 5px 0;
+            color: #222;
+            width: 88%;
+            margin-top: -16px;
+            clear: both;
+        }
+        label.desc, legend.desc {
+            font-size: 95%;
+            font-weight: bold;
+            color: #222;
+            line-height: 150%;
+            margin: 0;
+            padding: 0 0 3px 0;
+            border: none;
+            display: block;
+            white-space: normal;
+            width: 100%;
+        }
+
+        textarea.medium {
+            height: 10em;
+            width: 293px;
+            min-width: 100%;
+            max-width: 100%;
+            border-top: 1px solid #7c7c7c;
+            border-left: 1px solid #c3c3c3;
+            border-right: 1px solid #c3c3c3;
+            border-bottom: 1px solid #ddd;
+            background: #fff;
+        }
+    </style>
+    <title>Survey Form</title>
+    <form action="SurveyForm.html">
+        <header id="header" class="info">
+            <h2>Market Research Survey</h2>
+            <div>Please take a few moments to complete this satisfaction survey. </div>
+        </header>
+        <ul>
+            <li id="fo77li503" class="      ">
+                <label class="desc notranslate" id="title503" for="Field503">
+                    What is your age range?
+                </label>
+                <div>
+                    <select id="Field503" name="Field503" class="field select medium" onchange="handleInput(this);" onkeyup="handleInput(this);" tabindex="0" data-wufoo-field="dropdown">
+                        <option value="18-24">
+                            18-24
+                        </option>
+                        <option value="25-34">
+                            25-34
+                        </option>
+                        <option value="35-50">
+                            35-50
+                        </option>
+                        <option value="50+">
+                            50+
+                        </option>
+                    </select>
+                </div>
+            </li>
+
+
+
+            <li id="fo77li504" class="      ">
+                <label class="desc notranslate" id="title504" for="Field504">
+                    What is your yearly income range?
+                </label>
+                <div>
+                    <select id="Field504" name="Field504" class="field select medium" onchange="handleInput(this);" onkeyup="handleInput(this);" tabindex="0" data-wufoo-field="dropdown">
+                        <option value="$0 - $25,000">
+                            $0 - $25,000
+                        </option>
+                        <option value="$25,001 - $50,000">
+                            $25,001 - $50,000
+                        </option>
+                        <option value="$50,001 - $100,000">
+                            $50,001 - $100,000
+                        </option>
+                        <option value="$100,000+">
+                            $100,000+
+                        </option>
+                    </select>
+                </div>
+            </li>
+
+
+            <li id="fo77li505" class="     ">
+                <fieldset>
+                    <!--[if !IE | (gte IE 8)]-->
+                    <legend id="title505" class="desc notranslate">
+                        Gender Identity
+                    </legend>
+                    <!--[endif]-->
+                    <!--[if lt IE 8]>
+                    <label id="title505" class="desc">
+                        Gender Identity
+                    </label>
+                    <![endif]-->
+                    <div>
+                        <input id="radioDefault_505" name="Field505" type="hidden" value="">
+                        <span>
+  <input id="Field505_0" name="Field505" type="radio" class="field radio" value="Male" tabindex="0" onchange="handleInput(this);handleRadioOther(this.name, false);" onmouseup="handleInput(this);">
+  <label class="choice" for="Field505_0">
+    <span class="choice__text notranslate">Male</span>
+          <span class="choice__qty">
+              </span>
+  </label>
+    </span>
+                        <span>
+  <input id="Field505_1" name="Field505" type="radio" class="field radio" value="Female" tabindex="0" onchange="handleInput(this);handleRadioOther(this.name, false);" onmouseup="handleInput(this);">
+  <label class="choice" for="Field505_1">
+    <span class="choice__text notranslate">Female</span>
+          <span class="choice__qty">
+              </span>
+  </label>
+    </span>
+                        <span>
+  <input id="Field505_2" name="Field505" type="radio" class="field radio" value="Nonbinary" tabindex="0" onchange="handleInput(this);handleRadioOther(this.name, false);" onmouseup="handleInput(this);">
+  <label class="choice" for="Field505_2">
+    <span class="choice__text notranslate">Nonbinary</span>
+          <span class="choice__qty">
+              </span>
+  </label>
+    </span>
+                        <span>
+  <input id="Field505_3" name="Field505" type="radio" class="field radio" value="Other" tabindex="0" onchange="handleInput(this);handleRadioOther(this.name, true);" onmouseup="handleInput(this);">
+  <label class="choice" for="Field505_3" onmouseup="document.getElementById('Field505_other').focus();">
+    <span class="choice__text notranslate">Other</span>
+          <span class="choice__qty">
+              </span>
+  </label>
+                            <br>
+                               <input style="float: left" id="Field505_other" name="Field505_other_Other" type="text" class="field text other" value="" maxlength="250" onclick="document.getElementById('Field505_3').checked = 'checked';handleRadioOther('Field505', true);" onkeyup="handleInput(this);validateRange(505, 'character');" onchange="handleInput(this);" tabindex="0">
+        <label id="Field505_otherlabel" class="other" for="Field505_other" style="display:none;">
+      Maximum of <var id="rangeMaxMsg505">250</var> characters.&nbsp;&nbsp;&nbsp; <em class="currently" style="display: inline;">Currently Used: <var id="rangeUsedMsg505">0</var> characters.</em>
+    </label>
+        </span>
+                    </div>
+                </fieldset>
+            </li>
+
+
+
+            <li id="fo77li303" class="     ">
+                <fieldset>
+                    <!--[if !IE | (gte IE 8)]-->
+                    <legend id="title303" class="desc notranslate">
+                        Which of the following products have your purchased in the last 2 months. Please check all that apply.
+                    </legend>
+                    <!--[endif]-->
+                    <!--[if lt IE 8]>
+                    <label id="title303" class="desc">
+                        Which of the following products have your purchased in the last 2 months. Please check all that apply.
+                    </label>
+                    <![endif]-->
+                    <div>
+		<span class="subfield">
+	<input id="Field303" name="Field303" type="checkbox" class="field checkbox" value="Product 1" tabindex="0" onchange="handleInput(this);">
+	<label class="choice" for="Field303">
+		<span class="choice__text notranslate">Product 1</span>
+					<span class="choice__qty">
+							</span>
+	</label>
+	</span>
+                        <span class="subfield">
+	<input id="Field304" name="Field304" type="checkbox" class="field checkbox" value="Product 2" tabindex="0" onchange="handleInput(this);">
+	<label class="choice" for="Field304">
+		<span class="choice__text notranslate">Product 2</span>
+					<span class="choice__qty">
+							</span>
+	</label>
+	</span>
+                        <span class="subfield">
+	<input id="Field305" name="Field305" type="checkbox" class="field checkbox" value="Product 3" tabindex="0" onchange="handleInput(this);">
+	<label class="choice" for="Field305">
+		<span class="choice__text notranslate">Product 3</span>
+					<span class="choice__qty">
+							</span>
+	</label>
+	</span>
+                    </div>
+                </fieldset>
+            </li>
+
+
+            <li id="fo77li808" class="     ">
+                <fieldset>
+                    <!--[if !IE | (gte IE 8)]-->
+                    <legend id="title808" class="desc notranslate">
+                        How often would you use our new product?
+                    </legend>
+                    <!--[endif]-->
+                    <!--[if lt IE 8]>
+                    <label id="title808" class="desc">
+                        How often would you use our new product?
+                    </label>
+                    <![endif]-->
+                    <div>
+                        <input id="radioDefault_808" name="Field808" type="hidden" value="">
+                        <span>
+  <input id="Field808_0" name="Field808" type="radio" class="field radio" value="Daily" tabindex="0" onchange="handleInput(this);" onmouseup="handleInput(this);">
+  <label class="choice" for="Field808_0">
+    <span class="choice__text notranslate">Daily</span>
+          <span class="choice__qty">
+              </span>
+  </label>
+    </span>
+                        <span>
+  <input id="Field808_1" name="Field808" type="radio" class="field radio" value="Weekly" tabindex="0" onchange="handleInput(this);" onmouseup="handleInput(this);">
+  <label class="choice" for="Field808_1">
+    <span class="choice__text notranslate">Weekly</span>
+          <span class="choice__qty">
+              </span>
+  </label>
+    </span>
+                        <span>
+  <input id="Field808_2" name="Field808" type="radio" class="field radio" value="Monthly" tabindex="0" onchange="handleInput(this);" onmouseup="handleInput(this);">
+  <label class="choice" for="Field808_2">
+    <span class="choice__text notranslate">Monthly</span>
+          <span class="choice__qty">
+              </span>
+  </label>
+    </span>
+                    </div>
+                </fieldset>
+            </li>
+
+
+
+            <li id="fo77li807" class="notranslate      ">
+                <label class="desc" id="title807">
+                    What would you pay for the new product?
+                </label>
+                <span class="symbol">$</span>
+                <span>
+		<input id="Field807" name="Field807" type="text" class="field text currency nospin" value="" size="10" tabindex="0" onkeyup="handleInput(this);" onchange="handleInput(this);">
+		<label for="Field807">Dollars</label>
+	</span>
+                <span class="symbol radix">.</span>
+                <span class="cents">
+		<input id="Field807-1" name="Field807-1" type="text" class="field text nospin" value="" size="2" maxlength="2" tabindex="0" onkeyup="handleInput(this);" onchange="handleInput(this);">
+		<label for="Field807-1">Cents</label>
+	</span>
+            </li>
+
+
+
+            <li id="fo77li806" class="notranslate      ">
+
+
+                <label class="desc" id="title806" for="Field806">
+                    What features would you like to see in the new product.
+                </label>
+
+                <div>
+                    <textarea id="Field806" name="Field806" class="field textarea medium" spellcheck="true" rows="10" cols="50" tabindex="0" onkeyup="handleInput(this); " onchange="handleInput(this);" placeholder=""></textarea>
+
+                </div>
+
+
+
+            </li>
+
+
+
+            <li id="fo77li403" class="likert notranslate
+	col4 ">
+                <table cellspacing="0" style="height: 150px" cellpadding="15px">
+                    <caption id="title403" style="text-align: left;">
+                        <label class="desc">Please rate your level of agreement with the following statements</label>
+                    </caption>
+                    <thead>
+                    <tr style="background-color: #cccccc">
+                        <th>&nbsp;</th>
+                        <td>Strongly Disagree</td>
+                        <td>Disagree</td>
+                        <td>Agree</td>
+                        <td>Strongly Agree</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr role="radiogroup" aria-labelledby="Field-403" class="statement403">
+                        <th>
+                            <label id="Field-403" for="Field403">
+                                Our products are priced fairly.
+                            </label>
+                        </th>
+                        <td title="Strongly Disagree">
+                            <input id="Field403_1" name="Field403" type="radio" role="radio" tabindex="0" aria-checked="false" value="Strongly Disagree" onchange="handleInput(this);">
+                            <label for="Field403_1">1</label>
+                        </td>
+                        <td title="Disagree">
+                            <input id="Field403_2" name="Field403" type="radio" role="radio" tabindex="0" aria-checked="false" value="Disagree" onchange="handleInput(this);">
+                            <label for="Field403_2">2</label>
+                        </td>
+                        <td title="Agree">
+                            <input id="Field403_3" name="Field403" type="radio" role="radio" tabindex="0" aria-checked="false" value="Agree" onchange="handleInput(this);">
+                            <label for="Field403_3">3</label>
+                        </td>
+                        <td title="Strongly Agree">
+                            <input id="Field403_4" name="Field403" type="radio" role="radio" tabindex="0" aria-checked="false" value="Strongly Agree" onchange="handleInput(this);">
+                            <label for="Field403_4">4</label>
+                        </td>
+                    </tr>
+                    <tr role="radiogroup" aria-labelledby="Field-404" class="alt statement404">
+                        <th>
+                            <label id="Field-404" for="Field404">
+                                Our products are high quality.
+                            </label>
+                        </th>
+                        <td title="Strongly Disagree">
+                            <input id="Field404_1" name="Field404" type="radio" role="radio" tabindex="0" aria-checked="false" value="Strongly Disagree" onchange="handleInput(this);">
+                            <label for="Field404_1">1</label>
+                        </td>
+                        <td title="Disagree">
+                            <input id="Field404_2" name="Field404" type="radio" role="radio" tabindex="0" aria-checked="false" value="Disagree" onchange="handleInput(this);">
+                            <label for="Field404_2">2</label>
+                        </td>
+                        <td title="Agree">
+                            <input id="Field404_3" name="Field404" type="radio" role="radio" tabindex="0" aria-checked="false" value="Agree" onchange="handleInput(this);">
+                            <label for="Field404_3">3</label>
+                        </td>
+                        <td title="Strongly Agree">
+                            <input id="Field404_4" name="Field404" type="radio" role="radio" tabindex="0" aria-checked="false" value="Strongly Agree" onchange="handleInput(this);">
+                            <label for="Field404_4">4</label>
+                        </td>
+                    </tr>
+                    <tr role="radiogroup" aria-labelledby="Field-405" class="statement405">
+                        <th>
+                            <label id="Field-405" for="Field405">
+                                You would recommend our product to a friend or coworker.
+                            </label>
+                        </th>
+                        <td title="Strongly Disagree">
+                            <input id="Field405_1" name="Field405" type="radio" role="radio" tabindex="0" aria-checked="false" value="Strongly Disagree" onchange="handleInput(this);">
+                            <label for="Field405_1">1</label>
+                        </td>
+                        <td title="Disagree">
+                            <input id="Field405_2" name="Field405" type="radio" role="radio" tabindex="0" aria-checked="false" value="Disagree" onchange="handleInput(this);">
+                            <label for="Field405_2">2</label>
+                        </td>
+                        <td title="Agree">
+                            <input id="Field405_3" name="Field405" type="radio" role="radio" tabindex="0" aria-checked="false" value="Agree" onchange="handleInput(this);">
+                            <label for="Field405_3">3</label>
+                        </td>
+                        <td title="Strongly Agree">
+                            <input id="Field405_4" name="Field405" type="radio" role="radio" tabindex="0" aria-checked="false" value="Strongly Agree" onchange="handleInput(this);">
+                            <label for="Field405_4">4</label>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </li>
+
+
+
+
+
+            <li class="buttons ">
+                <div>
+                    <button type="submit" value="Submit" style="font-size: x-large">Submit</button>
+                </div>
+            </li>
+        </ul>
+    </form>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>// read text file
+const logFileText = async file => {
+    const response = await fetch(file)
+    const text = await response.text()
+    console.log(text)
+}
+logFileText('test.css')</script>
+</body>
+</html>

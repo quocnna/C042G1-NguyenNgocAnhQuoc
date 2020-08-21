@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Message JS</title>
+</head>
+<body>
+<button type="button" onclick="showMessage();">Click Me!</button>
+<script>
+    function showMessage(){
+        alert('Xin chào!');
+    }
+</script>
+
+<div id="messageDiv"></div>
+<button type="button" onclick="showMessage1();">Click Me!</button>
+<script>
+    function showMessage1(){
+        document.getElementById('messageDiv').innerHTML = 'Xin chào!';
+    }
+</script>
+
+<button type="button" onclick="showMessage2();">Click Me!</button>
+<script>
+    function showMessage2(){
+        document.write('Xin chào!');
+    }
+</script>
+
+<button type="button" onclick="showMessage3();">Click Me!</button>
+<script>
+    function showMessage3(){
+        console.log('Xin chào!');
+    }
+</script>
+</body>
+</html>

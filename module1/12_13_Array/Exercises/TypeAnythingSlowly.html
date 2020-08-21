@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+            background-image: linear-gradient(to right,rgba(24, 21, 209, 0.7), rgba(24, 21, 209, 0));
+        }
+        textarea{
+            font-size: x-large;
+            color: #0B29CF;
+            padding: 5px 5px 5px 10px;
+        }
+    </style>
+    <title>Title</title>
+</head>
+<body>
+<h2>Typing Anything Slowly</h2>
+<textarea rows="20" cols="90" data-action="0"></textarea>
+<script>
+    let x = "Hello World. My name is CodeGym";
+    let txa = document.querySelector("textarea");
+    txa.addEventListener("input", e => {
+        let element = e.target;
+        let a = parseInt(element.dataset.action);
+        if (a == x.length)
+            element.dataset.action = "0";
+        // txa.value = x.slice(0, a + 1);
+        txa.value = x.substring(0,a);
+        element.dataset.action++;
+    })
+</script>
+</body>
+</html>

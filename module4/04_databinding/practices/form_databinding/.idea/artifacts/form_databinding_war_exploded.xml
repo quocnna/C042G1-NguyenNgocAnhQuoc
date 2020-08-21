@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="form_databinding:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/form_databinding_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="form_databinding/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="form_databinding" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Spring-5.2.3.RELEASE" />
+          <element id="library" level="project" name="Spring MVC-5.2.3.RELEASE" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adam Eva</title>
+</head>
+<body>
+<script>
+    class Apple{
+        #weight;
+        constructor() {
+            this.#weight=5;
+        }
+        decrease(){
+            this.#weight--;
+        }
+        isEmpty(){
+            return false;
+        }
+        get Weight(){
+            return this.#weight;
+        }
+    }
+
+    class Human{
+        constructor(name,gender,weight) {
+            this.name=name;
+            this.gender= gender;
+            this.weight = weight;
+        }
+        say(st){
+            alert(st);
+        }
+        eat(apple){
+            if(apple.Weight>0){
+                alert("dang an tao");
+                apple.decrease();
+                this.weight++;
+            }
+            else
+                alert("Nothing to eat")
+        }
+        checkApple(apple){
+            return apple.Weight;
+        }
+    }
+
+    const apple = new Apple();
+    const adam = new Human();
+    const eva = new Human();
+    adam.say("Di vuon dia dang choi ko?");
+    eva.say("ok yeah");
+    adam.say("qua tao kia dep qua");
+    eva.say("minh an thu di");
+    for (let i = 0; i <=adam.checkApple(apple) ; i++) {
+        adam.eat(apple);
+        eva.eat(apple);
+    }
+
+</script>
+</body>
+</html>

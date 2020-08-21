@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a=[];
+    let n = parseInt(prompt("Input a number for array:"));
+    while (n<=6 || Number.isNaN(n)){
+        alert("Input incorrect format number")
+        n = parseInt(prompt("Input a number for array again:"));
+    }
+
+
+    for (let i = 0; i <n ; i++){
+        let r =parseInt(prompt("Input a number:"));
+        while (Number.isNaN(r)){
+            alert("Incorrect format number");
+            r =parseInt(prompt("Input a number again:"));
+        }
+        a[i]=r;
+    }
+
+    a.sort(function (a,b) {
+        return a-b;
+    })
+    alert(a);
+</script>
+</body>
+</html>

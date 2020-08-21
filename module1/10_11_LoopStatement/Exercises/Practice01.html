@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        div{
+            display: inline-block;
+            vertical-align: top;
+            border: 1px solid black;
+            text-align: left;
+            margin-right: 10px;
+        }
+        p{
+            color: #0B29CF;
+            font-weight: bold;
+            padding: 0 0 5px 0;
+            margin: 0;
+        }
+        input{
+            width: 50px;
+        }
+    </style>
+    <title>More Exercises Star</title>
+</head>
+<body>
+<div id="bt1"><p>Bai 1</p></div>
+<div id="bt3"><p>Bai 3</p></div>
+<div id="bt4"><p>Bai 4</p></div>
+<div id="bt5"><p>Bai 5</p></div>
+<div id="bt6"><p>Bai 6</p></div>
+<div id="bt7"><p>Bai 7</p></div>
+<div id="bt8">
+    <p>Bai 8</p>
+    <p>Predict a number</p>
+    From number: <input id="from" type="number"><br/><br/>
+    To number: <input id="to" style="margin-left: 18px" type="number"><br/><br/>
+    Your number:<input id="you" type="number" style="margin-left: 7px" ><br/><br/>
+    <button id="play" type="button" data-info="0">Play</button>
+</div>
+<script>
+    let bt1 = document.getElementById("bt1");
+    for (let i = 1; i < 100; i++) {
+        bt1.innerHTML += i+"<br/>";
+    }
+
+    // let tem = parseInt(prompt("Input any temperature:"));
+    // while (true){
+    //     if(tem>100){
+    //         alert("Please temperature down");
+    //         break;
+    //     }
+    //     if(tem<20){
+    //         alert("Please temperature up");
+    //         break;
+    //     }
+    //     tem = parseInt(prompt("Input any temperature:"));
+    // }
+    let bt3 = document.getElementById("bt3");
+    let arrFibonacci = [0,1,2];
+    let i =0;
+    do{
+        if(i== (arrFibonacci[arrFibonacci.length-2]+arrFibonacci[arrFibonacci.length-1]))
+            arrFibonacci.push(i);
+        i++;
+    }while (arrFibonacci.length<20)
+
+    arrFibonacci.forEach(ele=> bt3.innerHTML += ele+ "<br/>");
+
+    for (let j = 0; j <arrFibonacci.length ; j++) {
+        if(arrFibonacci[j]/5==0)
+        {
+            document.getElementById("bt4").innerHTML+= j;
+            break;
+        }
+    }
+    let totalB5 = 0;
+    for (let j = 0; j <arrFibonacci.length ; j++) {
+        totalB5 += arrFibonacci[j];
+    }
+    document.getElementById("bt5").innerHTML += totalB5;
+
+    let arrDS = [];
+    let totalB6 =0;
+    let t6 = 0;
+    while (true)
+    {
+        if(t6%7==0)
+        {
+            arrDS.push(t6);
+            totalB6 += t6;
+        }
+
+        t6++;
+        if(arrDS.length==30)
+            break;
+    }
+    document.getElementById("bt6").innerHTML += totalB6;
+
+    let bt7 = document.getElementById("bt7");
+    for (let j = 0; j < 100; j++) {
+        if( j%3==0  && j%5==0)
+            bt7.innerHTML += "FizzBuzz"+ "<br/>";
+        else if(j%3==0)
+            bt7.innerHTML += "Fizz"+ "<br/>";
+        else if(j%5==0)
+            bt7.innerHTML += "Buzz"+ "<br/>";
+        else
+            bt7.innerHTML += j+ "<br/>";
+    }
+
+    document.getElementById("play").addEventListener("click",e=>{
+            const ele = e.target;
+            let count =ele.dataset.info;
+            if(count>3)
+            {
+                alert("You choice 3 times. Play play again");
+                reset(ele);
+                return;
+            }
+
+            count++;
+            ele.dataset.info = count;
+        const your = parseInt(document.getElementById("you").value);
+        const f = parseInt(document.getElementById("from").value);
+        const t = parseInt(document.getElementById("to").value);
+        const random = Math.floor(Math.random() *(t-f))+ f;
+        if(your==random)
+        {
+            alert("Congratulation!");
+            reset(ele);
+        }
+        else if(your>random)
+            alert("Your number predict greater than random number! Please predict again");
+        else
+            alert("Your number predict less than random number! Please predict again");
+    });
+
+    const reset = (ele)=>{
+        ele.dataset.info = "0";
+        document.getElementById("from").value = "";
+        document.getElementById("to").value="";
+        document.getElementById("you").value="";
+    }
+</script>
+</body>
+</html>

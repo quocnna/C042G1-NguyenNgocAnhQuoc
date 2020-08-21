@@ -1,0 +1,177 @@
+<!--https://www.geeksforgeeks.org/how-to-align-modal-content-box-to-center-of-any-screen/-->
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <title>Hello, world!</title>
+    <style>
+        /* Text alignment for body */
+        body {
+            text-align: center;
+        }
+
+        /* Styling h1 tag */
+        h1 {
+            color: green;
+            text-align: center;
+        }
+
+        /* Styling modal */
+        .modal:before {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .modal-dialog {
+            display: inline-block;
+            vertical-align: middle;
+            margin-bottom: 10%;
+        }
+
+        .modal .modal-content {
+            padding: 20px 20px 20px 20px;
+            -webkit-animation-name: modal-animation;
+            -webkit-animation-duration: 0.5s;
+            animation-name: modal-animation;
+            animation-duration: 0.5s;
+        }
+
+        .modal .modal-content .popDes{
+            background-color: #BD362F;
+            text-align: left;
+        }
+        .modal .modal-content .popTitle{
+            background-color: #2F96B4;
+        }
+        .modal .modal-content .popDetail{
+            background-color: yellow;
+            text-align: left;
+        }
+        .modal .modal-content .popDetailInline{
+            background-color: green;
+            padding-left: 10px;
+            float: left;
+            width: 50%;
+            border: 1px solid;
+        }
+        .modal .modal-content .popDetailInline label{
+            display: inline-block;
+            width: 80px;
+        }
+        .modal .modal-content .popDetailInline input{
+            width: 111px;
+        }
+        .modal .modal-content .popDetailInline .select{
+            text-align: center;
+        }
+        .modal .modal-content button{
+            background-color: red;
+        }
+        .modal .modal-content .popSub{
+            background-color: violet;
+        }
+
+
+        @-webkit-keyframes modal-animation {
+            from {
+                top: -100px;
+                opacity: 0;
+            }
+            to {
+                top: 0px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes modal-animation {
+            from {
+                top: -100px;
+                opacity: 0;
+            }
+            to {
+                top: 0px;
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+<h1>On page load show Modal Popup !</h1>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <form action="popUp.html" method="post">
+        <div class="modal-content">
+<!--            <div class="modal-header">-->
+<!--                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>-->
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">-->
+<!--                    <span aria-hidden="true">×</span>-->
+<!--                </button>-->
+<!--            </div>-->
+<!--            <div class="modal-body">-->
+<!--                Modal body text goes here.-->
+<!--            </div>-->
+<!--            <div class="modal-footer">-->
+<!--                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>-->
+<!--                <button type="button" class="btn btn-primary">Save changes</button>-->
+<!--            </div>-->
+
+            <div class="popDes">iNote is a simple and quick sticky notepad app. This helps you organize your notes, memos, messages, emails, shopping lists, check lists and to-do lists by COLOR. Taking color notes with iNote is never easier than before.</div>
+            <div class="popTitle">Please choose the way you store data</div>
+            <div class="popDetail">
+                <div class="popDetailInline">
+                <div>Database: data wil save on your database so you have to config info your database, username and password </div>
+                    <div>
+                        <label>db name:</label><input type="text" value="inotes">
+                        <label>username:</label><input type="text" value="username">
+                        <label>password:</label><input type="text" value="password">
+                    </div>
+                    <div class="select">select</div>
+                </div>
+                <div class="popDetailInline">
+                    <div>File: data will save to file on your local computer, so you have to config your path</div>
+                    <div>
+                        <label>files path:</label><input type="text" value="C:\">
+                    </div>
+                    <div class="select">select</div>
+                </div>
+            </div>
+            <button>Done</button>
+            <div class="popSub">(You can change the way store data after)</div>
+        </div>
+        </form>
+    </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="http://khaalipaper.com/js/jquery-3.2.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+        // setTimeout(function () {
+        $("#exampleModal").modal('show');
+        // },3000);
+
+        // /* Centering the modal vertically */
+        // function alignModal() {
+        //   var modalDialog = $(this).find(".modal-dialog");
+        //   modalDialog.css("margin-top", Math.max(0,
+        //           ($(window).height() - modalDialog.height()) / 2));
+        // }
+        // $(".modal").on("shown.bs.modal", alignModal);
+        //
+        // /* Resizing the modal according the screen size */
+        // $(window).on("resize", function() {
+        //   $(".modal:visible").each(alignModal);
+        // });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let res=1;
+    let a = [];
+    for (let i = 1; i < 10; i++) {
+        for (let j = 1; j < 10; j++) {
+            document.write("*")
+            if(j==9)
+                a.push(j);
+
+        }
+        if(i%3==0)
+            res*=i;
+        document.write("<br/>")
+    }
+    //alert(res);
+    alert(a);
+    a.shift();
+    alert(a);
+</script>
+</body>
+</html>

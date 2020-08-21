@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            background-image: linear-gradient(to left, rgba(28, 146, 210, 0.5), rgba(228, 229, 230, 0.3));
+        }
+
+        #container {
+            margin: 0 auto;
+            text-align: center;
+            width: 100%;
+            height: 500px;
+        }
+
+        #container > div {
+            padding: 15px 35px 20px 105px;
+            text-align: left;
+        }
+
+        table {
+            display: inline-block;
+            border-collapse: collapse;
+        }
+
+        table button {
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+
+        table thead {
+            background: #1C6EA4;
+            background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+        }
+
+        table thead tr th:nth-child(2) {
+            border-bottom: 0.03cm solid #8a8a8a;
+        }
+
+        table td {
+            border: 1px solid black;
+            width: 180px;
+            height: 60px;
+        }
+
+        #container .dataNew {
+            display: none;
+        }
+
+        #container .dataNew.show {
+            display: block;
+        }
+
+        #container .dataNew .section {
+            height: 50px;
+            width: 100%;
+            display: block;
+        }
+
+        #container .dataNew .section .field {
+            height: 30px;
+            width: 10%;
+            float: left;
+            text-align: right;
+        }
+
+        #container .dataNew .section .data {
+            height: 30px;
+            width: 60%;
+            float: left;
+            text-align: left;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="container">
+    <div>
+        <button onclick="addNew()">Add New</button>
+    </div>
+    <div class="dataNew">
+        <input id="hf" style="display: none">
+        <div class="section">
+            <div class="field"><label>Order Id:</label></div>
+            <div class="data"><input type="text" id="iOrderId"></div>
+        </div>
+        <div class="section">
+            <div class="field"><label>Full Name:</label></div>
+            <div class="data"><input type="text" id="iFullname"></div>
+        </div>
+        <div class="section">
+            <div class="field"><label>Birthday:</label></div>
+            <div class="data"><input type="text" id="iBirthday"></div>
+        </div>
+        <div class="section">
+            <div class="field"><label>Address:</label></div>
+            <div class="data"><input type="text" id="iAddress"></div>
+        </div>
+        <div class="section">
+            <div class="field"><label>Salary:</label></div>
+            <div class="data"><input type="text" id="iSalary"></div>
+        </div>
+        <div class="section">
+            <div class="field"><label>Position:</label></div>
+            <div class="data"><input type="text" id="iPosition"></div>
+        </div>
+        <div>
+            <div class="section">
+                <div class="field"></label></div>
+                <div class="data">
+                    <button id="btAdd" type="button">Add</button>
+                    <button id="btCancel" type="button" onclick="Cancel()">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script>
+    const hf = document.getElementById("hf");
+    const data = document.querySelector(".dataNew");
+    const iOrderId = document.getElementById("iOrderId");
+    const iFullname = document.getElementById("iFullname");
+    const iBirthday = document.getElementById("iBirthday")
+    const iSalary = document.getElementById("iSalary");
+    const iAddress = document.getElementById("iAddress");
+    const iPosition = document.getElementById("iPosition");
+    const btAdd = document.getElementById("btAdd");
+
+    class Worker {
+        constructor(id, order, name, birthday, address, salary, position) {
+            this.Id = id;
+            this.Order = order;
+            this.Name = name;
+            this.Birthday = birthday;
+            this.Address = address;
+            this.Salary = salary;
+            this.Position = position;
+        }
+
+        static del(i) {
+            if (confirm("Are you sure to delete?")) {
+                arr.splice(i - 1, 1);
+                buildTable();
+            }
+        }
+
+        static add(o) {
+            arr.push(o);
+            buildTable();
+        }
+
+        static update(o) {
+            arr.forEach(e => {
+                if (e.Id == o.Id) {
+                    e.Order = o.Order;
+                    e.Name = o.Name;
+                    e.Birthday = o.Birthday;
+                    e.Address = o.Address;
+                    e.Salary = o.Salary;
+                    e.Position = o.Position;
+                }
+            });
+            buildTable();
+        }
+    }
+
+    const buildTable = () => {
+        const table = document.querySelector("table");
+        if (table !== null)
+            table.remove();
+
+        const tbl = document.createElement("table");
+        const thead = document.createElement("thead");
+        const tbody = document.createElement("tbody");
+        arr.sort(compareNames);
+        for (let i = 0; i < arr.length; i++) {
+            const row = document.createElement("tr");
+            const thRow = document.createElement("tr");
+            for (let j = 0; j < Object.keys(arr[i]).length; j++) {
+                if (i == 0) {
+                    const th = document.createElement("th");
+                    const thText = document.createTextNode(Object.keys(arr[0])[j]);
+                    th.appendChild(thText);
+                    thRow.appendChild(th);
+                    thead.appendChild(thRow);
+
+                    if (j == 0) {
+                        th.style.setProperty("display", "none");
+                    }
+                }
+                const cell = document.createElement("td");
+                const data = document.createTextNode(arr[i][Object.keys(arr[i])[j]]);
+                cell.appendChild(data);
+                row.appendChild(cell);
+
+                if (j == 0) {
+                    cell.style.setProperty("display", "none");
+                }
+            }
+            const btEdit = document.createElement("button");
+            btEdit.textContent = "Edit";
+            btEdit.addEventListener("click", e => {
+                let t = arr.find(f => {
+                    return f.Id == arr[i]["Id"];
+                });
+                hf.value = t.Id;
+                iOrderId.value = t.Order;
+                iFullname.value = t.Name;
+                iBirthday.value = t.Birthday;
+                iAddress.value = t.Address;
+                iSalary.value = t.Salary;
+                iPosition.value = t.Position;
+                btAdd.textContent = "Update";
+                data.classList.add("show");
+            });
+
+            const btDel = document.createElement("button");
+            btDel.textContent = "Delete";
+            btDel.addEventListener("click", e => {
+                Worker.del(arr[i]["Id"]);
+            });
+
+            row.appendChild(btEdit);
+            row.appendChild(btDel);
+            tbody.appendChild(row);
+        }
+        tbl.appendChild(thead);
+        tbl.appendChild(tbody);
+
+        const container = document.querySelector("#container");
+        container.appendChild(tbl);
+    };
+
+    let o1 = new Worker(1, 1, "quoc", "02/02/2020", "19 le do", "2000$", "dev");
+    let o2 = new Worker(2, 2, "dung", "04/04/2020", "01 tran cao van", "1000$", "sale");
+    let o3 = new Worker(3, 3, "toan", "05/05/2020", "09 ong ich khiem", "3000$", "manager");
+    let arr = [o1, o2, o3];
+
+    buildTable();
+
+    btAdd.addEventListener("click", e => {
+        const ele = e.target;
+        const patternDate = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/i;
+        if (iFullname.value == "undefined" || iFullname.value == "") {
+            alert("Please input name");
+            return;
+        }
+        if (!patternDate.test(iBirthday.value)) {
+            alert("Please Input birthday correct format")
+            return;
+        }
+        if (ele.textContent == "Add") {
+            let IdAdd = arr.length + 1;
+            let o = new Worker(IdAdd, iOrderId.value, iFullname.value, iBirthday.value, iAddress.value, iSalary.value, iPosition.value);
+            Worker.add(o);
+            resetField();
+            alert("Add successful!")
+        } else {
+            let o = new Worker(parseInt(hf.value), iOrderId.value, iFullname.value, iBirthday.value, iAddress.value, iSalary.value, iPosition.value);
+            Worker.update(o);
+            resetField();
+            alert("Update successful!")
+            data.classList.remove("show");
+        }
+    });
+
+    function addNew() {
+        data.classList.add("show");
+    }
+
+    function Cancel() {
+        data.classList.remove("show");
+    }
+
+    const resetField = () => {
+        hf.value = "";
+        iOrderId.value = "";
+        iFullname.value = "";
+        iBirthday.value = "";
+        iAddress.value = "";
+        iSalary.value = "";
+        iPosition.value = "";
+        btAdd.textContent = "Add";
+    };
+
+    function compareNames(a, b) {
+        const fName = a.Name;
+        const sName = b.Name;
+        if (fName.localeCompare(sName) < 0)
+            return -1;
+        else if (fName.localeCompare(sName) > 0)
+            return 1;
+        else if (fName.localeCompare(sName) == 0)
+            return 0;
+    }
+</script>
+</body>
+</html>

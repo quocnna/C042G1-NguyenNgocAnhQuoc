@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const number = parseInt(prompt("Input a number:"));
+    let res=0;
+    let a = new Array(number);
+    for (let i = 0; i < a.length; i++) {
+        a[i]=i;
+        if(i%2!=0)
+            res+=i;
+    }
+    if(number%2!=0)
+        res+=number;
+    //alert(res);
+
+    a.push(4);
+    const index = a.findIndex(e=>{
+        return e==4;
+    });
+    //alert(index);
+
+    a.sort(function (a,b) {
+        return b-a;
+    });
+    //alert(a)
+
+    a.push(12);
+    a.sort(function (a,b) {
+        return a-b;
+    });
+    alert(a);
+</script>
+</body>
+</html>

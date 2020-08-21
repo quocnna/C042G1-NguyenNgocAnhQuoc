@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script>
+    let fibonacci =[1,1,2];
+    for (let i = 3; i < 20; i++) {
+        fibonacci.push(fibonacci[i-1] + fibonacci[i-2]);
+    }
+    alert(fibonacci);
+</script>
+</body>
+</html>

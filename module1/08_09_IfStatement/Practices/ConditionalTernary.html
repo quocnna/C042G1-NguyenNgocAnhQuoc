@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Conditional Ternary</title>
+</head>
+<body>
+
+</body>
+<script>
+    let login = prompt("Nhap ten login:",)
+    let message = (login == 'Employee') ?
+        'Hello' :
+        (login == 'Director') ?
+            'Greetings' :
+            (login == '') ?
+                'No login' :
+                'Unknow you';
+    alert(message);
+</script>
+</html>

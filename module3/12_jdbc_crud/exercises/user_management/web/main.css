@@ -1,0 +1,113 @@
+body{
+    margin: 0 auto;
+    width: 80%;
+}
+
+.table-wrapper {
+    background: #fff;
+    padding: 20px 25px;
+    margin: 30px 0;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+.table-title {
+    padding-bottom: 15px;
+    background: #435d7d;
+    color: #fff;
+    padding: 16px 30px;
+    margin: -20px -25px 10px;
+    border-radius: 3px 3px 0 0;
+}
+
+table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid purple;
+    /*empty-cells: hide;*/
+    /*border-collapse: separate;*/
+}
+
+th:nth-child(1) {
+    width: 30%;
+}
+
+th:nth-child(2) {
+    width: 27%;
+}
+
+th:nth-child(3) {
+    width: 27%;
+}
+
+th:nth-child(4) {
+    width: 16%;
+}
+
+th{
+    padding: 20px;
+    background-color: gray;
+    color: white;
+}
+
+td a:hover {
+    color: #2196F3;
+}
+td a.edit {
+    color: #FFC107;
+}
+td a.delete {
+    color: #F44336;
+}
+
+td{
+    height: 100px;
+    vertical-align: bottom;
+    padding: 20px;
+    /*border: 1px solid black;*/
+    border-bottom: 1px solid black;
+}
+tr:nth-child(even) {
+    background-color: lightgray;
+}
+tr:hover {
+    background-color: yellow;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    padding-left: 30px;
+}
+
+.modal .modal-dialog {
+    max-width: 400px;
+}
+.modal .modal-header, .modal .modal-body, .modal .modal-footer {
+    padding: 20px 30px;
+}
+.modal .modal-content {
+    border-radius: 3px;
+}
+.modal .modal-footer {
+    background: #ecf0f1;
+    border-radius: 0 0 3px 3px;
+}
+.modal .modal-title {
+    display: inline-block;
+}
+.modal .form-control {
+    border-radius: 2px;
+    box-shadow: none;
+    border-color: #dddddd;
+}
+.modal textarea.form-control {
+    resize: vertical;
+}
+.modal .btn {
+    border-radius: 2px;
+    min-width: 100px;
+}
+.modal form label {
+    font-weight: normal;
+}

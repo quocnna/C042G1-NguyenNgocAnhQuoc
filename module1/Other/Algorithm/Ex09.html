@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let st= "Hello World";
+    const reverseSt = (st) => st.split("").reverse().join('');
+    function reverse(str) {
+        let reverseString = "";
+
+        for (let character of str) {
+            reverseString = character + reverseString;
+        }
+
+        return reverseString;
+    }
+
+    //alert(st.toUpperCase());
+    //alert(st.toLowerCase());
+
+    function convertSt(st) {
+        return st.split("").map(e=>e==e.toUpperCase()?e.toLowerCase():e.toUpperCase());
+    }
+    alert(convertSt(st));
+
+</script>
+</body>
+</html>

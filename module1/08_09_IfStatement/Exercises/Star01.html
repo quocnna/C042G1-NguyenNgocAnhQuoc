@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Good Fast Cheap</title>
+</head>
+<body>
+<input type="radio"> Good
+<input type="radio"> Fast
+<input type="radio"> Cheap
+<script>
+    const rds = document.querySelectorAll("input");
+    for (let i = 0; i < rds.length; i++) {
+        rds[i].addEventListener("click",e=>{
+            if(rds[0].checked && rds[1].checked && rds[2].checked){
+                if(i==0)
+                    rds[i+2].checked = false;
+                else
+                    rds[i-1].checked = false;
+            }
+        })
+    }
+</script>
+</body>
+</html>

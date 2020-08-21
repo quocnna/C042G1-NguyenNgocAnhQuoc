@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body{
+            text-align: center;
+            width: 100%;
+            margin: 0 auto;
+            height: 100%;
+            background-image: linear-gradient(90deg,#005AA7,#FFFDE4);
+        }
+        table{
+            border-collapse: collapse;
+            display: inline-block;
+        }
+        td{
+            border: 1px solid gray;
+            width: 100px;
+            height: 50px;
+            color: black;
+        }
+        h1{
+            font-family: Lobster cursive;
+            color: #6f42c1;
+        }
+    </style>
+    <title>Multiplication Table</title>
+</head>
+<body>
+<h1>Multiplication Table</h1>
+<script>
+    const body = document.getElementsByTagName("body")[0];
+    const tbl = document.createElement("table");
+    const tbody = document.createElement("tbody");
+
+    for (let i = 1; i <=9; i++) {
+        const row = document.createElement("tr");
+        for (let j = 2; j <=9 ; j++) {
+           const cell = document.createElement("td");
+           const data = document.createTextNode(`${j} x ${i} = ${j*i}`);
+           cell.appendChild(data);
+           row.appendChild(cell);
+        }
+        tbody.appendChild(row);
+    }
+    tbl.appendChild(tbody);
+    body.appendChild(tbl);
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex05</title>
+</head>
+<body>
+<script>
+// compare 2 array
+let a=[1,"c","b","4","aaa"];
+let b = prompt("input");
+let c= b.split(",");
+let flag =false;
+for (let i = 0; i < a.length; i++) {
+flag = c.some(e=>{
+return e[i]==a[i];
+})
+}
+alert(flag);
+</script>
+</body>
+</html>

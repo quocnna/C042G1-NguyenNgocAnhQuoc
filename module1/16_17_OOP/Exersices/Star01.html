@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat and Rat</title>
+</head>
+<body>
+<script>
+    class Animal{
+        constructor(name,weight,speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+        }
+
+        say(){
+            alert("This is say method from Animal")
+        }
+    }
+    class Rat extends Animal{
+        constructor(name,weight,speed,status) {
+            super(name,weight,speed);
+            this.status = status;
+        }
+        say(){
+            super.say();
+            alert(this.name + " say Chit Chit")
+        }
+    }
+    class Cat extends Animal{
+        say(){
+            alert(this.name + " say Meo Meo");
+        }
+        catchRat(rat){
+            return this.speed >= rat.speed;
+        }
+        eatRat(rat){
+            if(rat.status){
+                this.weight += rat.weight;
+            }
+        }
+    }
+
+    const rat = new Rat("jerry",3,5,true);
+    const cat = new Cat("tom",8,9);
+    rat.say();
+    cat.say();
+    alert(cat.catchRat(rat)?"Catch Success":"Catch Fail") ;
+    alert("Weight before eat: "+cat.weight);
+    cat.eatRat(rat);
+    alert("Weight after eat: "+cat.weight)
+</script>
+</body>
+</html>

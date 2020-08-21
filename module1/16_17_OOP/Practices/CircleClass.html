@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Circle Class</title>
+</head>
+<body>
+<script>
+    class Circle{
+        constructor(radius) {
+            this.radius= radius;
+        }
+        get Area(){
+            return Math.PI * radius *radius;
+        }
+    }
+    const radius = parseInt(prompt("Input a number:"));
+    let circle = new Circle(radius);
+    alert(`radius= ${radius} and area= ${circle.Area}`);
+</script>
+</body>
+</html>

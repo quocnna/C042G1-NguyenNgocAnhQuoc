@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="date">
+<button onclick="checkDay(document.querySelector('input').value)">Check</button>
+<script>
+    const checkDay= st=>{
+        let res=0;
+        let a = st.split('-');
+        for (let i = 1; i < a[1]; i++)
+            res+= checkMonth(i);
+        res= checkLeapYear(a[0]) && a[1]>2?res+ parseInt(a[2]) +1 :  res+ parseInt(a[2]);
+        alert(res);
+    };
+
+    const checkMonth = m=>{
+        return (m==1 || m==3|| m==5 ||m==7||m==8||m==10||m==12)?31:(m==4 || m==6 || m==9|| m==11)?30:28;
+    };
+    const checkLeapYear = y=>{
+        return y%4== 0? (y%100==0 ? y%400==0: true): false;
+    };
+
+    alert(checkLeapYear(2020));
+</script>
+</body>
+</html>

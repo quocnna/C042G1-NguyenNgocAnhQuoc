@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        function fcBai1() {
+            let dLy = document.getElementById("txtPhysics").value;
+            let dHoa = document.getElementById("txtChemistry").value;
+            let dSinh = document.getElementById("txtBiology").value;
+            alert((parseInt(dLy) +parseInt(dHoa) + parseInt(dSinh))/3);
+        }
+
+        function fcCircuit() {
+            let radius = document.getElementById("txtRadius").value;
+            alert("Circuit: "+ (parseInt(radius) * 2 * 3.14));
+        }
+
+        function fcArea() {
+            let radius = document.getElementById("txtRadius2").value;
+            alert("Area: "+ (parseInt(radius) * parseInt(radius) * 3.14));
+        }
+    </script>
+    <meta charset="UTF-8">
+    <title>Using Variable, DataType and Operator</title>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Bai 1</legend>
+            Diem Ly: <input type="number" id="txtPhysics">
+            Diem Hoa: <input type="number" id="txtChemistry">
+            Diem Sinh: <input type="number" id="txtBiology">
+            <button type="button" onclick="fcBai1();">Average</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Bai 2</legend>
+            Ban Kinh: <input type="number" id="txtRadius">
+            <button type="button" onclick="fcCircuit();">Circuit</button>
+        </fieldset>
+
+        <fieldset>
+            <legend>Bai 3</legend>
+            Ban Kinh: <input type="number" id="txtRadius2">
+            <button type="button" onclick="fcArea();">Area</button>
+        </fieldset>
+    </div>
+
+</body>
+</html>

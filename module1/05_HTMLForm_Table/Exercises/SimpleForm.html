@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .section{margin-top: 10px;height: 50px;}
+        .field{display: block;float: left;width: 30%;text-align: right;height: 35px;color: #1A36AD;font-size: x-large;}
+        .data{display: block;float: right;width: 68%;text-align: left;height: 35px;}
+         label{display: block}
+        .secInline{display: block;float: left;padding-right: 35px}
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            color: #FF8758;
+        }
+
+        /* Hide the browser's default checkbox */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+        /* Create a custom checkbox */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: #eee;
+        }
+
+        /* When the checkbox is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the checkmark/indicator (hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the checkmark when checked */
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the checkmark/indicator */
+        .container .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 3px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        input[type=submit], input[type=reset] {
+            background-color: whitesmoke;
+            font-size:20px
+        }
+
+    </style>
+    <title>Simple Form</title>
+</head>
+<body style="background-color: #D6FEFF">
+<div style="background-color: #D6FEFF;text-align: center">
+    <div style="background-color: white;display: inline-block;width: 1000px;height: 410px ">
+        <form method="get" action="SimpleForm.html">
+        <div style="background-color: #FF4D1C; color: white; padding-top: 1px;padding-bottom: 1px;margin: 10px 10px 10px 10px"><h2>SO THICH CUA BAN</h2></div>
+        <div class="section" style="margin-top: 30px">
+            <div class="field">Ho va Ten:</div>
+            <div class="data"><input type="text" name="fullName" style="height: 25px;width: 500px;"></div>
+        </div>
+        <div class="section">
+            <div class="field">Email:</div>
+            <div class="data"><input  type="email" name="email" style="width: 350px;height: 25px"></div>
+        </div>
+        <div class="section" style="height: 120px">
+            <div class="field">So Thich:</div>
+            <div class="data">
+                <div class="secInline">
+                    <label class="container">
+                        <input type="checkbox" checked>
+
+                        <span class="checkmark"></span>
+                        The Thao
+                    </label>
+
+                    <label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Luot Web
+                    </label>
+
+                    <label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Du Lich
+                    </label>
+                </div>
+                <div class="secInline">
+                    <label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                        Am Nhac
+                    </label>
+
+                    <label class="container">
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                       Choi Game
+                    </label>
+                </div>
+                <div class="secInline">
+        <label class="container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Doc Sach
+        </label>
+
+        <label class="container">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+            Dien Anh
+        </label>
+    </div>
+            </div>
+        </div>
+         <div class="section">
+             <div class="field"></div>
+             <div class="data">
+
+                 <div class="secInline" style="height: 50px">
+                     <input type="submit" name="ok" value="Gui Thong Tin" >
+                 </div>
+                 <div class="secInline">
+                     <input type="reset" name="reset" value="Nhap Lai" >
+                 </div>
+             </div>
+         </div>
+        </form>
+    </div>
+</div>
+<div style="background-color: #D6FEFF;text-align: center;margin-top: 35px">
+    <div style="background-color: #FFFCAD;display: inline-block;width: 1000px;height: 650px ">
+        <form method="get" action="SimpleForm.html">
+            <div style="background-color: #D5FCD7; color: #103FFB; padding-top: 1px;padding-bottom: 1px;margin: 10px 10px 10px 10px"><h2>DANG KY HOC VIEN</h2></div>
+            <div class="section" style="margin-top: 30px">
+                <div class="field">Ho va Ten:</div>
+                <div class="data"><input type="text" name="fullName" style="height: 25px;width: 500px;"></div>
+            </div>
+            <div class="section">
+                <div class="field">Ngay sinh:</div>
+                <div class="data"><input  type="date" name="email" style="width: 250px;height: 25px;font-size: x-large"></div>
+            </div>
+            <div class="section">
+                <div class="field">Gioi tinh:</div>
+                <div class="data">
+                    <div style="display: block;float: left;margin-right: 20px"><label style="font-size: x-large"><input type="radio" name="Gender" value="Nam">   Nam</label></div>
+                    <div style="display: block;float: left"><label style="font-size: x-large"><input type="radio" name="Gender" value="Nu">   Nu</label></div>
+                </div>
+            </div>
+
+            <div class="section" style="height: 105px">
+                <div class="field">Dia chi:</div>
+                <div class="data">
+                    <textarea cols="40" rows="8"></textarea>
+                </div>
+            </div>
+
+            <div class="section" style="margin-top: 30px">
+                <div class="field">Lop:</div>
+                <div class="data">
+                    <select style="font-size: x-large">
+                        <option selected>--- Chon Lop ---</option>
+                        <option>Khieu Vu</option>
+                        <option>Lap trinh</option>
+                        <option>Ca hat</option>
+                        <option>Bong da</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="section">
+                <div class="field">Email:</div>
+                <div class="data"><input  type="email" name="email" style="width: 250px;height: 25px"></div>
+            </div>
+
+            <div class="section">
+                <div class="field">Dien thoai:</div>
+                <div class="data"><input  type="tel" name="email" style="width: 250px;height: 25px"></div>
+            </div>
+            <div class="section">
+                <div class="field"></div>
+                <div class="data">
+
+                    <div class="secInline" style="height: 50px">
+                        <input type="submit" name="ok" value="Dang Ky" >
+                    </div>
+                    <div class="secInline">
+                        <input type="reset" name="reset" value="Nhap Lai" >
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

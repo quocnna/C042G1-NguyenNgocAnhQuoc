@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: inherit;
+        }
+
+        embed,
+        iframe,
+        img,
+        object,
+        video {
+            max-width: 100%;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        ul,
+        ol,
+        li,
+        p,
+        pre,
+        blockquote,
+        figure,
+        hr {
+            margin: 0;
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:focus {
+            outline: none;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            display: block;
+        }
+
+        ol,
+        ul {
+            list-style: none;
+        }
+
+        input,
+        textarea,
+        button {
+            border: 0;
+            border-radius: 0;
+            background-color: transparent;
+            font-size: inherit;
+            font-family: inherit;
+            font-weight: inherit;
+            outline: none;
+            appearance: none;
+            text-align: left;
+        }
+
+        input:hover,
+        input:active,
+        input:focus,
+        textarea:hover,
+        textarea:active,
+        textarea:focus,
+        button:hover,
+        button:active,
+        button:focus {
+            outline: none;
+        }
+
+        :root {
+            font-family: Helvetica, Arial, sans-serif;
+        }
+
+        html {
+            font-size: 175%;
+            font-weight: 300;
+            line-height: 1.3;
+            box-sizing: border-box;
+        }
+
+        body {
+            align-items: center;
+            background-image: linear-gradient(236deg, #74ebd5, #acb6e5);
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 20em;
+        }
+
+        .container > p {
+            text-align: center;
+        }
+
+        .calculator {
+            border-radius: 12px;
+            box-shadow: 0 0 40px 0px rgba(0, 0, 0, 0.15);
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 15em;
+            overflow: hidden;
+        }
+
+        .calculator__display {
+            background-color: #222222;
+            color: #fff;
+            font-size: 1.714285714em;
+            padding: 0.5em 0.75em;
+            text-align: right;
+        }
+
+        .calculator__keys {
+            background-color: #999;
+            display: grid;
+            grid-gap: 1px;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .calculator__keys > * {
+            background-color: #fff;
+            padding: 0.5em 1.25em;
+            position: relative;
+            text-align: center;
+        }
+
+        .calculator__keys > *:active::before,
+        .calculator__keys > .is-depressed::before {
+            border: 1px solid black;
+            background-color: rgba(0, 0, 0, 0.3);
+            bottom: 0;
+            box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+            content: "";
+            left: 0;
+            opacity: 0.3;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 1;
+        }
+
+        .key--operator {
+            background-color: #eee;
+        }
+
+        .key--equal {
+            background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+            grid-column: -2;
+            grid-row: 2 / span 4;
+        }
+
+       .myShake{
+           background-image: linear-gradient(to bottom, #fe886a, #ff7033);
+           grid-column: -2;
+           grid-row: 2 / span 4;
+           -webkit-animation: shake 0.1s ease-in-out 0.1s infinite alternate;
+       }
+
+        @-webkit-keyframes shake {
+            from {
+                -webkit-transform: rotate(3deg);
+            }
+            to {
+                -webkit-transform-origin:center center;
+                -webkit-transform: rotate(-3deg);
+            }
+
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Calculator Basic</title>
+</head>
+<body>
+<div class="calculator">
+    <div class="calculator__display">0</div>
+    <div class="calculator__keys">
+        <button class="key--operator" data-action="add">+</button>
+        <button class="key--operator" data-action="subtract">-</button>
+        <button class="key--operator" data-action="multiply">&times;</button>
+        <button class="key--operator" data-action="divide">÷</button>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>0</button>
+        <button data-action="decimal">.</button>
+        <button data-action="clear">AC</button>
+        <button class="key--equal" data-action="calculate">=</button>
+    </div>
+</div>
+</div>
+</body>
+<script>
+    const calculator = document.querySelector(".calculator");
+    const display = calculator.querySelector(".calculator__display");
+    const keys = calculator.querySelector(".calculator__keys");
+
+    keys.addEventListener("click", e => {
+        const key = e.target;
+        const action = key.dataset.action;
+        const keyContent = key.textContent;
+        let displayedNum = display.textContent;
+
+        if (key.nodeName.match("BUTTON")) {
+            const previousKeyType = calculator.dataset.previousKeyType;
+
+            Array.from(key.parentNode.children)
+                .forEach(k => k.classList.remove('is-depressed'))
+            calculator.dataset.previousKey = 'number'
+            key.classList.add('is-depressed');
+            if (!action)
+                display.textContent = displayedNum == "0" || previousKeyType == "operator" ? keyContent : displayedNum + keyContent;
+            else {
+                if (action !== 'clear') {
+                    const clearButton = calculator.querySelector('[data-action=clear]')
+                    clearButton.textContent = 'CE'
+                }
+                switch (action) {
+                    case "add":
+                    case "subtract":
+                    case "multiply":
+                    case "divide":
+                        const f = calculator.dataset.firstValue;
+                        const o = calculator.dataset.operator;
+                        const s = displayedNum;
+                        if ((typeof f && typeof o) !== "undefined" && previousKeyType!=="calculate" && previousKeyType!=="operator") {
+                            displayedNum = calculate(f, o, s);
+                            display.textContent = displayedNum;
+                        }
+                        calculator.dataset.firstValue = displayedNum;
+                        calculator.dataset.operator = action;
+                        calculator.dataset.previousKeyType = "operator";
+                        break;
+                    case "decimal":
+                        display.textContent = previousKeyType == "operator" ? "0" : !displayedNum.includes(".") ? displayedNum + "." : displayedNum;
+                        calculator.dataset.previousKeyType = 'decimal';
+                        break;
+                    case "clear":
+                        if (key.textContent === 'AC') {
+                            calculator.dataset.firstValue = ''
+                            calculator.dataset.modValue = ''
+                            calculator.dataset.operator = ''
+                            calculator.dataset.previousKeyType = ''
+                        } else
+                            key.textContent = 'AC'
+
+                        display.textContent = '0';
+                        calculator.dataset.previousKeyType = 'clear'
+                        break;
+                    case "calculate":
+                        calculator.dataset.previousKeyType = 'calculate';
+                        const firstValue = calculator.dataset.firstValue;
+                        const operator = calculator.dataset.operator;
+                        const secondValue = displayedNum;
+                        let res = calculate(firstValue, operator, secondValue);
+                        if(previousKeyType==="calculate" || isNaN(res)) {
+                            key.classList.add("myShake");
+                            setTimeout(()=>key.classList.remove("myShake"),300);
+                            return;
+                        }
+                        display.textContent = res;
+                        break;
+                }
+            }
+        }
+    })
+    const calculate = (n1, operator, n2) => {
+        const firstNum = parseFloat(n1)
+        const secondNum = parseFloat(n2)
+        return operator==='add'? firstNum + secondNum: operator==='subtract' ? firstNum - secondNum :operator==='multiply'? firstNum * secondNum : firstNum / secondNum;
+    }
+</script>
+</html>

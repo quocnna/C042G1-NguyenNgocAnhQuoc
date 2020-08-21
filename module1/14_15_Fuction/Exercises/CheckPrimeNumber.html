@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number">
+<button onclick="checkPrimeNumber(document.querySelector('input').value)">Check</button>
+<script>
+    let flag = true;
+    let checkPrimeNumber = e=>{
+        if(e==0 || e==1){
+            alert("No")
+            return;
+        }
+        for (let i = 2; i < e; i++) {
+            if(e%i==0)
+                flag = false;
+        }
+        alert(flag?"Yes":"No")
+        flag = true;
+    };
+</script>
+</body>
+</html>

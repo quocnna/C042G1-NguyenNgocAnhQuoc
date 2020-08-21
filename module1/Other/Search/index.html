@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bootstrap Search Box, Search Panel Like Amazon</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Bootstrap search box or search panel like amazon.com"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="author" content="Satyendra Kumar Singh"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8 col-xs-offset-2">
+            <div class="input-group">
+                <div class="input-group-btn search-panel">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        <span id="search_concept">All</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu scrollable-dropdown" role="menu">
+                        <li><a href="#">Automotive Accesories</a></li>
+                        <li><a href="#">Cell Phone Accesories</a></li>
+                        <li><a href="#">Computer Accesories</a></li>
+                        <li><a href="#">Health and Personal Care</a></li>
+                        <li><a href="#">Automotive Accesories</a></li>
+                        <li><a href="#">Cell Phone Accesories</a></li>
+                        <li><a href="#">Computer Accesories</a></li>
+                        <li><a href="#">Health and Personal Care</a></li>
+                        <li><a href="#">Automotive Accesories</a></li>
+                        <li><a href="#">Cell Phone Accesories</a></li>
+                        <li><a href="#">Computer Accesories</a></li>
+                        <li><a href="#">Health and Personal Care</a></li>
+                        <li><a href="#">Automotive Accesories</a></li>
+                        <li><a href="#">Cell Phone Accesories</a></li>
+                        <li><a href="#">Computer Accesories</a></li>
+                        <li><a href="#">Health and Personal Care</a></li>
+                    </ul>
+                </div>
+                <input type="hidden" name="search_param" value="all" id="search_param">
+                <input type="text" class="form-control" name="x" id="search" placeholder="Search">
+                <span class="input-group-btn">
+	     <button class="btn btn-default" type="button">
+	       <span class="glyphicon glyphicon-search"></span>
+	     </button>
+	 </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<p>I am a paragraph.</p>
+<p class="fancy">I am so very fancy!</p>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js">
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(e){
+        $('.search-panel .dropdown-menu').find('a').click(function(e) {
+            e.preventDefault();
+            var param = $(this).attr("href").replace("#","");
+            var concept = $(this).text();
+            $('.search-panel span#search_concept').text(concept);
+            $('.input-group #search_param').val(param);
+        });
+    });
+    var a = document.getElementByTagName('a').item(0);
+    $(a).on('keyup', function(evt){
+        console.log(evt);
+        if(evt.keycode === 13){
+
+            alert('search?');
+        }
+    });
+</script>
+</body>
+</html>

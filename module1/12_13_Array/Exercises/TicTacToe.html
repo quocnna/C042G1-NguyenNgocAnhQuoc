@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <style>
+        body{
+            margin: 0 auto;
+            text-align: center;
+            width: 80%;
+        }
+        button{
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+<script>
+    const body = document.querySelector("body");
+    let board = [[],[],[]];
+    let toggle = true;
+    let res=[];
+    for (let i = 0; i < 3; i++) {
+        for (let j = 0; j < 3; j++) {
+            const b = document.createElement("button");
+            b.addEventListener("click",e=>{
+                board[i][j]=toggle
+                b.textContent = toggle? "x":"o";
+                b.disabled = true;
+                toggle= !toggle;
+                if(checkWin())
+                    alert("win");
+            })
+            body.appendChild(b);
+        }
+        document.write("<br/>");
+    }
+
+    const checkWin = ()=>{
+        for (let i = 0; i < 3; i++) {
+            if(equal(board[i][0],board[i][1],board[i][2]))
+                return true
+        }
+
+        for(let i=0;i<3;i++){
+            if(equal(board[0][i],board[1][i],board[2][i]))
+                return true;
+        }
+
+        if(equal(board[0][0],board[1][1],board[2][2]))
+            return true;
+        if(equal(board[0][2],board[1][1],board[2][0]))
+            return true;
+    }
+
+    const equal = (a,b,c)=>{
+        if((typeof a|| typeof b||typeof c)=="undefined")
+            return false;
+        if(a===b && a===c && b===c)
+            return true;
+    }
+</script>
+</body>
+</html>

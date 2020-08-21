@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function lcm(a,b) {
+    for (let i = Math.max(...[a,b]); i <= a*b; i++)
+        if(i%a==0 &&i%b==0)
+            return  i;
+}
+
+function gcd(a,b){
+    let res=1;
+    for (let i = 1; i <= Math.max(...[a,b]); i++)
+        if(a%i==0 && b%i==0)
+            res=i;
+    return res;
+}
+
+alert(lcm(3,4));
+alert(gcd(6,9));
+</script>
+</body>
+</html>

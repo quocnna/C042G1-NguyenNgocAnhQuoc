@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Services</title>
+    <script>
+        function testOperater() {
+            const patternEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+            alert(patternEmail.test("abc @gmail. com"));
+        }
+    </script>
+    <style>
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .container .section{
+            height: 50px;
+            width: 100%;
+            display: block;
+        }
+
+        .container .section .field{
+            height: 30px;
+            width: 30%;
+            float: left;
+            text-align: right;
+        }
+
+        .container .section .data{
+            height: 30px;
+            width: 60%;
+            float: left;
+            text-align: left;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Furama Resort Order</h2>
+    <div class="section">
+        <div class="field"><label>Full Name:</label></div>
+        <div class="data"><input type="text" id="iName" name="uName"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Card Identify Number:</label></div>
+            <div class="data"><input type="number" id="iID" name="nId"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Birthday:</label></div>
+        <div class="data"><input type="date" id="iDate" name="nDate"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Email:</label></div>
+        <div class="data"><input type="email" id="iEmail" name="nEmail"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Address:</label></div>
+        <div class="data"><input type="text" id="iAddress" name="nAddress"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Customer Type:</label></div>
+        <div class="data">
+            <select>
+                <option name="noMember">No Member</option>
+                <option name="noMember">Diamond Member</option>
+                <option name="noMember">Platinum Member</option>
+                <option name="noMember">Gold Member</option>
+                <option name="noMember">Silver Member</option>
+            </select>
+    </div>
+
+
+</div>
+    <div class="section">
+        <div class="field"><label>Discount:</label></div>
+        <div class="data"><input type="number" id="iDisCount" name="nDisCountr"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Number People:</label></div>
+        <div class="data"><input type="number" id="iNumPeople" name="nNumPeople"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Number Day:</label></div>
+        <div class="data"><input type="number" id="iNumDay" name="nNumDay"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Service Type:</label></div>
+        <div class="data">
+            <input type="radio" id="rdVilla" name="rdSerType"><label> Villa</label>
+            <input type="radio" id="rdHouse" name="rdSerType"><label> House</label>
+            <input type="radio" id="rdRoom" name="rdVSerType"><label> Room</label>
+        </div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Room Type:</label></div>
+        <div class="data">
+            <input type="radio" id="rdNormal" name="rdRoomType"><label> Normal</label>
+            <input type="radio" id="rdBusiness" name="rdRoomType"><label> Bussiness</label>
+            <input type="radio" id="rdVIP" name="rdRoomType"><label> VIP</label>
+        </div>
+    </div>
+    <div>
+        <div class="section">
+            <div class="field"></label></div>
+            <div class="data">
+                <button id="idOrder" type="button">Order</button>
+                <button id="idReset" type="button" onclick="testOperater()">Reset</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+</body>
+</html>

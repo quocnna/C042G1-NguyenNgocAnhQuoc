@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Use For Statement</title>
+</head>
+<body>
+<label id="lbBT1"></label>
+<script>
+    for (let i = 0; i <5 ; i++) {
+        document.write("The number is: " + i.toString()+ "<br/>")
+    }
+
+    let total = 0;
+    const input =parseInt(prompt("Input any number:"));
+    for(let i=1;i<=input;i++){
+        total +=i;
+    }
+    document.write(`Total from 1 to ${input} is: ${total}`);
+</script>
+</body>
+</html>

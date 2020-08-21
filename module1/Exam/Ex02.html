@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+    let n= prompt("Input a number:");
+    while (n.length!=4 || Number.isNaN(parseInt(n))){
+        n= prompt("Please input a number correct format with ####:");
+    }
+    const isNumber= n=>parseInt(n[0])+parseInt(n[1]) ==parseInt(n[2]) - parseInt(n[3]);
+    alert(isNumber(n));
+</script>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: linear-gradient(to right,rgba(24, 21, 209, 0.7), rgba(24, 21, 209, 0));
+        }
+        #container{
+            width: 100%;
+            margin: 0 auto;
+            height: 600px;
+            text-align: center;
+        }
+        .section{
+            display: inline-block;
+            width: 60%;
+            height: 400px;
+            border-radius: 20px;
+            background-image: linear-gradient(to bottom,rgba(239, 226, 42, 0.5), rgba(239, 226, 42, 0));
+        }
+        .left{
+            height: 400px;
+            width: 49%;
+            float: left;
+            text-align: left;
+            padding-left: 21px;
+        }
+        .right{
+            height: 400px;
+            width: 40%;
+            float: left;
+            text-align: left;
+            padding-left: 23px;
+            border-left: 1px solid;
+        }
+
+        .content{
+            font-family: 'Lobster', cursive;
+            font-size: 30px;
+            margin-top: 20px;
+        }
+        .btContent{
+            padding-left: 181px;
+            margin-top: 20px;
+        }
+        .result{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 35px;
+            margin-top: 20px;
+            color: #0B29CF;
+            display: none;
+        }
+        .extra{
+            font-family: 'Lobster', cursive;
+            font-size: 26px;
+            display: none;
+            color: #989B36;
+        }
+        .info{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            margin-top: -10px;
+            color: #0B29CF;
+        }
+        input{
+            margin-left: 20px;
+            margin-right: 10px;
+            width: 70px;
+            font-family: 'Lobster', cursive;
+            font-size: 25px;
+        }
+        button{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+        }
+        h3{
+            font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 40px;
+            height: 50px;
+            color: red;
+            letter-spacing: .09em;
+            text-shadow: 1px -1px 0 #0B29CF, -1px 2px 1px #0B35CF, -2px 4px 1px #0B4FCF, -3px 6px 1px #0B6DCF, -4px 8px 1px #0B88CF, -5px 10px 1px #0B9FCF;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Calculate BMI</title>
+</head>
+<body>
+<div id="container">
+    <h3>Calculate Body Mass Index</h3>
+    <div class="section">
+        <div class="left">
+            <div class="content">Your Height: <input type="number" id="idHeight"> centimeters</div>
+            <div class="content">Your Weight: <input type="number" id="idWeight"> kilograms</div>
+            <div class="btContent"><button id="btCompute" onclick="ComputeIBM()">Compute BMI</button></div>
+            <div class="result" id="resIBM">Your IBM: 123</div>
+            <div class="extra" id="resExtra">Your are underweight</div>
+        </div>
+        <div class="right">
+            <h1 style="padding-top: 5px;color: darkred">BMI Categories</h1>
+            <div class="info">
+            Underweight = <18.5<br>
+            Normal weight = 18.5–24.9<br>
+            Overweight = 25–29.9<br>
+            Obesity = BMI of 30 or greater</div>
+    </div>
+</div>
+</div>
+</body>
+<script>
+    function ComputeIBM() {
+        let height = parseInt(document.getElementById("idHeight").value)/100;
+        let weight = parseInt(document.getElementById("idWeight").value);
+        let res = (weight / (height * height)).toFixed(1);
+
+        let a= document.getElementById("resIBM");
+        let b= document.getElementById("resExtra");
+        a.style.display = "block";
+        b.style.display = "block";
+        a.textContent="Your IBM: "+ res +"";
+        b.textContent = res>30 ? "You are obesity" : 25<res<29.9? "You are over weight": 18.5<res<24.9 ? "Your are normal weight":"Your are under weight";
+    }
+</script>
+</html>

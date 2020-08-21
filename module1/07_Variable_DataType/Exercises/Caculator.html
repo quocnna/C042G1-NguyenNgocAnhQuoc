@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-image: linear-gradient(to right,rgba(31, 67, 209, 0.5), rgba(431, 67, 209, 0));
+        }
+        #container {
+            width: 40%;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        h1{
+            color: red;
+        }
+
+        table {
+            width: 100%;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        td {
+            font-size: xx-large;
+            border: 2px solid black;
+            padding: 5px 5px 5px 5px;
+            height: 80px;
+            width: 60px;
+            margin: auto;
+            /*outline: thick solid;*/
+        }
+
+        input {
+            height: 80px;
+            box-sizing: border-box;
+            width: 100%;
+            font-size: 60px;
+            text-align: right;
+            color: #103FFB;
+        }
+
+        button {
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            font-size: xx-large;
+            color: #103FFB;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+</head>
+<body>
+<div id="container">
+    <h1>Calculator</h1>
+    <table>
+        <tr>
+            <td colspan="4" style="padding: 0 0 0 0">
+                <input type="text" id="txtNumber" value="0">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="btAC" onclick="calculator('AC')">AC</button>
+            </td>
+            <td>
+                <button type="button" id="btD" onclick="calculator('Invert')">+/-</button>
+            </td>
+            <td>
+                <button type="button" id="btP" onclick="calculator('%')">%</button>
+            </td>
+
+            <td>
+                <button type="button" id="btA" onclick="calculator('+')">+</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="bt7" onclick="calculator(7)">7</button>
+            </td>
+            <td>
+                <button type="button" id="bt8" onclick="calculator(8)">8</button>
+            </td>
+            <td>
+                <button type="button" id="bt9" onclick="calculator(9)">9</button>
+            </td>
+            <td>
+                <button type="button" id="btT" onclick="calculator('-')">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="bt4" onclick="calculator(4)">4</button>
+            </td>
+            <td>
+                <button type="button" id="bt5" onclick="calculator(5)">5</button>
+            </td>
+            <td>
+                <button type="button" id="bt6" onclick="calculator(6)">6</button>
+            </td>
+            <td>
+                <button type="button" id="btN" onclick="calculator('*')">&times;</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="bt1" onclick="calculator(1)">1</button>
+            </td>
+            <td>
+                <button type="button" id="bt2" onclick="calculator(2)">2</button>
+            </td>
+            <td>
+                <button type="button" id="bt3" onclick="calculator(3)">3</button>
+            </td>
+            <td>
+                <button type="button" id="btX" onclick="calculator('/')">&divide;</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button type="button" id="btM" onclick="calculator('SquareRoot')">&radic;</button>
+            </td>
+            <td>
+                <button type="button" id="btC" onclick="calculator('Square')">x&sup2;</button>
+            </td>
+            <td>
+                <button type="button" id="bt0" onclick="calculator(0)">0</button>
+            </td>
+            <td>
+                <button type="button" id="btB" onclick="calculator('=')">=</button>
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
+</body>
+<script>
+    let valFirst = 0;
+    let valSecond = 0;
+    let operator = "";
+    let isFlag= false;
+
+    function calculator(para) {
+        let eleRes = document.getElementById("txtNumber");
+        switch (para) {
+            case "+":
+                eleRes.value = SaveFirstValue(valFirst,valSecond,"+");
+                return;
+            case "-":
+                eleRes.value = SaveFirstValue(valFirst,valSecond,"-");
+                return;
+            case "*":
+                eleRes.value = SaveFirstValue(valFirst,valSecond,"*");
+                return;
+            case "/":
+                eleRes.value = SaveFirstValue(valFirst,valSecond,"/");
+                return;
+            case "%":
+                eleRes.value = SaveFirstValue(valFirst,valSecond,"%");
+                return;
+            case "SquareRoot":
+                valFirst = Math.sqrt(parseInt(valFirst));
+                eleRes.value = valFirst.toFixed(12);
+                return;
+            case "Invert":
+                operator="";
+                isFlag =true;
+                valFirst =-(parseInt(valFirst));
+                eleRes.value = valFirst;
+                return;
+            case "Square":
+                valFirst = parseInt(valFirst) * parseInt(valFirst) ;
+                eleRes.value = valFirst;
+                return;
+            case "=":
+                switch (operator) {
+                    case "+":
+                        valFirst = parseInt(valFirst) + parseInt(valSecond);
+                        eleRes.value = valFirst;
+                        break;
+                    case "-":
+                        valFirst = parseInt(valFirst) - parseInt(valSecond);
+                        eleRes.value = valFirst;
+                        break;
+                    case "*":
+                        valFirst = parseInt(valFirst) * parseInt(valSecond);
+                        eleRes.value = valFirst;
+                        break;
+                    case "/":
+                        valFirst = parseInt(valFirst) / parseInt(valSecond);
+                        eleRes.value = valFirst;
+                        break;
+                    case "%":
+                        valFirst = parseInt(valFirst) % parseInt(valSecond);
+                        eleRes.value = valFirst;
+                        break;
+                }
+                valSecond = 0;
+                return;
+            case "AC":
+                document.getElementById("txtNumber").value = 0;
+                valFirst = 0;
+                valSecond = 0;
+                operator = "";
+                isFlag=false;
+                return;
+        }
+
+        if (operator.length>0) {
+            valSecond = isFlag ? para : valSecond.toString()+ para;
+            isFlag =false;
+            eleRes.value = valSecond;
+        } else {
+            valFirst = valFirst ==0 || isFlag ? para :valFirst.toString() +para;
+            eleRes.value = valFirst;
+        }
+    }
+    function SaveFirstValue(f,s,o) {
+        operator = o;
+        isFlag =true;
+        valFirst = parseInt(f) + parseInt(s);
+        return valFirst;
+    }
+</script>
+</html>

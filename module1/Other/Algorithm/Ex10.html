@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const st="Hello";
+    // const f = st=>st.split("").forEach(e=> document.write(e+"<br/>"));
+    //
+    // const f1 = st=> st.length;
+
+    const f2= st=> {
+        let a = st.split("");
+        let res=[];
+        for (let i = 0; i < a.length; i++) {
+            let o = new Object();
+            o.charater= a[i];
+            o.frequency = a.filter(e=>e==a[i]).length;
+            res.push(o);
+        }
+      return res;
+    };
+    res.sort()
+    f2(st).forEach(e=>{
+        document.write(`${e.charater}: ${e.frequency}<br/>`);
+    })
+</script>
+</body>
+</html>

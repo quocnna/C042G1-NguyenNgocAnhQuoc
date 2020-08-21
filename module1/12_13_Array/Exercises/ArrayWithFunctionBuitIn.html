@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>div{
+        display: inline-block;
+        vertical-align: top;
+        border: 1px solid black;
+        text-align: left;
+        margin-right: 10px;}
+    p{
+        color: #0B29CF;
+        font-weight: bold;
+        padding: 0 0 5px 0;
+        margin: 0;
+    }
+    </style>
+    <title>Array With Function BuiltIn</title>
+</head>
+<body>
+<div id="bt1"><p>Bai 1</p></div>
+<div id="bt2"><p>Bai 2</p></div>
+<div id="bt3"><p>Bai 3</p></div>
+<script>
+    const myColor = ["Red", "Green", "White", "Black"];
+    document.getElementById("bt1").innerHTML += myColor.toString();
+
+    // let number = prompt("Input a number");
+    // let a = number.split('');
+
+    // for (let i = 0; i < a.length; i++) {
+    //     if(a[i]%2==0 && i!=a.length-1)
+    //         a[i]=a[i]+"-";
+    // }
+    // document.getElementById("bt2").innerHTML += a.join("");
+
+    // let b=  a.map(e=>{
+    //    return  e%2==0? e+"-":e;
+    // });
+    // alert(b[b.length-1]);
+    // if(b[b.length-1].includes("-")){
+    //     let t= b[b.length-1].replace('-','');
+    // }
+
+    let st = prompt("Input a string");
+    let a = st.split('');
+    let b = a.map(e=>{
+        return e==e.toUpperCase()?e.toLowerCase(): e.toUpperCase();
+    })
+    document.getElementById("bt3").innerHTML += b.join("");
+</script>
+</body>
+</html>

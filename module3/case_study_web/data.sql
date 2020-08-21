@@ -1,0 +1,85 @@
+insert into division (id, name) values (1, 'Marketing');
+insert into division (id, name) values (2, 'Legal');
+insert into division (id, name) values (3, 'Human Resources');
+insert into division (id, name) values (4, 'Legal');
+insert into division (id, name) values (5, 'Sales');
+insert into division (id, name) values (6, 'Training');
+
+
+insert into education_degree (id, name) values (1, 'Undergraduate');
+insert into education_degree (id, name) values (2, 'Master');
+insert into education_degree (id, name) values (3, 'Doctoral');
+insert into education_degree (id, name) values (4, 'Professional');
+insert into education_degree (id, name) values (5, 'College');
+insert into education_degree (id, name) values (6, 'University');
+
+insert into position (id, name) values (1, 'Manager Employee');
+insert into position (id, name) values (2, 'Database Administrator');
+insert into position (id, name) values (3, 'Registered receptionist');
+insert into position (id, name) values (4, 'Structural Analysis Engineer');
+insert into position (id, name) values (5, 'Budget/Accounting Analyst');
+insert into position (id, name) values (6, 'Environmental Specialist');
+
+
+insert into user (id, username, password) values (1, 'tcastaignet0', 'forever');
+insert into user (id, username, password) values (2, 'lwhyte1', 'forever');
+insert into user (id, username, password) values (3, 'ckeady2', 'forever');
+insert into user (id, username, password) values (4, 'ebrecknock3', 'forever');
+insert into user (id, username, password) values (5, 'jcorkan4', 'forever');
+insert into user (id, username, password) values (6, 'sbalderson5', 'forever');
+insert into user (id, username, password) values (7, 'admin', 'admin');
+insert into user (id, username, password) values (8, 'user', 'user');
+insert into user (id, username, password) values (9, 'jcovotti8', 'forever');
+insert into user (id, username, password) values (10, 'mdenford9', 'forever');
+
+
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (1, 'Sandy Pashan', '1961-01-15', '37000-727', 1163.08, '663-959-9605', 'spashan0@bandcamp.com', '5 Roth Road', 6, 5, 4, 10);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (2, 'Philipa Kennerley', '1954-11-14', '48951-1178', 1313.71, '587-113-9816', 'pkennerley1@sourceforge.net', '5 Union Pass', 5, 1, 3, 7);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (3, 'Mahalia Bigland', '1961-04-03', '0406-9959', 2347.75, '369-457-9519', 'mbigland2@harvard.edu', '922 Gateway Alley', 6, 6, 6, 9);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (4, 'Quillan Rewcastle', '1988-08-18', '53157-300', 3124.24, '941-396-9009', 'qrewcastle3@unc.edu', '734 John Wall Terrace', 5, 4, 5, 8);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (5, 'Joella Skilbeck', '1968-09-15', '61314-225', 1061.98, '847-249-3629', 'jskilbeck4@ox.ac.uk', '577 Everett Park', 2, 2, 1, 7);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (6, 'Evangelin Grayshan', '1984-05-31', '51334-882', 2107.3, '253-637-2071', 'egrayshan5@reuters.com', '2 Union Place', 4, 1, 3, 3);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (7, 'Mavis Mattiuzzi', '1995-06-03', '54868-0520', 2948.05, '851-771-0858', 'mmattiuzzi6@acquirethisname.com', '77 Kensington Trail', 5, 5, 4, 3);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (8, 'Virgilio Jaze', '1979-12-15', '64764-253', 3895.07, '597-347-4065', 'vjaze7@ftc.gov', '22 4th Point', 6, 5, 2, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (9, 'Annabela Pitherick', '1950-12-01', '36987-1190', 2880.58, '528-905-6627', 'apitherick8@ed.gov', '0 Lighthouse Bay Junction', 3, 2, 2, 9);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (10, 'Rickert Freshwater', '1992-06-16', '36987-2899', 2300.7, '271-319-5402', 'rfreshwater9@biglobe.ne.jp', '73 Clemons Avenue', 3, 6, 6, 5);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (11, 'Trisha Coton', '1968-11-15', '16853-1305', 2971.4, '914-126-8308', 'tcotona@scribd.com', '04 Del Mar Circle', 4, 4, 5, 3);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (12, 'Wat Eckersall', '1980-06-02', '0268-0153', 1313.17, '713-338-8129', 'weckersallb@4shared.com', '302 Manitowish Avenue', 6, 6, 6, 6);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (13, 'Gabi Tidman', '1994-05-13', '0615-2525', 3253.19, '324-999-3543', 'gtidmanc@goo.gl', '85165 Eagan Hill', 4, 1, 6, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (14, 'Constantin Treadway', '1952-01-22', '43857-0101', 2344.88, '586-507-1116', 'ctreadwayd@webs.com', '5448 Graedel Hill', 3, 4, 1, 8);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (15, 'Amalie Linfitt', '1964-12-26', '10237-629', 2191.54, '640-545-4045', 'alinfitte@tumblr.com', '6400 Mifflin Parkway', 5, 1, 3, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (16, 'Leola Halward', '1987-03-08', '49999-895', 2572.72, '410-710-1004', 'lhalwardf@miibeian.gov.cn', '681 Dexter Parkway', 6, 4, 1, 6);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (17, 'Winston Van der Son', '1973-01-25', '51625-002', 672.63, '150-638-9355', 'wvang@merriam-webster.com', '1533 Kim Drive', 1, 3, 2, 2);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (18, 'Chevy Stanaway', '1981-07-14', '58668-1931', 3225.27, '172-626-0746', 'cstanawayh@multiply.com', '9 Meadow Ridge Parkway', 1, 2, 1, 3);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (19, 'Nolan Pflieger', '1994-10-23', '53329-941', 619.27, '316-568-2767', 'npfliegeri@artisteer.com', '8 Straubel Alley', 5, 6, 2, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (20, 'Blanche Bonnyson', '1997-10-05', '68405-058', 3543.15, '312-274-1325', 'bbonnysonj@harvard.edu', '9 Longview Crossing', 3, 6, 5, 10);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (21, 'Scott Penburton', '1997-07-30', '0904-6338', 1681.85, '646-810-1655', 'spenburtonk@imageshack.us', '02056 Spaight Way', 6, 2, 4, 1);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (22, 'Vinson Hunting', '2005-08-08', '59779-397', 3325.43, '457-893-9840', 'vhuntingl@123-reg.co.uk', '27 Twin Pines Way', 2, 5, 3, 8);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (23, 'Gabriellia Lepick', '1980-03-18', '59779-632', 2768.53, '493-593-5681', 'glepickm@microsoft.com', '28429 Independence Parkway', 6, 1, 2, 7);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (24, 'Vaughn Olivey', '1959-01-25', '52124-2901', 2395.53, '971-529-2866', 'voliveyn@walmart.com', '72 Doe Crossing Crossing', 3, 5, 5, 2);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (25, 'Elaine Oxton', '1960-03-25', '16781-189', 3292.14, '143-972-2973', 'eoxtono@nymag.com', '3 Hagan Hill', 5, 3, 4, 1);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (26, 'Stephanus Gibbieson', '2004-08-22', '49999-619', 2321.12, '456-807-4184', 'sgibbiesonp@mlb.com', '02676 Drewry Lane', 5, 5, 4, 2);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (27, 'Hendrika Peare', '1989-04-14', '59746-339', 1721.94, '408-404-2547', 'hpeareq@dagondesign.com', '20074 Melrose Way', 6, 6, 3, 5);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (28, 'Torin Sellors', '2000-08-18', '51346-036', 2658.44, '504-394-9756', 'tsellorsr@symantec.com', '717 Hoard Pass', 3, 6, 2, 3);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (29, 'Gisella Legan', '1965-07-20', '53808-0874', 2152.5, '103-386-8874', 'glegans@feedburner.com', '885 Judy Street', 1, 3, 1, 5);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (30, 'Loella Pyott', '1989-10-19', '76077-200', 2115.46, '116-952-0260', 'lpyottt@icq.com', '996 Bluestem Street', 6, 2, 5, 5);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (31, 'Burk Slyne', '1999-04-07', '54575-947', 2685.67, '640-819-4926', 'bslyneu@clickbank.net', '7 Crest Line Place', 5, 2, 4, 5);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (32, 'Reece Soot', '2000-12-18', '68769-002', 3641.63, '458-238-5209', 'rsootv@dyndns.org', '02 Parkside Road', 4, 2, 4, 5);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (33, 'Maisey Duckhouse', '2000-09-15', '64117-104', 718.6, '993-632-4704', 'mduckhousew@dedecms.com', '5071 Manley Alley', 6, 4, 2, 3);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (34, 'Joaquin Bompas', '2002-10-05', '37205-952', 3123.84, '937-432-0292', 'jbompasx@hexun.com', '2376 Lighthouse Bay Parkway', 2, 1, 1, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (35, 'Harriette Field', '1968-10-30', '42192-111', 1576.02, '559-412-5848', 'hfieldy@bloglines.com', '1443 Lillian Trail', 4, 5, 4, 3);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (36, 'Prentiss Clelland', '1954-05-14', '0713-0166', 2166.29, '121-242-7277', 'pclellandz@go.com', '6 Sunfield Hill', 4, 6, 3, 6);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (37, 'Niel Drieu', '1964-02-01', '65603-001', 556.16, '356-129-1707', 'ndrieu10@so-net.ne.jp', '0788 Packers Junction', 1, 6, 1, 6);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (38, 'Fax Greenrodd', '1991-12-18', '68788-9879', 659.26, '594-113-7980', 'fgreenrodd11@reddit.com', '15 Huxley Center', 4, 6, 2, 1);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (39, 'Wendye Collyer', '1986-04-01', '0264-3145', 3414.19, '252-213-2422', 'wcollyer12@ezinearticles.com', '5 Loomis Plaza', 5, 3, 6, 6);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (40, 'Carlotta Avieson', '1962-04-05', '0615-1343', 2130.92, '730-840-1324', 'cavieson13@hp.com', '127 Buhler Hill', 1, 4, 5, 3);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (41, 'Aldis Clubb', '1964-05-14', '67046-428', 2236.46, '788-381-6503', 'aclubb14@salon.com', '8255 David Street', 3, 3, 1, 6);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (42, 'Roldan Cholwell', '1984-01-21', '10742-8902', 2020.19, '278-138-5057', 'rcholwell15@sohu.com', '375 High Crossing Pass', 6, 3, 4, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (43, 'Ardis Message', '1967-02-28', '0067-2035', 3086.56, '637-827-8159', 'amessage16@sciencedirect.com', '57806 Northport Plaza', 4, 2, 5, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (44, 'Towney Drewes', '1973-11-08', '49738-237', 768.26, '800-667-1801', 'tdrewes17@tmall.com', '70967 Buell Plaza', 1, 1, 4, 5);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (45, 'Dacie Harnott', '2001-09-17', '12496-1204', 613.19, '172-879-5067', 'dharnott18@pen.io', '35693 Doe Crossing Plaza', 1, 6, 5, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (46, 'Wrennie Ivens', '2003-07-14', '0093-3107', 1235.21, '362-916-4086', 'wivens19@addthis.com', '5 Manufacturers Street', 1, 6, 3, 1);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (47, 'Chadd Blakely', '1996-09-09', '15127-883', 1987.66, '499-358-7094', 'cblakely1a@histats.com', '791 Truax Center', 5, 1, 3, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (48, 'Lenci Shawcross', '1971-02-12', '0187-5100', 2044.6, '184-279-1469', 'lshawcross1b@state.tx.us', '396 Dayton Court', 2, 4, 1, 1);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (49, 'Willyt Wigsell', '1962-04-25', '52125-389', 3598.67, '525-742-4417', 'wwigsell1c@com.com', '375 Mifflin Park', 1, 5, 5, 4);
+insert into employee (id, name, birthday, cardid, salary, phone, email, address, position_id, education_degree_id, division_id, user_id) values (50, 'Rozelle Cratchley', '2004-08-06', '52343-006', 1981.5, '595-779-7081', 'rcratchley1d@com.com', '979 Carioca Place', 6, 5, 6, 2);

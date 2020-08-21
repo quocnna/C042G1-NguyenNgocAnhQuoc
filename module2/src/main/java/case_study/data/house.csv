@@ -1,0 +1,5 @@
+id,name,areaUsed,price,maxPeople,typeRent,TypeBed,typeRoom,description,numberOfFloor
+1,quoc,2.0,3.0,4,DAY,,DELUXE,d,5
+2,dung,3.0,5.0,5,DAY,,DELUXE,9,3
+SVHO-1234,Quoc,123.0,234.0,2,DAY,EXTRA_BED,DELUXE,ff,5
+SVHO-3933,Quoc,123.0,999.0,8,DAY,EXTRA_BED,DELUXE,888,8

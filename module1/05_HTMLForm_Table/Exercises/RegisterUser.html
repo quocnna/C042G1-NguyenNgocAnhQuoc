@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        .section{margin-top: 20px}
+    </style>
+    <title>Register User</title>
+</head>
+<body>
+<form action="http://demo.codegym.vn/6/registration_form/register.php" method="post">
+<div class="section">
+    Ho va ten:
+    <div>
+    <input type="text" name="name">
+    </div>
+</div>
+
+<div class="section">
+    Email:
+    <div>
+        <input type="email" name="email">
+    </div>
+</div>
+
+<div class="section">
+    So Dien Thoai:
+    <div>
+        <input type="tel" name="phone">
+    </div>
+</div>
+
+<div class="section">
+    Gioi Tinh:
+    <div>
+        <input type="radio" id="iMale" name="gender" checked>Nam
+        <input type="radio" id="iFemale" name="gender"> Nu
+    </div>
+</div>
+
+<div class="section">
+    <button type="submit" style="font-size:large" onclick="test()">Dang ky</button>
+</div>
+</form>
+<script>
+    function test() {
+        let gender= document.getElementById("iFemale").checked?"Female":"Male";
+        alert(gender);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let res=1;
+    function f(n) {
+        let i= n%2==0?2:1;
+        for (i; i <= n; i+=2)
+            res *=i;
+        return res;
+    }
+    alert(f(4));
+</script>
+</body>
+</html>

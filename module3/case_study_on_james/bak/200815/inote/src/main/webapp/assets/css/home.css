@@ -1,0 +1,108 @@
+body {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    background-image: url('../img/home.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+.navbar {
+    background:#6ab446;
+}
+.nav-link,
+.navbar-brand {
+    color: #fff;
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+}
+.nav-link:hover {
+    color: #000;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+
+.modal:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.modal-dialog {
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 10%;
+}
+
+.modal .modal-content {
+    padding: 20px 20px 20px 20px;
+    -webkit-animation-name: modal-animation;
+    -webkit-animation-duration: 0.5s;
+    animation-name: modal-animation;
+    animation-duration: 0.5s;
+}
+
+.modal .modal-content .popDes{
+    background-color: #BD362F;
+    text-align: left;
+}
+.modal .modal-content .popTitle{
+    background-color: #2F96B4;
+}
+.modal .modal-content .popDetail{
+    background-color: yellow;
+    text-align: left;
+}
+.modal .modal-content .popDetailInline{
+    background-color: green;
+    padding-left: 10px;
+    float: left;
+    width: 50%;
+}
+.modal .modal-content .popDetailInline div:first-child{
+    background-color: yellow;
+    padding: 5px 5px 5px 5px;
+    height: 110px;
+    border: 1px solid;
+    border-radius: 5px;
+}
+.modal .modal-content .configdb,.configfile{
+    text-align: center;
+    padding:0 20% 0 20%;
+    display: none;
+}
+
+
+
+.modal .modal-content label{
+    display: inline-block;
+    width: 80px;
+
+}
+.modal .modal-content input{
+    width: 120px;
+}
+
+
+.modal .modal-content .popDetailInline .select{
+    text-align: center;
+}
+.modal .modal-content .popDetailInline .select .form-check-input{
+    width: auto;
+    margin-left: auto;
+    position: static;
+}
+.modal .modal-content .popDetailInline .select .form-check-label{
+    width: auto;
+}
+.modal .modal-content button{
+    background-color: red;
+}
+.modal .modal-content .popSub{
+    background-color: violet;
+}

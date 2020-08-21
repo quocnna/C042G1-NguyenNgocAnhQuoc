@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Remote and TV</title>
+</head>
+<body>
+<script>
+    class Remote{
+        constructor(code,tv) {
+            this.code = code;
+            this.tv = tv;
+        }
+        switchChannel(channel){
+            alert("Use Remote switch to channel "+ channel);
+            this.tv.switchChannel(channel);
+        }
+        controlVolume(unit){
+            alert("Use Remote up "+ unit+" unit volume");
+            this.tv.controlVolume(unit);
+        }
+        ToggleStatus(){
+            this.tv.Status = !this.tv.Status;
+        }
+    }
+
+    class TV{
+        constructor(channel,volume,status,) {
+            this.channel = channel;
+            this.volume = volume;
+            this.status = status;
+        }
+
+        get Status(){
+            return  this.status;
+        }
+        set Status(status){
+            alert(`${status?"On":"Off"} TV`);
+            this.status = status;
+        }
+        switchChannel(channel){
+            alert("Switch to channel: "+ channel);
+            this.channel= channel;
+        }
+        controlVolume(unit){
+            alert("Up "+ unit+" unit volume");
+            this.volume+=unit;
+        }
+    }
+
+    const tv = new TV(1,1,false);
+    const remote = new Remote("SamSung05",tv);
+    tv.Status= true;
+    tv.switchChannel(7);
+    remote.switchChannel(3);
+    remote.controlVolume(2);
+    alert("Status before use remote: "+tv.Status)
+    remote.ToggleStatus();
+    alert("Status after use remote: " +tv.Status);
+</script>
+</body>
+</html>

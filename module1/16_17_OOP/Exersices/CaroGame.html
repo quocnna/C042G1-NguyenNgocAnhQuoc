@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caro Game</title>
+    <style>
+        body{
+            background-image: linear-gradient(to right,rgba(24, 21, 209, 0.3), rgba(24, 21, 209, 0));
+        }
+        #container{
+            width: 59%;
+            margin: 0 auto;
+            text-align: center;
+            padding-top: 15px;
+        }
+        #container>div{
+            width: 900px;
+            display: flex;
+        }
+        #container>div>div{
+            width: 40px;
+            height: 35px;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid black;
+            font-size: 30px;
+        }
+
+        #container>div .x{
+            background-image: url("Images/x.png");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        #container>div .o{
+            background-repeat: no-repeat;
+            background-image: url("Images/o.png");
+            background-size: contain;
+            background-position: center;
+        }
+
+        .winning-message {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(28, 13, 13, 0.8);
+
+            display: none;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 5rem;
+            flex-direction: column;
+        }
+
+        .winning-message button {
+            font-size: 3rem;
+            background-color: white;
+            border: 1px solid black;
+            padding: .25em .5em;
+            cursor: pointer;
+        }
+
+        .winning-message button:hover {
+            background-color: black;
+            color: white;
+            border-color: white;
+        }
+
+        .winning-message.show {
+            display: flex;
+        }
+       </style>
+</head>
+<body>
+<div id="container">
+</div>
+<div class="winning-message" id="winningMessage">
+    <div data-win></div>
+    <button id="btRestart">Restart</button>
+</div>
+<script>
+    class CaroGame{
+        constructor(p1,p2) {
+            this.p1= p1;
+            this.p2= p2;
+        }
+        startGame(){
+            const winMessage = document.getElementById('winningMessage');
+            const btRestart = document.getElementById('btRestart');
+            const personWinText = document.querySelector('[data-win]');
+            const container = document.querySelector("#container");
+            let array= new Array(20);
+            const startGame= ()=>{
+                let turnNext=true;
+                while (array.length>0)
+                    array.pop();
+                for (let i=0; i<20;i++){
+                    array[i]= new Array(20);
+                    for (let j=0; j<20;j++){
+                        array[i][j]='';
+                    }
+                }
+                container.innerHTML="";
+                winMessage.classList.remove("show");
+                for (let i = 0; i < 20; i++) {
+                    const row = document.createElement("div");
+                    for (let j = 0; j < 20; j++) {
+                        const cell = document.createElement("div");
+                        cell.addEventListener("mouseover",e=>{
+                            cell.style.backgroundColor="#7c7c7c";
+                            cell.style.backgroundRepeat="no-repeat";
+                            cell.style.backgroundSize="contain";
+                            cell.style.backgroundPosition="center";
+                            cell.style.backgroundImage=`url("Images/${turnNext?"x":"o"}.png")`;
+                        });
+                        cell.addEventListener("mouseout",e=>{
+                            cell.removeAttribute("style");
+                        });
+                        cell.addEventListener("click",e=>{
+                            if(!array[i][j]){
+                                array[i][j] = turnNext ?"x":"o";
+                                cell.classList.add(array[i][j]);
+                                if(checkWin(array[i][j])){
+                                    winMessage.classList.add("show");
+                                    personWinText.innerText = `${turnNext ? this.p1.name : this.p2.name} Wins!`;
+                                }
+
+                                turnNext=!turnNext;
+                            }
+                        });
+                        row.appendChild(cell);
+                    }
+                    container.appendChild(row);
+                }
+            };
+            const checkWin= (e)=>{
+                for (let i=0; i<20;i++)
+                    for (let j=0; j<20;j++)
+                        if (array[i][j]==e)
+                            if((array[i][j + 1] == e && array[i][j + 2] == e && array[i][j+3]==e && array[i][j+4]==e)
+                                || (array[i + 1][j] == e && array[i + 2][j] == e && array[i+3][j]==e && array[i+4][j]==e)
+                                ||(array[i + 1][j + 1] == e && array[i + 2][j + 2] == e &&array[i+3][j+3]==e && array[i+4][j+4]==e)
+                                ||(array[i + 1][j - 1] == e && array[i + 2][j - 2] == e && array[i+3][j-3]==e &&array[i+4][j-4]==e))
+                                return true;
+                return false;
+            };
+            btRestart.addEventListener("click",e=>{
+                startGame();
+            });
+            startGame();
+        }
+    }
+    class Player{
+        constructor(name) {
+            this.name = name;
+        }
+    }
+
+    const p1 = new Player("Quoc");
+    const p2 = new Player("Dung");
+    const caro = new CaroGame(p1,p2);
+    caro.startGame();
+</script>
+</body>
+</html>

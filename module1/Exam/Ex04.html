@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body{
+            background-image: linear-gradient(to left, rgba(28, 146, 210, 0.5), rgba(228, 229, 230, 0.3));
+        }
+        .container{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .container .section{
+            height: 50px;
+            width: 100%;
+            display: block;
+        }
+
+        .container .section .field{
+            height: 30px;
+            width: 30%;
+            float: left;
+            text-align: right;
+        }
+
+        .container .section .data{
+            height: 30px;
+            width: 60%;
+            float: left;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .container.hide{
+            display: none;
+        }
+        .container.show{
+            display: block;
+        }
+
+        .login{
+            display: none;
+        }
+        .login .section{
+            height: 50px;
+            width: 100%;
+            display: block;
+        }
+        .login .section .field{
+            height: 30px;
+            width: 30%;
+            float: left;
+            text-align: right;
+        }
+
+        .login .section .data{
+            height: 30px;
+            width: 60%;
+            float: left;
+            text-align: left;
+            padding-left: 20px;
+        }
+        .login.show{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h2>Create Employee</h2>
+    <div class="section">
+        <div class="field"><label>UserName:</label></div>
+        <div class="data"><input type="text" id="iUserName"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Full Name:</label></div>
+        <div class="data"><input type="text" id="iFullName"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>PassWord:</label></div>
+        <div class="data"><input type="password" id="iPassword"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Birthday:</label></div>
+        <div class="data"><input type="text" id="iBirthday"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Identify Number:</label></div>
+        <div class="data"><input type="text" id="iIdentify"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Gender:</label></div>
+        <div class="data">
+            <input type="radio" id="rdMale" name="rdGender"><label> Male</label>
+            <input type="radio" id="rdFemale" name="rdGender"><label> Female</label>
+        </div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Address:</label></div>
+        <div class="data"><input type="text" id="iAddress" name="nAddress"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Phone Number:</label></div>
+        <div class="data"><input type="text" id="iPhone"></div>
+    </div>
+
+    <div>
+        <div class="section">
+            <div class="field"></label></div>
+            <div class="data">
+                <button id="btAdd" type="button" onclick="fcAdd()">Add</button>
+                <button id="btCancel" type="button">Cancel</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="login">
+    <h2 style="text-align: center">Login Form</h2>
+    <div class="section">
+        <div class="field"><label>UserName:</label></div>
+        <div class="data"><input type="text" id="iUserLogin"></div>
+    </div>
+    <div class="section">
+        <div class="field"><label>Password:</label></div>
+        <div class="data"><input type="password" id="iPasswordLogin"></div>
+    </div>
+    <div>
+        <div class="section">
+            <div class="field"></label></div>
+            <div class="data">
+                <button id="btLogin" type="button" onclick="fcLogin()">Login</button>
+                <button id="btReset" type="button">Reset</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script>
+    const patternDate = /^([0-2][0-9]|(3)[0-1])(\/)(((0)[0-9])|((1)[0-2]))(\/)\d{4}$/i;
+    class Employee {
+        constructor(username, fullName, password, birthday, identify,gender, address,phone) {
+            this.username = username;
+            this.fullName = fullName;
+            this.password = password;
+            this.birthday = birthday;
+            this.identify = identify;
+            this.gender = gender;
+            this.address = address;
+            this.phone = phone;
+        }
+
+        set UserName(value){
+            this.username = value;
+        }
+        get UserName(){
+            return this.username;
+        }
+
+        set FullName(value){
+            this.fullname = value;
+        }
+        get FullName(){
+            return this.fullname;
+        }
+
+        set Password(value){
+            this.password = value;
+        }
+        get Password(){
+            return this.password;
+        }
+
+        set Birthday(value){
+            this.birthday = value;
+        }
+        get Birthday(){
+            return this.birthday;
+        }
+
+        set Identify(value){
+            this.identify = value;
+        }
+        get Identify(){
+            return this.identify;
+        }
+
+        set Gender(value){
+            this.gender = value;
+        }
+        get Gender(){
+            return this.gender;
+        }
+
+        set Address(value){
+            this.address = value;
+        }
+        get Address(){
+            return this.address;
+        }
+
+        set Phone(value){
+            this.phone  = value;
+        }
+        get Phone(){
+            return this.phone;
+        }
+
+        static add(o){
+            a.push(o);
+        }
+        static login(u,p){
+            return  a.some(e=>{
+                return e.UserName==u && e.Password==p;
+            })
+        }
+    }
+
+    let e = new Employee("admin","Quoc","admin","23/09/1984","201518183","Male","19 Le Do","0708230984");
+    let a=[e];
+    const container = document.querySelector(".container");
+    const login = document.querySelector(".login");
+    const userName= document.getElementById("iUserName");
+    const fullName = document.getElementById("iFullName");
+    const password = document.getElementById("iPassword");
+    const birthday = document.getElementById("iBirthday");
+    const identify = document.getElementById("iIdentify");
+    const rdFemale = document.getElementById("rdFemale");
+    const address = document.getElementById("iAddress");
+    const phone = document.getElementById("iPhone");
+    const uLogin = document.getElementById("iUserLogin");
+    const uPassword = document.getElementById("iPasswordLogin");
+
+    function fcAdd(){
+            if(!patternDate.test(iBirthday.value)){
+                alert("Incorrect format date dd/mm/yyyy");
+                return;
+            }
+            if(iBirthday.value.split('/')[2]>new Date().getFullYear()){
+                alert("Please input year less than current year");
+                return;
+            }
+            const o = new Employee(userName.value,fullName.value,password.value,birthday.value,identify.value,rdFemale.checked?"Female":"Male",address.value,phone.value);
+            Employee.add(o);
+            container.classList.add("hide");
+            login.classList.add("show");
+    }
+    function fcLogin(){
+          alert(Employee.login(uLogin.value,uPassword.value)?"Success":"Fail") ;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .boxmodel{
+            margin: 0 auto;
+            width: 800px;
+            border: 10px;
+            padding: 10px;
+            border-color: chartreuse aqua blue blueviolet;
+            border-style: solid;
+        }
+
+        .boxmodel p{
+            border: 3px dotted darkred;
+            padding: 10px;
+        }
+
+        #boxmodel1{
+            margin-bottom: 20px;
+            background-color: yellow;
+        }
+        #boxmodel2{
+            box-sizing: content-box; /* default content box */
+            width: 400px;
+            height: 300px;
+            margin-bottom: 60px;
+            padding-top: 60px;
+            border: 5px solid;
+            background-color: blue;
+        }
+        #boxmodel3{
+            box-sizing: border-box;
+            width: 400px;
+            height: 300px;
+            margin-bottom: 60px;
+            padding-top: 60px;
+            border: 5px solid;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="boxmodel">
+    <p id="boxmodel1">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+        Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+    <p id="boxmodel2">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+        Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+    <p id="boxmodel3">Mô hình hộp trong CSS về cơ bản là một hộp bao quanh phần tử HTML.
+        Nó bao gồm: lề (margin), viền (border), phần đệm (padding) và nội dung (content)</p>
+</div>
+</body>
+</html>

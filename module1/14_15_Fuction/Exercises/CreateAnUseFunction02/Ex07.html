@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex07</title>
+</head>
+<body>
+<script>
+    const f = (a, b) => {
+        // let t = a.value;
+        // a.value = b.value;
+        // b.value = t;
+
+        let t= a;
+        a=b;
+        b=t;
+    }
+
+    // let a = {value: 5};
+    // let b = {value: 10};
+
+    let a = new String("5");
+    let b= new String("10");
+    let c = Object;
+    alert(typeof a);
+    // let a=5;
+    // let b=10;
+    f(a, b);
+    // alert(a.value);
+    // alert(b.value);
+    //
+    alert(a.valueOf());
+    alert(b.valueOf());
+</script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prime </title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let i = 0;
+    let flag = true;
+    while (true) {
+
+        if (i == 0 || i == 1) {
+            i++;
+            continue;
+        } else if (i == 2) {
+            arr.push(i);
+            i++;
+            continue;
+        } else {
+            if (i % 2 > 0) {
+                for (let j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        flag = false
+                        break;
+                        i=i+20;
+                    }
+                }
+
+                if (flag)
+                    arr.push(i);
+            }
+        }
+        flag = true;
+        i++;
+        if (arr.length == 20)
+            break;
+    }
+    arr.forEach(ele => document.write(ele.toString() + "<br/>"));
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Min Value In Array</title>
+</head>
+<body>
+<script>
+    let a =[3, 5, 1, 8, -3, 7, 8];
+    function minValue(a) {
+        //return Math.min.apply(null,a);
+        return  Math.min(...a);
+    }
+    alert(minValue(a));
+</script>
+</body>
+</html>

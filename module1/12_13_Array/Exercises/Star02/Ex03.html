@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ex03</title>
+</head>
+<body>
+<script>
+    let a= ["a",1,4,"b","c",5,9];
+    let b = a.filter(e=>{
+        if(Number.isInteger(e))
+            return e;
+    });
+    alert(b.length);
+</script>
+</body>
+</html>

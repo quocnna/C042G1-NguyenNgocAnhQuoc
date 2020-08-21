@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Temperature Class</title>
+</head>
+<body>
+<script>
+    class Temperature{
+        constructor(c) {
+            this.c = c;
+        }
+
+        convertCtoF(){
+            return (this.c*1.8)+32;
+        }
+        convertCtoK(){
+            return (this.c*273.15)-273.15;
+        }
+    }
+
+    let temper = new Temperature(25);
+    document.write(`25 celsius = ${temper.convertCtoF()}K = ${temper.convertCtoK()}F`)
+</script>
+</body>
+</html>

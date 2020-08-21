@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="MyComponent.js" defer></script>
+</head>
+<body>
+<custom-element test="alert('abc')" lb-text="123" bt-text="Check"></custom-element>
+<script>
+    f = () => {
+        let a = [1, 2, 3];
+        let b = a.reverse();
+        alert(b);
+    };
+    const ele = document.querySelector("custom-element");
+    ele.setAttribute("test", `f=${f.toString()};f()`);
+</script>
+</body>
+</html>

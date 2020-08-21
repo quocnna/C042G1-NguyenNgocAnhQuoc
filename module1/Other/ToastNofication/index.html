@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            width: 100%;
+            height: 600px;
+            background-color: #2F96B4;
+            margin: 0;
+            text-align: center;
+        }
+        /*div{*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*    background-color: #BD362F;*/
+        /*}*/
+    </style>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="toastr.css">
+
+</head>
+<body>
+<!-- https://www.jqueryscript.net/demo/Highly-Customizable-jQuery-Toast-Message-Plugin-Toastr
+https://www.jqueryscript.net/other/Highly-Customizable-jQuery-Toast-Message-Plugin-Toastr.html-->
+<br><br><br>
+<button>Click me</button>
+<script>
+    let b= document.querySelector("button");
+    b.addEventListener("click",function () {
+        toastr.options = {
+            "closeButton": false,
+            "debug": false,
+            "newestOnTop": false,
+            "progressBar": false,
+            "positionClass": "toast-top-full-width",
+            "preventDuplicates": false,
+            "onclick": null,
+            "showDuration": "300",
+            "hideDuration": "1000",
+            "timeOut": "3000",
+            "extendedTimeOut": "1000",
+            "showEasing": "swing",
+            "hideEasing": "linear",
+            "showMethod": "fadeIn",
+            "hideMethod": "fadeOut"
+        }
+        toastr["success"]("My name is Inigo Montoya")
+    });
+</script>
+<script src="jquery.min.js"></script>
+<script src="toastr.min.js"></script>
+</body>
+</html>

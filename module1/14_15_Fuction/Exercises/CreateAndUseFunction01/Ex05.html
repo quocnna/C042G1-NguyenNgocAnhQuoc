@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const a=["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    const b= ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    const f = e=>{
+        let t = a.findIndex(s=>{
+            return s==e;
+        })
+        return b[t];
+    };
+    alert(f(prompt("Input the name of star:"))??"Find No Star");
+</script>
+</body>
+</html>

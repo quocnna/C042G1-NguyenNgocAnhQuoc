@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const checkEmail= e=>{
+        const patternEmail = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/g;
+        return patternEmail.test(e)?`Hello ${e}`:"Incorrect format email";
+    }
+    const email = prompt("Input a email");
+    let res = checkEmail(email).split("@");
+    alert(res[0]);
+</script>
+</body>
+</html>

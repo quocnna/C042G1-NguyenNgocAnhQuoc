@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            height: 300px;
+        }
+    </style>
+    <title>Nested Loop</title>
+</head>
+<body>
+<script>
+    let body = document.getElementsByTagName("body")[0];
+    const tbl = document.createElement("table");
+    const tBody = document.createElement("tbody");
+    for (let i = 1; i <=10 ; i++) {
+        const row = document.createElement("tr");
+        for (let j = 1; j <= 10; j++) {
+            const cell = document.createElement("td");
+            const data = document.createTextNode((i*j).toString());
+            cell.appendChild(data);
+            row.appendChild(cell);
+        }
+        tBody.appendChild(row);
+    }
+
+    tbl.appendChild(tBody);
+    body.appendChild(tbl);
+    tbl.setAttribute("border","2");
+</script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        #container {
+            position: relative;
+        }
+
+        #container p {
+            height: 6px;
+        }
+
+        #container .section {
+            float: left;
+            width: 10%;
+            height: 100px;
+            position: relative;
+        }
+
+        #container .vertical-center {
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            transform: translateY(-50%);
+        }
+
+        #container select {
+            width: 120px;
+            text-align-last: center;
+        }
+    </style>
+    <script>
+        function ConvertCurrency() {
+            let amount = parseInt(document.getElementById("numAmount").value);
+            let fromCur = document.getElementById("slFromCur").value;
+            let toCur = document.getElementById("slToCur").value;
+            let res="";
+
+            switch (fromCur) {
+                case "USD":
+                    switch (toCur) {
+                        case "EUR":
+                            res = amount + " USD = "+  (amount*0.93) + " EUR";
+                            alert(res);
+                            break;
+                        case "GBP":
+                            res = amount + " USD = "+  (amount*0.81) + " EUR";
+                            alert(res);
+                            break;
+                        case "JPY":
+                            res = amount + " USD = "+  (amount*106) + " EUR";
+                            alert(res);
+                            break;
+                        case "VND":
+                            res = amount + " USD = "+  (amount*23500) + " VND";
+                            alert(res);
+                            break;
+                        default:
+                            alert("Equal together")
+                    }
+                    break;
+                case "EUR":
+                    alert("from EUR");
+                    break;
+                case "GBP":
+                    alert("from GBP");
+                    break;
+                case "JPY":
+                    alert("from JPY");
+                    break;
+                case "VND":
+                    switch (toCur) {
+                        case "EUR":
+                            res = amount + " VND = "+  (amount*0.00004) + " EUR";
+                            alert(res);
+                            break;
+                        case "GBP":
+                            res = amount + " VND = "+  (amount*0.00002) + " GBP";
+                            alert(res);
+                            break;
+                        case "JPY":
+                            res = amount + " VND = "+  (amount*0.0045) + " JPY";
+                            alert(res);
+                            break;
+                        case "USD":
+                            res = amount + " VND = "+  (amount/23500) + " USD";
+                            alert(res);
+                            break;
+                        default:
+                            alert("Equal together")
+                    }
+                    break;
+            }
+        }
+    </script>
+    <title>Convert Currency</title>
+</head>
+<body>
+<div id="container">
+    <div class="section">
+        <p>Amount</p>
+        <input type="number" id="numAmount">
+    </div>
+
+    <div class="section">
+        <p>From Currency</p>
+        <select id="slFromCur">
+            <option selected>USD</option>
+            <option>EUR</option>
+            <option>JPY</option>
+            <option>GBP</option>
+            <option>VND</option>
+        </select>
+    </div>
+
+    <div class="section">
+        <p>To Currency</p>
+        <select id="slToCur">
+            <option selected>VND</option>
+            <option>EUR</option>
+            <option>JPY</option>
+            <option>GBP</option>
+            <option>USD</option>
+        </select>
+    </div>
+    <div class="section">
+        <div class="vertical-center">
+            <button type="button" id="btConvert" onclick="ConvertCurrency();">Convert</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

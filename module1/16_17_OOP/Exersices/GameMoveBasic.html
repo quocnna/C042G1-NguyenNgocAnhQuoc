@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Move Basic</title>
+</head>
+<body>
+<div id="game">
+<!--    <img src="Images/pikachu.png" width="200px" height="200px" style="top: 20px;left: 30px">-->
+</div>
+<script>
+    let isRight= false;
+    class Hero{
+        constructor(img,top,left,size,speed) {
+            this.img = img;
+            this.top = top;
+            this.left = left;
+            this.size = size;
+            this.speed = speed;
+        }
+
+        getHeroElement(){
+            return `<img width='${this.size}px' height='${this.size}px' src='${this.img}' style='top:${this.top}px;left:${this.left}px;position:absolute'>`;
+        }
+        moveRight(){
+            this.left+=this.speed;
+        }
+        moveBottom(){
+            this.top += this.speed;
+        }
+        moveLeft(){
+            this.left -= this.speed;
+        }
+        moveTop(){
+            this.top -= this.speed;
+        }
+    }
+
+
+    const hero = new Hero('Images/pikachu.png', 0, 0, 200,50);
+
+    function start(){
+        if(!isRight){
+            if(hero.left < window.innerWidth - hero.size)
+                hero.moveRight();
+            else
+            {
+                if(hero.top< window.innerHeight - hero.size)
+                     hero.moveBottom();
+                else
+                    isRight=true;
+            }
+        }
+        else {
+            if(hero.left>=0){
+                hero.moveLeft();
+            }
+            else{
+                if(hero.top>=0)
+                    hero.moveTop();
+                else
+                    isRight=false;
+            }
+        }
+
+        document.getElementById('game').innerHTML = hero.getHeroElement();
+        setTimeout(start, 500)
+    }
+
+    start();
+</script>
+</body>
+</html>

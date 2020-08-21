@@ -1,0 +1,19 @@
+<taglib>
+    <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Test TLD</short-name>
+    <uri>customQuocTag</uri>
+
+    <tag>
+        <name>tbl</name>
+        <tag-class>qtag.TableCRUD</tag-class>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>colums_display</name>
+            <required>false</required>
+        </attribute>
+    </tag>
+</taglib>

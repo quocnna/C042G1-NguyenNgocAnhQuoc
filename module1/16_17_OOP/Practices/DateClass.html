@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Date Class</title>
+</head>
+<body>
+<script>
+    class MyDate{
+        constructor(day,month,year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+        get Day(){
+            return this.day;
+        }
+        get Month(){
+            return this.month;
+        }
+        get Year(){
+            return this.year;
+        }
+        set Day(day){
+            this.day= day;
+        }
+        set Month(month){
+            this.month = month;
+        }
+        set Year(year){
+            this.year = year;
+        }
+    }
+
+    let date = new MyDate(20,5,2020);
+    const day = date.Day;
+    const month = date.Month;
+    const  year = date.Year;
+    alert(`${day}/${month}/${year}`);
+
+
+    date.Day=10;
+    date.Month=10;
+    date.Year=2021;
+    //alert(`${day}/${month}/${year}`);
+    alert(`${date.Day}/${date.Month}/${date.Year}`);
+</script>
+</body>
+</html>

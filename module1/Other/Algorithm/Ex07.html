@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function sum(n) {
+        let res=0;
+        let a= n.toString().split('');
+        for (const v of a)
+            res+=parseInt(v);
+        return res;
+    }
+    function multi(n) {
+        let res=1;
+        let a= n.toString().split('');
+        for (const v of a)
+            res *= parseInt(v);
+        return res;
+    }
+    alert(sum(234));
+    alert(multi(234));
+</script>
+</body>
+</html>
