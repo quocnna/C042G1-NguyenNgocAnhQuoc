@@ -47,4 +47,42 @@ public final class Setting {
     public void setSingature(String singature) {
         this.singature = singature;
     }
+
+
+
+    public static class Builder {
+        private String language="Vietnam";
+        private int pageSize= 15;
+        private boolean isSpamFilter= false;
+        private String singature="singature";
+
+        public Builder withLanguage(String language) {
+            this.language = language;
+            return this;
+        }
+
+        public Builder withPageSize(int pageSize) {
+            this.pageSize = pageSize;
+            return this;
+        }
+
+        public Builder withSpamFilter(boolean isSpamFilter) {
+            this.isSpamFilter = isSpamFilter;
+            return this;
+        }
+
+        public Builder withSingature(String singature) {
+            this.singature = singature;
+            return this;
+        }
+
+        public Setting build() {
+            Setting setting = new Setting();
+            setting.language = this.language;
+            setting.pageSize = this.pageSize;
+            setting.isSpamFilter = this.isSpamFilter;
+            setting.singature= this.singature;
+            return setting;
+        }
+    }
 }

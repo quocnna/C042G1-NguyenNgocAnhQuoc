@@ -1,0 +1,33 @@
+
+    <iframe id="img-of-the-day"
+            width="560" height="315" frameborder="0" allowfullscreen></iframe>
+<script>
+    let query = 'https://api.nasa.gov/planetary/apod?api_key=7fc7zVOJdonBJ3O4sD0BzQ3Znz4dRz8SqTBl4h0w';
+    let request = new XMLHttpRequest();
+    request.open('GET', query);
+    request.onload = function() {
+        if (request.status === 200) {
+            let response = JSON.parse(request.responseText);
+            document.getElementById('img-of-the-day').setAttribute('src', response.url);
+        }
+    };
+    request.send();
+</script>
+<html>
+<body>
+<br>
+<select>
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+    <option>4</option>
+    <option>5</option>
+</select>
+<br>
+Author: <input type="text">
+<br>
+Feedback: <textarea></textarea>
+<br>
+<button type="submit" >Comment</button>
+</body>
+</html>

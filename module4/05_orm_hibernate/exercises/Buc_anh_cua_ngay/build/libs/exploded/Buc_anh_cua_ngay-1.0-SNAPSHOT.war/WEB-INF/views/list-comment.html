@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Mark</th>
+        <th>Author</th>
+        <th>Feedback</th>
+        <th>Like</th>
+        <th></th>
+    </tr>
+    <tr th:each="comment : ${comments}">
+        <td th:value="${comment.id}"></td>
+        <td th:value="${comment.mark}"></td>
+        <td th:value="${comment.author}"></td>
+        <td th:value="${comment.feedback}"></td>
+        <td th:value="${comment.like}"></td>
+        <td><a th:href="@{/update-like/id=${comment.id}}"></a></td>
+    </tr>
+</table>
+</body>
+</html>

@@ -49,7 +49,7 @@
                             <input type="hidden" name="by" value="all" id="search_param">
                             <input type="text" class="form-control" name="val" placeholder="Search" value="${paging.searchVal}">
                             <span class="input-group-btn">
-	     <button type="submit" class="tmp btn btn-default" style="height: 34px" type="button">
+	     <button type="submit" class="tmp btn btn-default" style="height: 34px">
 	       <span class="glyphicon glyphicon-search"></span>
 	     </button>
 	 </span>
@@ -186,23 +186,23 @@
             <div class="modal-body">
                 <div class="form-group">
                     <label>Name:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewName">name</label>
+                    <label style="color: blue;padding-left: 5px" class="viewName"></label>
                 </div>
                 <div class="form-group">
                     <label>Price:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewPrice">price</label>
+                    <label style="color: blue;padding-left: 5px" class="viewPrice"></label>
                 </div>
                 <div class="form-group">
                     <label>Quantity:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewQuantity">quanity</label>
+                    <label style="color: blue;padding-left: 5px" class="viewQuantity"></label>
                 </div>
                 <div class="form-group">
                     <label>Color:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewColor">color</label>
+                    <label style="color: blue;padding-left: 5px" class="viewColor"></label>
                 </div>
                 <div class="form-group">
                     <label>Category:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewCategory">category</label>
+                    <label style="color: blue;padding-left: 5px" class="viewCategory"></label>
                 </div>
             </div>
             <div class="modal-footer">

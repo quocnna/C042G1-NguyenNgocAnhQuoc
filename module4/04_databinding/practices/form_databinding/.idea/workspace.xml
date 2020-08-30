@@ -7,29 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ec30281c-317c-4e0c-a7bc-b0ff03c33b9d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../exercises/config_email/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/config_email/src/controller/SettingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/config_email/src/model/Setting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/config_email/web/setting.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/EmployeeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/employee/create.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/employee/info.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../login/src/model/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/config_email/.idea/artifacts/config_email_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/config_email/.idea/artifacts/config_email_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/controller/PictureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/webapp/WEB-INF/placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../exercises/config_email/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/config_email/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/config_email/config_email.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/config_email/config_email.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/config_email/out/artifacts/config_email_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/config_email/out/artifacts/config_email_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/config_email/out/artifacts/config_email_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/config_email/out/artifacts/config_email_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/config_email/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/config_email/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercises/config_email/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/config_email/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/config_email/src/controller/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/config_email/src/controller/SettingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercises/config_email/src/model/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercises/config_email/src/model/Setting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login/.idea/artifacts/login_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../login/.idea/artifacts/login_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../login/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login/login.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../login/login.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login/out/artifacts/login_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../login/out/artifacts/login_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../login/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../login/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -64,7 +59,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Employee.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="630">
+            <state relative-caret-position="450">
               <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
               <folding>
                 <element signature="e#350#351#0" expanded="true" />
@@ -94,6 +89,11 @@
               </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -153,8 +153,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="697" />
+    <option name="y" value="46" />
+    <option name="width" value="644" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -162,7 +164,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -192,10 +193,17 @@
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="employee" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="form_databinding" type="b2602c69:ProjectViewProjectNode" />
+              <item name="form_databinding" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -308,17 +316,19 @@
       <updated>1598003018583</updated>
       <workItem from="1598003022618" duration="420000" />
       <workItem from="1598202028426" duration="480000" />
+      <workItem from="1598324788649" duration="615000" />
+      <workItem from="1598329066195" duration="72000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="900000" />
+    <option name="totallyTimeSpent" value="1587000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30615166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31473532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -357,23 +367,9 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/model/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="630">
+        <state relative-caret-position="450">
           <caret line="42" column="1" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
           <folding>
             <element signature="e#350#351#0" expanded="true" />
@@ -392,6 +388,9 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -406,6 +405,20 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="9" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="22" selection-start-line="19" selection-start-column="22" selection-end-line="19" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
         </state>
       </provider>
     </entry>

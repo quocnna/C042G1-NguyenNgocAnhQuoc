@@ -7,25 +7,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f9efcd64-5041-488e-b3b0-1d4008e0eeb5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/SettingController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Setting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/web/setting.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practices/login/.idea/libraries/taglibs_standard_impl_1_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../practices/login/src/model/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/config_email_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/config_email_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/controller/PictureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../05_orm_hibernate/exercises/pictures/src/main/webapp/WEB-INF/templates/placeholder.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config_email.iml" beforeDir="false" afterPath="$PROJECT_DIR$/config_email.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/config_email_war_exploded/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/config_email_war_exploded/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/config_email_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/config_email_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/SettingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Setting.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../practices/form_databinding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practices/form_databinding/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practices/login/.idea/artifacts/login_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practices/login/.idea/artifacts/login_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practices/login/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practices/login/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practices/login/login.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../practices/login/login.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practices/login/out/artifacts/login_war_exploded/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../practices/login/out/artifacts/login_war_exploded/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../practices/login/web/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../practices/login/web/index.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -39,7 +38,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/setting.jsp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -48,11 +47,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/SettingController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="22" column="21" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="21" />
+            <state relative-caret-position="165">
+              <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,12 +71,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Setting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-              <folding>
-                <element signature="e#748#749#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="525">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
             </state>
           </provider>
         </entry>
@@ -79,8 +83,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="spring-beans.schema" />
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -93,9 +97,10 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/web/WEB-INF/dispatcher-servlet.xml" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/setting.jsp" />
+        <option value="$PROJECT_DIR$/src/model/Builder.java" />
         <option value="$PROJECT_DIR$/src/controller/SettingController.java" />
         <option value="$PROJECT_DIR$/src/model/Setting.java" />
-        <option value="$PROJECT_DIR$/web/setting.jsp" />
       </list>
     </option>
   </component>
@@ -107,8 +112,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
+    <option name="x" value="697" />
+    <option name="y" value="46" />
+    <option name="width" value="644" />
+    <option name="height" value="778" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -116,7 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,7 +163,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -271,17 +278,19 @@
       <workItem from="1598114568058" duration="3591000" />
       <workItem from="1598144737509" duration="377000" />
       <workItem from="1598189636923" duration="2479000" />
+      <workItem from="1598295401372" duration="1345000" />
+      <workItem from="1598326485622" duration="57000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6673000" />
+    <option name="totallyTimeSpent" value="8075000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31473532" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.32331902" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -324,7 +333,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/controller/SettingController.java</url>
-          <line>17</line>
+          <line>18</line>
           <properties />
           <option name="timeStamp" value="3" />
         </line-breakpoint>
@@ -346,6 +355,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Builder.java" />
+    <entry file="file://$PROJECT_DIR$/src/controller/SettingController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="17" column="41" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Setting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -353,31 +380,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Setting.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="39" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="39" />
-          <folding>
-            <element signature="e#748#749#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/setting.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="450">
           <caret line="30" column="75" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/SettingController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="22" column="21" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

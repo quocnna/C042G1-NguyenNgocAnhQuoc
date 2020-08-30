@@ -15,6 +15,7 @@ public class SettingController {
 
     @PostMapping("/update")
     public String update(Setting setting){
+//        Setting aaa= new Setting.Builder().withLanguage("").withPageSize().build();
         Setting s= Setting.getInstance();
         s.setLanguage(setting.getLanguage());
         s.setPageSize(setting.getPageSize());

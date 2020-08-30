@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            background-image: url("https://source.unsplash.com/random/800x600");
+            width: 800px;
+            height: 600px;
+            background-color: gray;
+        }
+
+        img{
+            width: 800px;
+            height: 600px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div>
+</div>
+<!--<img th:src="@{/image-resource}">-->
+
+<!--<img style="background-image: url('MYIMAGE.svg');" src="MYIMAGE.jpg" width="500">-->
+
+<img th:src="@{/image-resource}" data-src="https://source.unsplash.com/random/800x600" onload="if(this.src !== this.getAttribute('data-src')) this.src=this.getAttribute('data-src');">
+
+<!--<img id="img-of-the-day" width="500px" height="500px">-->
+<!--<script>-->
+<!--    let query ='https://source.unsplash.com/random/300x200';-->
+<!--    let request = new XMLHttpRequest();-->
+<!--    request.open('GET', query);-->
+<!--    request.onload = function() {-->
+
+<!--        if (request.status == 200) {-->
+<!--            // let response = JSON.parse(request.responseText);-->
+<!--            document.getElementById('img-of-the-day').setAttribute('src', request.responseURL);-->
+<!--        }-->
+<!--    };-->
+<!--    request.send();-->
+
+<!--</script>-->
+</body>
+</html>

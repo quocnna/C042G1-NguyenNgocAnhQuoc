@@ -7,71 +7,79 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5527e1f3-7c7c-4185-812e-fce2c9a1b01a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/common/BaseCRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/common/MapDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/common/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../final_examination/examination/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../final_examination/examination/src/main/java/common/Paging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../final_examination/examination/src/main/java/common/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../final_examination/examination/src/main/java/common/Toastr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../final_examination/examination/src/main/java/common/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../final_examination/examination/src/main/java/dao/ConfiguraionDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/common/StringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/common/Toastr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/controller/NoteServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/controller/NoteTypeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/controller/NoteTypeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/model/Note.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/model/NoteDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/bussiness/BaseManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/bussiness/NoteManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/bussiness/NoteManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/bussiness/NoteTypeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/bussiness/NoteTypeManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/bussiness/NoteTypeManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/dao/BaseDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/dao/Configuration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/dao/NoteDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/dao/NoteDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/dao/NoteTypeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/dao/NoteTypeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/dao/NoteTypeDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/file/FileBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/file/NoteFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/file/NoteFileImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/file/NoteTypeFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/classes/java/main/service/file/NoteTypeFileImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/libs/inote-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/build/libs/inote-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/common/Paging.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/common/Paging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/controller/NoteTypeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/controller/NoteTypeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/bussiness/BaseManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/bussiness/NoteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/bussiness/NoteManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/bussiness/NoteManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/bussiness/NoteManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/bussiness/NoteTypeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/bussiness/NoteTypeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/bussiness/NoteTypeManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/bussiness/NoteTypeManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/src/main/java/common/BaseCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/ConfigurationDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/NoteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/NoteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/NoteDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/NoteDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/NoteTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/NoteTypeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/NoteTypeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/dao/NoteTypeDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/file/NoteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/file/NoteFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/file/NoteTypeFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/java/service/file/NoteTypeFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/webapp/note.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_on_james/inote/src/main/webapp/note.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_web/furama/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_web/furama/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_web/furama/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_web/furama/build/libs/m3.furama-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_web/furama/build/libs/m3.furama-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_web/furama/src/main/webapp/admin/employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_web/furama/src/main/webapp/admin/employee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../case_study_web/furama/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../case_study_web/furama/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/Buc_anh_cua_ngay/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/AppConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/AppInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/controller/PictureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/model/Picture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/repository/PictureRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/repository/PictureRepositoryImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/service/PictureService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/java/qg/exercise/service/PictureServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/resources/hibernate.conf.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/webapp/WEB-INF/images/placeholder.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/pictures/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/BlogConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/Common/StringUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/CustomPhysicalNamingStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/controller/admin/BlogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/model/Blog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/repository/BlogRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/service/BlogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/service/BlogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/java/com/example/blog/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/admin/css/crud.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/admin/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/admin/css/toastr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/admin/js/crud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/admin/js/toastr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/img10.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/img11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/img15.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/img2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/img20.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/pointer.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/pre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/social-icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/static/images/social-icons1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/templates/admin/blog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/templates/admin/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/templates/contact.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../module4/06_jpa/exercises/blog/src/main/resources/templates/single.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../11_mvc_model/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../11_mvc_model/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/build/libs/m3exam-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/build/libs/m3exam-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../final_examination/examination/src/main/webapp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../final_examination/examination/src/main/webapp/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/04_databinding/exercises/config_email/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/04_databinding/exercises/config_email/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/04_databinding/exercises/config_email/src/controller/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/04_databinding/exercises/config_email/src/controller/SettingController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/04_databinding/exercises/config_email/src/model/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/04_databinding/exercises/config_email/src/model/Setting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module4/04_databinding/practices/form_databinding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/04_databinding/practices/form_databinding/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -85,15 +93,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/service/GeneralService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/GeneralServlet.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -109,13 +108,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/general.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="285">
               <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/service/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
@@ -141,7 +140,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/service/GeneralServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
+            <state relative-caret-position="60">
               <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -150,11 +149,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/common/StringUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="100" />
+            <state relative-caret-position="195">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="87" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/qtag/TableCRUD.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -289,6 +300,12 @@
               <item name="custom_tag" type="b2602c69:ProjectViewProjectNode" />
               <item name="custom_tag" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="qtag" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="custom_tag" type="b2602c69:ProjectViewProjectNode" />
+              <item name="custom_tag" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -307,7 +324,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/dao" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -426,17 +443,19 @@
       <workItem from="1596975943302" duration="559000" />
       <workItem from="1597015146880" duration="1250000" />
       <workItem from="1597590494718" duration="129000" />
+      <workItem from="1598701005291" duration="647000" />
+      <workItem from="1598706274282" duration="1568000" />
+      <workItem from="1598760413086" duration="22000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="30961000" />
+    <option name="totallyTimeSpent" value="33198000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.2639485" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -595,16 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/qtag/TableCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="64" column="21" selection-start-line="64" selection-start-column="17" selection-end-line="64" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/service/GeneralService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -622,16 +631,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/web/general.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/service/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#666#667#0" expanded="true" />
+            <element signature="e#699#700#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/custom_tag.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/web/main.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/common/StringUtil.java">
+    <entry file="file://$PROJECT_DIR$/src/service/GeneralServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="100" />
+        <state relative-caret-position="60">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/qtag/TableCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="45" column="51" selection-start-line="45" selection-start-column="51" selection-end-line="45" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -667,31 +707,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/general.jsp">
+    <entry file="file://$PROJECT_DIR$/src/common/StringUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/GeneralServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/service/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#666#667#0" expanded="true" />
-            <element signature="e#699#700#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="195">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="87" />
         </state>
       </provider>
     </entry>

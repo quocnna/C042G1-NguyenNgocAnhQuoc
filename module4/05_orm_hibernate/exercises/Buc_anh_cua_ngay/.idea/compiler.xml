@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="Buc_anh_ca_ngày_main" target="1.8" />
+      <module name="Buc_anh_ca_ngày_test" target="1.8" />
+      <module name="Buc_anh_cuangày_main" target="1.8" />
+      <module name="Buc_anh_cuangày_test" target="1.8" />
+      <module name="Buc_anh_của_ngày_main" target="1.8" />
+      <module name="Buc_anh_của_ngày_test" target="1.8" />
+      <module name="Buc_nh_của_ngày_main" target="1.8" />
+      <module name="Buc_nh_của_ngày_test" target="1.8" />
+      <module name="Buc_ảnh_của_ngày_main" target="1.8" />
+      <module name="Buc_ảnh_của_ngày_test" target="1.8" />
+      <module name="cau_hinh_hom_thu_dien_tu_main" target="1.8" />
+      <module name="cau_hinh_hom_thu_dien_tu_test" target="1.8" />
+      <module name="cau_hinh_hom_thu_dien_tử_main" target="1.8" />
+      <module name="cau_hinh_hom_thu_dien_tử_test" target="1.8" />
+      <module name="cau_hinh_hom_thu_diện_tử_main" target="1.8" />
+      <module name="cau_hinh_hom_thu_diện_tử_test" target="1.8" />
+      <module name="cau_hinh_hom_thu_điện_tử_main" target="1.8" />
+      <module name="cau_hinh_hom_thu_điện_tử_test" target="1.8" />
+      <module name="cau_hinh_hom_thư_điện_tử_main" target="1.8" />
+      <module name="cau_hinh_hom_thư_điện_tử_test" target="1.8" />
+      <module name="cau_hinh_hòm_thư_điện_tử_main" target="1.8" />
+      <module name="cau_hinh_hòm_thư_điện_tử_test" target="1.8" />
+      <module name="cau_hinhhòm_thư_điện_tử_main" target="1.8" />
+      <module name="cau_hinhhòm_thư_điện_tử_test" target="1.8" />
+      <module name="cau_hình_hòm_thư_điện_tử_main" target="1.8" />
+      <module name="cau_hình_hòm_thư_điện_tử_test" target="1.8" />
+      <module name="cu_hình_hòm_thư_điện_tử_main" target="1.8" />
+      <module name="cu_hình_hòm_thư_điện_tử_test" target="1.8" />
+      <module name="product-manager_main" target="1.8" />
+      <module name="product-manager_test" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
