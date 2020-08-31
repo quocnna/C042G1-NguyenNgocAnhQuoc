@@ -1,6 +1,6 @@
 package com.example.blog.service;
 
-import com.example.blog.Common.StringUtil;
+import com.example.blog.common.StringUtil;
 import com.example.blog.model.Blog;
 import com.example.blog.model.Category;
 import com.example.blog.repository.BlogRepository;

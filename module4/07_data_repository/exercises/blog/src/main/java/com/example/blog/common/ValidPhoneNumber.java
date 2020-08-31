@@ -1,4 +1,4 @@
-package com.example.blog.Common;
+package com.example.blog.common;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;

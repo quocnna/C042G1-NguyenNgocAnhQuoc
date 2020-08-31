@@ -1,4 +1,4 @@
-package com.example.blog.Common;
+package com.example.blog.common;
 
 import java.util.Optional;
 import java.util.regex.Pattern;

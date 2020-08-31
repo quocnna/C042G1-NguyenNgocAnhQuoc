@@ -1,4 +1,4 @@
-package com.example.blog.Common;
+package com.example.blog.common;
 
 import org.springframework.beans.factory.annotation.Configurable;
 import javax.validation.ConstraintValidator;

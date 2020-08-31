@@ -1,11 +1,8 @@
 package com.example.blog.model;
 
-import com.example.blog.Common.StringUtil;
-import com.example.blog.Common.ValidPhoneNumber;
+import com.example.blog.common.ValidPhoneNumber;
 import lombok.*;
 import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
-import javax.validation.constraints.Size;
 import java.time.LocalDate;
 
 @Data
