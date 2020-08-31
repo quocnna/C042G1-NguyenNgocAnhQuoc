@@ -7,31 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21678fc8-4b65-4e40-bda3-25fea72f518c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../exercises/Buc_anh_cua_ngay/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/java/qg/exercise/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/java/qg/exercise/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/java/qg/exercise/controller/PictureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/java/qg/exercise/model/Picture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/java/qg/exercise/repository/PictureRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/java/qg/exercise/repository/PictureRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/java/qg/exercise/service/PictureService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/java/qg/exercise/service/PictureServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/resources/hibernate.conf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/webapp/WEB-INF/images/placeholder.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercises/pictures/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/src/controller/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/src/controller/SettingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/src/model/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/src/model/Setting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../04_databinding/practices/form_databinding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_databinding/practices/form_databinding/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/final_examination/examination/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/final_examination/examination/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/Gradle___cg_wbd___Gran_Demonstration_1_0_SNAPSHOT_war__exploded_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/Gradle___cg_wbd___Gran_Demonstration_1_0_SNAPSHOT_war__exploded_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -56,22 +36,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/service/impl/HibernateCustomerServiceImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
+            <state relative-caret-position="120">
               <caret line="18" selection-start-line="18" selection-end-line="27" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#0#27#1" expanded="true" />
-                <element signature="e#0#44#1" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/hibernate.conf.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="135" selection-start-line="8" selection-start-column="106" selection-end-line="8" selection-end-column="135" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/AppConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="62" selection-start-line="62" selection-end-line="62" />
+              <folding>
+                <element signature="e#2578#2579#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -94,9 +93,9 @@
         <option value="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/model/Customer.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/AppConfig.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/resources/hibernate.conf.xml" />
         <option value="$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/service/impl/HibernateCustomerServiceImpl.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -164,43 +163,6 @@
               <item name="cms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="grandemonstration" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gran Demonstration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="grandemonstration" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gran Demonstration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="grandemonstration" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gran Demonstration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="grandemonstration" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gran Demonstration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -210,23 +172,6 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Gran Demonstration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Gran Demonstration" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cms" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -234,6 +179,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -340,17 +286,17 @@
       <workItem from="1598324005145" duration="6011000" />
       <workItem from="1598404411613" duration="1910000" />
       <workItem from="1598413077542" duration="3220000" />
+      <workItem from="1598849739879" duration="598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12909000" />
+    <option name="totallyTimeSpent" value="13507000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.31473532" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3190272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -399,16 +345,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/AppConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="62" selection-start-line="62" selection-end-line="62" />
-          <folding>
-            <element signature="e#2578#2579#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/AppInit.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -420,13 +356,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
           <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="19" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -453,12 +382,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/service/impl/HibernateCustomerServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
+        <state relative-caret-position="120">
           <caret line="18" selection-start-line="18" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#0#27#1" expanded="true" />
-            <element signature="e#0#44#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -467,6 +394,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="8" column="135" selection-start-line="8" selection-start-column="106" selection-end-line="8" selection-end-column="135" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/cg/wbd/grandemonstration/AppConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+          <folding>
+            <element signature="e#2578#2579#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
