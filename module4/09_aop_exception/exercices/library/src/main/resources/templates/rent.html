@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <td>Title</td>
+        <td>Amount</td>
+        <td>Action</td>
+    </tr>
+    <tr th:each="item:${res}">
+        <td th:text="${item.title}"></td>
+        <td th:text="${item.amount}"></td>
+        <td>
+            <a th:href="@{/rent/__${item.id}__}">Rent</a>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

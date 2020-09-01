@@ -7,31 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e1dcf534-a45c-4e0d-b730-d789b6dabdc2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/java/qg/exercise/AppConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/java/qg/exercise/AppInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/java/qg/exercise/controller/PictureController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/java/qg/exercise/model/Picture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/java/qg/exercise/repository/PictureRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/java/qg/exercise/repository/PictureRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/java/qg/exercise/service/PictureService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/java/qg/exercise/service/PictureServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/resources/hibernate.conf.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/webapp/WEB-INF/images/placeholder.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../pictures/src/main/webapp/WEB-INF/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/exercises/product_manager/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../03_view_thymeleaf/practices/customer_manager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/src/controller/SettingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/src/controller/SettingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/src/model/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_databinding/exercises/config_email/src/model/Setting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../04_databinding/practices/form_databinding/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../04_databinding/practices/form_databinding/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../02_spring_controller/exercises/sandwich/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../02_spring_controller/exercises/sandwich/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -64,10 +40,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codegym/ApplicationConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1095">
+            <state relative-caret-position="634">
               <caret line="105" column="58" selection-start-line="105" selection-start-column="58" selection-end-line="105" selection-end-column="58" />
             </state>
           </provider>
@@ -78,7 +54,7 @@
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codegym/controller/CommentController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -94,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/codegym/repository/impl/CommentRepositoryImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="525">
               <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
             </state>
           </provider>
@@ -158,10 +134,10 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="697" />
-    <option name="y" value="46" />
-    <option name="width" value="644" />
-    <option name="height" value="778" />
+    <option name="x" value="170" />
+    <option name="y" value="91" />
+    <option name="width" value="346" />
+    <option name="height" value="546" />
   </component>
   <component name="ProjectId" id="1gaCxZ98NipfO9MCA2etRMkh9nI" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -196,6 +172,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Buc_anh_cua_ngay" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Buc_anh_cua_ngay" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="codegym" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Buc_anh_cua_ngay" type="b2602c69:ProjectViewProjectNode" />
@@ -391,16 +375,18 @@
       <workItem from="1598350769320" duration="273000" />
       <workItem from="1598351070607" duration="36000" />
       <workItem from="1598404355669" duration="1875000" />
+      <workItem from="1598932063337" duration="563000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2184000" />
+    <option name="totallyTimeSpent" value="2747000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20886981" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21173105" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -508,10 +494,13 @@
     <state width="1024" height="326" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1598350208913" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build.gradle">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/image.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codegym/repository/impl/CommentRepositoryImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="91" />
+        <state relative-caret-position="525">
+          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -522,17 +511,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codegym/repository/impl/CommentRepositoryImpl.java">
+    <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="45" column="20" selection-start-line="45" selection-start-column="20" selection-end-line="45" selection-end-column="20" />
+        <state relative-caret-position="315">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codegym/ApplicationConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codegym/controller/CommentController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="105" column="58" selection-start-line="105" selection-start-column="58" selection-end-line="105" selection-end-column="58" />
+        <state relative-caret-position="75">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="e#686#687#0" expanded="true" />
+            <element signature="e#734#735#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -543,17 +536,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/image.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/codegym/controller/CommentController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/codegym/ApplicationConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="e#686#687#0" expanded="true" />
-            <element signature="e#734#735#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="634">
+          <caret line="105" column="58" selection-start-line="105" selection-start-column="58" selection-end-line="105" selection-end-column="58" />
         </state>
       </provider>
     </entry>
