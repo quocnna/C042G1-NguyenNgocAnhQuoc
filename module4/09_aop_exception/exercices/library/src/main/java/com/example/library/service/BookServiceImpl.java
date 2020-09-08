@@ -19,7 +19,7 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Optional<Book> findById(int id) throws Exception {
-        int index = bookList.indexOf(new Book(id));
+        int index = bookList.indexOf(Book.builder().id(id).build());
         if(index>=0)
         return Optional.ofNullable(bookList.get(index));
         throw new Exception();

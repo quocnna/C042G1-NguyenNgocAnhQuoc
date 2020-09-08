@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link href="/css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<title>Problog Website Template | Home :: W3layouts</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+			<div class="header">
+				<div class="wrap">
+				<div class="logo">
+					<a href="index.html"><img src="images/logo.png" title="logo" /></a>
+				</div>
+				<div class="clear"> </div>				
+			</div>
+			</div>
+			<div class="header-nav1">
+				<div class="wrap">
+					<ul>
+						<li class="current"><a href="index.html">Home</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Support</a></li>
+						<li><a href="#">Advertise</a></li>
+						<li><a href="contact.html">Contact</a></li>
+					</ul>				
+				<div class="search-bar">
+					<ul>
+						<li><input type="text"></li>
+						<li><form><input type="submit" value="" /></form></li>
+					</ul>
+				</div>
+				</div>				
+			<div class="clear"> </div>
+			</div>
+			<div class="wrap">
+				<div class="about">
+					<div class="services-sidebar">
+					<h4>Categories</h4>
+					<ul>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Lorem ipsum dolor sit amet</a></li>
+					</ul><br>
+					<h4>Archives</h4>
+					<ul>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Jan, 2012</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">Feb, 2012</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">March, 2012</a></li>
+						<li><img src="images/pointer.png" title="pointer" /><a href="#">April, 2012</a></li>
+					</ul>
+				</div>
+					<div class="bloder-content">
+
+
+					<div th:each="item: ${res}" class="bloger-grid">
+						<div class="blog-img">
+							<img th:src="'images/'+${item.imageUrl}" />
+						</div>
+						<div class="bloger-content">
+							<h5><a href="single.html" th:text="${item.title}"></a></h5>
+							<p th:text="${item.content}"></p>
+							<ul>
+								<li>Created on: <a href="#" th:text="${item.createdOn}"></a></li>
+								<li><a th:href="'/detail/'+${item.id}"><span>Readmore</span></a></li>
+							</ul>
+						</div>
+						<div class="clear"> </div>
+					</div>
+
+					</div>
+					<div class="clear"> </div>
+			</div>
+			</div>
+<div class="clear"> </div>
+			<div class="wrap">
+						<ul class="dc_pagination dc_paginationA dc_paginationA03">
+						  <li><a href="#" class="first">First</a></li>
+						  <li><a href="#" class="previous">Previous</a></li>
+						  <li><a href="#">1</a></li>
+						  <li><a href="#">2</a></li>
+						  <li><a href="#" class="current">3</a></li>
+						  <li><a href="#">4</a></li>
+						  <li><a href="#">5</a></li>
+						  <li><a href="#" class="next">Next</a></li>
+						  <li><a href="#" class="last">Last</a></li>
+						</ul>
+	    		<div class="clear"> </div>
+		</div>
+	<div class="clear"> </div>
+		<div class="footer">
+				<div class="wrap">
+				<h3>SAY HELLO</h3>
+				<p>Lorem ipsum dolor sit amet, consect etur adipiscing elit. Vestibulum ut tortor urnati dunt
+
+						dolor. Nunc vulputate ultrices con sect etur donec semper lacinia ultri dolore cie
+
+						lorem ipsum commete.</p>
+			<div class="footerlinks">
+				<div class="share">
+		                	<li><a href="#" target="_blank" title="Facebook"><span class="social fbook"> </span></a></li>
+		                	<li><a href="#" target="_blank" title="twitter"><span class="social twitter"> </span></a></li>
+		                    <li><a href="#" target="_blank" title="tumblr"><span class="social tumblr"> </span></a></li><br />
+		                    <li><a href="#" target="_blank" title="delicious"><span class="social delicious"> </span></a></li>
+		                	<li><a href="#" target="_blank" title="delicious"><span class="social delicious"> </span></a></li>
+		                	<li><a href="#" target="_blank" title="dribbble"><span class="social dribbble"> </span></a></li>
+		                    <li><a href="#" target="_blank" title="evernote"><span class="social evernote"> </span></a></li>
+		                    <li><a href="#" target="_blank" title="stumbleupon"><span class="social stumbleupon"> </span></a></li>
+		                </div>
+			</div>
+			</div>
+			</div>
+			<div class="footer1">
+	<p class="link"><span>© 2013 pro_blog. All rights Reserved | Designed by&nbsp; <a href="http://w3layouts.com/"> W3Layouts</a>	</span></p>
+</div>
+	</body>
+</html>

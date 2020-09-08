@@ -3,7 +3,6 @@ package com.example.library.model;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
-
 import java.util.Objects;
 
 @Data
@@ -13,8 +12,6 @@ public class Book {
     private int id;
     private String title;
     private int amount;
-
-    public Book(int id){ this.id= id;}
 
     @Override
     public boolean equals(Object o) {
