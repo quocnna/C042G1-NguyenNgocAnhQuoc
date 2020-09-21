@@ -24,6 +24,8 @@
 </div>
 <div>
     Age: <input name="age">
+    <label th:if="${#fields.hasErrors('age')}" th:errors="*{age}"></label>
+<!--    <label message=${message}; set case special by create message model or message entity -->
 </div>
 <div>
     <button>Submit</button>

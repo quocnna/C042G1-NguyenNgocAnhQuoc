@@ -13,7 +13,8 @@ public class User {
     private String lastName;
     @Pattern(regexp = "\\d{10}", message = "must be of 10 digit")
     private String phone;
-    @Min(value = 18)
+
+    @Min(value = 18, message = "min 18")
     private int age;
     @Pattern(regexp = "^[\\w-\\.]+@([\\w-]+\\.)+[\\w-]{2,4}$", message = "must be email")
     private String email;

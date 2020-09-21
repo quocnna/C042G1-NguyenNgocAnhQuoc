@@ -293,7 +293,7 @@
         $("select[name='category'] option").each(function () {
             if (this.value == nti) {
                 $(this).prop("selected", true)
-                return false;
+                return;
             }
         });
     });

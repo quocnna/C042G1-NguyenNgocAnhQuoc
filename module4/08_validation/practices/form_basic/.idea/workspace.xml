@@ -2,16 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d954146-52aa-4293-a4d4-db3a0b6fa87a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/resources/templates/result.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/resources/validate.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../custom_validation/src/main/java/com/example/demo/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../custom_validation/src/main/resources/validate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../custom_validation/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../custom_validation/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../custom_validation/src/main/resources/templates/result.html" beforeDir="false" afterPath="$PROJECT_DIR$/../custom_validation/src/main/resources/templates/result.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/common/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/common/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/common/SpringSecurityAuditorAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/repository/TokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/service/TokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/java/com/example/springsecurity/Configuration/SecurityWebApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/java/com/example/springsecurity/Configuration/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/java/com/example/springsecurity/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../case_study_james/src/main/java/com/example/inote/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/case_study_on_james/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/case_study_on_james/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../07_data_repository/exercises/blog/src/main/java/com/example/blog/common/PhoneNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_data_repository/exercises/blog/src/main/java/com/example/blog/common/PhoneNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../exercices/user_validate/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -59,7 +78,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/ApplicationInitializer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
+            <state relative-caret-position="195">
               <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
               <folding>
                 <element signature="e#280#281#0" expanded="true" />
@@ -93,7 +112,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -105,11 +124,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="165">
-              <caret line="11" column="88" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="88" />
+              <caret line="11" column="88" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="88" />
             </state>
           </provider>
         </entry>
@@ -206,6 +225,24 @@
               <item name="form_basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qg" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="from_basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="form_basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="qg" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="from_basic" type="b2602c69:ProjectViewProjectNode" />
+              <item name="form_basic" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -220,6 +257,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -322,17 +360,19 @@
       <workItem from="1598849345749" duration="948000" />
       <workItem from="1598850740541" duration="7000" />
       <workItem from="1598865876011" duration="1718000" />
+      <workItem from="1600233357970" duration="57000" />
+      <workItem from="1600236684336" duration="9000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2673000" />
+    <option name="totallyTimeSpent" value="2739000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30615166" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3104435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -381,10 +421,42 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/ApplicationInitializer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
+          <folding>
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#503#504#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="88" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="88" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/result.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -413,38 +485,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/ApplicationInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="1" selection-start-line="19" selection-start-column="1" selection-end-line="19" selection-end-column="1" />
-          <folding>
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#339#340#0" expanded="true" />
-            <element signature="e#407#408#0" expanded="true" />
-            <element signature="e#442#443#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
-            <element signature="e#543#544#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/ApplicationConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="88" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="88" />
         </state>
       </provider>
     </entry>

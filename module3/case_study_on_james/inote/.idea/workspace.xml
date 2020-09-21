@@ -2,93 +2,72 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d2b6983c-c861-4079-a8ff-119afa9e5580" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/BaseCRUD.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/MapDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/common/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/bussiness/NoteManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/bussiness/NoteManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/bussiness/NoteTypeManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/bussiness/NoteTypeManagerImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/common/Paging.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/common/StringUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/common/Toastr.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/common/Validation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/controller/NoteServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/controller/NoteTypeServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/dao/ConfigurationDB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/dao/NoteDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/dao/NoteDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/dao/NoteTypeDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/dao/NoteTypeDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/model/Note.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/model/NoteDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/model/NoteType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/webapp/assets/css/crud.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/webapp/assets/css/toastr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/webapp/assets/js/crud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/webapp/assets/js/toastr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/webapp/note.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/webapp/note_type.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../14_dependency_packing/exercises/custom_tag/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../14_dependency_packing/exercises/custom_tag/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/conveter/NumberConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/common/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/common/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/common/SpringSecurityAuditorAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/repository/TokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/service/TokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/practices/src/main/java/com/example/springsecurity/Configuration/SecurityWebApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/practices/src/main/java/com/example/springsecurity/Configuration/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/practices/src/main/java/com/example/springsecurity/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/practices/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/practices/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/practices/src/main/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/14_security/practices/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/common/IBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/controller/NoteController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/model/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/model/Note.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/model/NoteType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/bussiness/NoteManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/bussiness/NoteManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/bussiness/NoteTypeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/bussiness/NoteTypeManagerImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/dao/NoteDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/dao/NoteDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/dao/NoteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/dao/NoteTypeDAO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/dao/NoteTypeDAOImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/dao/NoteTypeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/file/NoteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/file/NoteFileImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/file/NoteTypeFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/java/com/example/inotes/service/file/NoteTypeFileImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/resources/templates/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/resources/templates/note.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/case_study_james/inotes/src/main/resources/templates/note_type.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/StringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/common/Toastr.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/NoteServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/controller/NoteTypeServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/controller/NoteTypeServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/Note.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/NoteDTO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/bussiness/BaseManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/bussiness/NoteManager.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/bussiness/NoteManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/bussiness/NoteTypeManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/service/bussiness/NoteTypeManager.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/bussiness/NoteTypeManagerImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/dao/BaseDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/dao/Configuration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/dao/NoteDAO.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/dao/NoteDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/dao/NoteTypeDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/service/dao/NoteTypeDAO.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/dao/NoteTypeDAOImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/file/FileBase.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/file/NoteFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/file/NoteFileImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/file/NoteTypeFile.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/service/file/NoteTypeFileImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/inote-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/inote-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/common/Paging.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/common/Paging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/controller/NoteTypeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/NoteTypeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/bussiness/BaseManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/bussiness/NoteManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/bussiness/NoteManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/bussiness/NoteManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/bussiness/NoteManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/bussiness/NoteTypeManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/bussiness/NoteTypeManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/bussiness/NoteTypeManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/bussiness/NoteTypeManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/dao/BaseDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../final_examination/examination/src/main/java/common/BaseCRUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/dao/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/dao/ConfigurationDB.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/dao/NoteDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/dao/NoteDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/dao/NoteDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/dao/NoteDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/dao/NoteTypeDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/dao/NoteTypeDAO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/dao/NoteTypeDAOImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/dao/NoteTypeDAOImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/file/NoteFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/file/NoteFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/file/NoteTypeFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/service/file/NoteTypeFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/note.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/note.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/4.10.3/taskHistory/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/4.10.3/taskHistory/taskHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_web/furama/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_web/furama/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_web/furama/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_web/furama/build/libs/m3.furama-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_web/furama/build/libs/m3.furama-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_web/furama/src/main/webapp/admin/employee.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_web/furama/src/main/webapp/admin/employee.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../case_study_web/furama/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../../case_study_web/furama/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/controller/NoteServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/controller/NoteServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.gradle/4.10.3/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.gradle/4.10.3/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.gradle/4.10.3/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.gradle/4.10.3/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.gradle/4.10.3/taskHistory/taskHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.gradle/4.10.3/taskHistory/taskHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/05_orm_hibernate/exercises/pictures/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/07_data_repository/exercises/blog/src/main/java/com/example/blog/common/PhoneNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/07_data_repository/exercises/blog/src/main/java/com/example/blog/common/PhoneNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/07_data_repository/exercises/blog/src/main/resources/templates/admin/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/07_data_repository/exercises/blog/src/main/resources/templates/admin/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/config/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/config/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/08_validation/exercices/user_validate/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/08_validation/exercices/user_validate/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/08_validation/practices/form_basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/08_validation/practices/form_basic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/10_session_cookie/practices/save_user/src/main/java/com/example/save_user/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/10_session_cookie/practices/save_user/src/main/java/com/example/save_user/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/10_session_cookie/practices/save_user/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/10_session_cookie/practices/save_user/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/10_session_cookie/practices/save_user/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/10_session_cookie/practices/save_user/src/main/resources/templates/login.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -128,31 +107,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/NoteTypeServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/dao/NoteDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="80" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/dao/NoteDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="-934">
               <caret line="101" selection-start-line="101" selection-end-line="132" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -170,54 +128,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/dao/NoteTypeDAOImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/controller/NoteServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="660">
-              <caret line="184" column="5" selection-start-line="184" selection-start-column="5" selection-end-line="184" selection-end-column="5" />
-              <folding>
-                <element signature="method#get#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#1600#2021#0" />
-                <element signature="e#1814#2011#1" />
-                <element signature="e#2052#2096#0" />
-                <element signature="method#getAll#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#2200#2411#0" />
-                <element signature="e#2442#2486#0" />
-                <element signature="method#getAllWithPaging#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#2743#3217#0" />
-                <element signature="e#3248#3292#0" />
-                <element signature="method#save#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#3407#3666#0" />
-                <element signature="e#3697#3741#0" />
-                <element signature="method#update#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#3836#4139#0" />
-                <element signature="e#4170#4214#0" />
-                <element signature="method#delete#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#4302#4466#0" />
-                <element signature="e#4497#4541#0" />
-                <element signature="method#deleteCascade#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#4636#4903#0" />
-                <element signature="e#4934#4978#0" />
-                <element signature="method#search#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#5088#5412#0" />
-                <element signature="e#5443#5487#0" />
-                <element signature="method#searchWithPaging#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#5768#6403#0" />
-                <element signature="e#6434#6478#0" />
-                <element signature="method#getListFromResultSet#0;class#NoteTypeDAOImpl#0" />
-                <element signature="e#6627#6885#0" />
-                <element signature="e#6658#6875#1" />
-                <element signature="e#6907#6951#0" />
-                <element signature="method#setPaging#0;class#NoteTypeDAOImpl#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/dao/NoteTypeDAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
+            <state relative-caret-position="305">
+              <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="30" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -228,36 +142,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/service/bussiness/NoteManagerImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="495">
-              <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
+            <state relative-caret-position="25">
+              <caret line="13" column="47" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/service/bussiness/NoteTypeManager.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/note.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="102" column="90" selection-end-line="254" />
-              <folding>
-                <element signature="n#c:if#0;n#jsp:root#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -268,18 +156,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/controller/NoteServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-207">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="64" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -348,7 +224,6 @@
         <option value="$PROJECT_DIR$/src/main/java/common/Toastr.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/HomeServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/dao/BaseDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/controller/NoteServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/assets/js/main.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/note_type.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/note.jsp" />
@@ -358,7 +233,6 @@
         <option value="$PROJECT_DIR$/src/main/java/service/file/NoteTypeFile.java" />
         <option value="$PROJECT_DIR$/src/main/java/controller/NoteTypeServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/bussiness/NoteManager.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/bussiness/NoteManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/MapDTO.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/Paging.java" />
         <option value="$PROJECT_DIR$/src/main/java/common/BaseCRUD.java" />
@@ -367,6 +241,8 @@
         <option value="$PROJECT_DIR$/src/main/java/service/dao/NoteTypeDAOImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/bussiness/NoteTypeManagerImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/dao/NoteDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/service/bussiness/NoteManagerImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/controller/NoteServlet.java" />
       </list>
     </option>
   </component>
@@ -390,7 +266,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -447,66 +322,21 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="bussiness" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inote" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="dao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inote" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inote" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inote" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inote" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inote" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/webapp/assets/js" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -643,17 +473,19 @@
       <workItem from="1597449805493" duration="4807000" />
       <workItem from="1597589069010" duration="1408000" />
       <workItem from="1597590620945" duration="12316000" />
+      <workItem from="1600319261500" duration="1954000" />
+      <workItem from="1600329925147" duration="4561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153502000" />
+    <option name="totallyTimeSpent" value="160017000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4856631" visible="true" weight="0.32331902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4856631" visible="true" weight="0.3319027" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -755,7 +587,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/controller/NoteServlet.java</url>
-          <line>73</line>
+          <line>85</line>
           <properties />
           <option name="timeStamp" value="85" />
         </line-breakpoint>
@@ -798,23 +630,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/NoteFileImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/NoteTypeFileImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/img/home.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -849,13 +664,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/HomeServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="112" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/assets/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
@@ -875,36 +683,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/bussiness/BaseManager.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/service/dao/BaseDAO.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/NoteFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/NoteTypeFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/FileBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/bussiness/NoteManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -979,34 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Note.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/NoteType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#299#300#0" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#357#358#0" expanded="true" />
-            <element signature="e#385#386#0" expanded="true" />
-            <element signature="e#416#417#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-            <element signature="e#515#516#0" expanded="true" />
-            <element signature="e#553#554#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#641#642#0" expanded="true" />
-            <element signature="e#687#688#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/NoteDTO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -1036,16 +786,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/common/BaseCRUD.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/note_type.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="395">
@@ -1053,10 +793,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/NoteTypeServlet.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/dao/NoteDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="24" column="50" lean-forward="true" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="80" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1104,7 +847,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/dao/NoteTypeDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="60">
           <caret line="5" column="44" selection-start-line="5" selection-start-column="44" selection-end-line="5" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1114,8 +857,140 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/bussiness/NoteTypeManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
+        <state relative-caret-position="60">
           <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/note.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1470">
+          <caret line="102" column="90" selection-end-line="254" />
+          <folding>
+            <element signature="n#c:if#0;n#jsp:root#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Note.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/NoteType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#299#300#0" expanded="true" />
+            <element signature="e#324#325#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#385#386#0" expanded="true" />
+            <element signature="e#416#417#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#515#516#0" expanded="true" />
+            <element signature="e#553#554#0" expanded="true" />
+            <element signature="e#587#588#0" expanded="true" />
+            <element signature="e#641#642#0" expanded="true" />
+            <element signature="e#687#688#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/NoteFileImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/NoteTypeFileImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/NoteFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/HomeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="19" column="112" selection-start-line="19" selection-start-column="82" selection-end-line="19" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/NoteTypeServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="24" column="50" selection-start-line="24" selection-start-column="50" selection-end-line="24" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/NoteTypeFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/file/FileBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/common/BaseCRUD.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/controller/NoteServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="305">
+          <caret line="29" column="4" selection-start-line="29" selection-start-column="4" selection-end-line="30" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/service/bussiness/NoteManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="13" column="47" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1132,51 +1007,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/dao/NoteDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="12" selection-end-column="80" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/note.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="102" column="90" selection-end-line="254" />
-          <folding>
-            <element signature="n#c:if#0;n#jsp:root#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/controller/NoteServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-207">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="64" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/service/bussiness/NoteManagerImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="45" column="30" selection-start-line="45" selection-start-column="30" selection-end-line="45" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/service/dao/NoteDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="-934">
           <caret line="101" selection-start-line="101" selection-end-line="132" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />

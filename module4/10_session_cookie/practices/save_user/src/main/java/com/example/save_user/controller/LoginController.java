@@ -16,6 +16,14 @@ public class LoginController {
         return new User();
     }
 
+    @GetMapping("/")
+    public String test(HttpServletResponse response){
+        Cookie cookie = new Cookie("aaaa", "aaaa");
+        cookie.setMaxAge(24 * 60 * 60);
+        response.addCookie(cookie);
+        return "redirect:/login";
+    }
+
     @RequestMapping("/login")
     public String Index(@CookieValue(value = "setUser", defaultValue = "") String setUser, Model model) {
         Cookie cookie = new Cookie("setUser", setUser);
@@ -25,16 +33,19 @@ public class LoginController {
 
     @PostMapping("/dologin")
     public String doLogin(@ModelAttribute("user") User user, Model model, @CookieValue(value = "setUser", defaultValue = "") String setUser,
-                          HttpServletResponse response, HttpServletRequest request) {
-        //implement business logic
+                         HttpServletResponse response, HttpServletRequest request) {
+
         if (user.getEmail().equals("123") && user.getPassword().equals("123")) {
-            if (user.getEmail() != null)
                 setUser = user.getEmail();
 
             // create cookie and set it in response
             Cookie cookie = new Cookie("setUser", setUser);
             cookie.setMaxAge(24 * 60 * 60);
             response.addCookie(cookie);
+
+            Cookie cookiePassword= new Cookie("setPassword",user.getPassword());
+            cookie.setMaxAge(24 * 60 * 60);
+            response.addCookie(cookiePassword);
 
             //get all cookies
             Cookie[] cookies = request.getCookies();

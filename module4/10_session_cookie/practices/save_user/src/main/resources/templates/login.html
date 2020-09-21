@@ -15,10 +15,14 @@
         </tr>
         <tr>
             <td><label>Password</label></td>
-            <td><input type="password" th:field="*{password}"/></td>
+            <td><input type="password" name="password" th:value="${cookieValue.value}" /></td>
         </tr>
     </table>
     <input type="submit" value="Login"/>
+
+    <p>
+        <label>Remember</label> <input type="checkbox" name="remember" checked/>
+    </p>
 </form>
 <br>
 <span th:text="${message}"></span>

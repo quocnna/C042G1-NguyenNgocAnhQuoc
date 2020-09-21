@@ -2,111 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f07c5639-f59b-418d-9bf0-9505e1535304" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/case_study_on_james.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/checkout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/contact.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/creditly.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/easy-responsive-tabs.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/flexslider.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/fontawesome-all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/jquery-ui1.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/login_overlay.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/owl.carousel.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/owl.theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/shop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/simplyCountdown.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/css/style6.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/Thumbs.db" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/banner-mid.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/banner1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/banner2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/banner3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/banner4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/close_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/d1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/d2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/d3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/g1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/g2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/g3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/g4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/m1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/m2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/m3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/m4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/paypal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s10.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s10.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/s9.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/team1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/team2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/team3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/team4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/images/up_arrow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/classie-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/creditly.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/demo1-search.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/easy-responsive-tabs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/imagezoom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/jquery-2.2.3.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/jquery-ui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/jquery.easing.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/jquery.flexslider.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/jquery.magnific-popup.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/minicart.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/modernizr-2.6.2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/move-top.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/owl.carousel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/js/simplyCountdown.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-brands-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-brands-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-brands-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-brands-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-brands-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-regular-400.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-regular-400.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-regular-400.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-regular-400.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-regular-400.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-solid-900.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-solid-900.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-solid-900.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-solid-900.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/static/webfonts/fa-solid-900.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/templates/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/templates/checkout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/templates/contact.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/templates/customer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/templates/payment.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/templates/shop.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/exercises/cart/src/main/resources/templates/single.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/practices/counter_view_page/src/main/java/com/example/counter/controller/CounterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/practices/counter_view_page/src/main/java/com/example/counter/model/MyCounter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/practices/counter_view_page/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/practices/save_user/src/main/java/com/example/save_user/controller/LoginController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/practices/save_user/src/main/java/com/example/save_user/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../module4/10_session_cookie/practices/save_user/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/02_spring_controller/exercises/sandwich/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/02_spring_controller/exercises/sandwich/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/09_aop_exception/exercices/library/src/main/java/com/example/library/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/09_aop_exception/exercices/library/src/main/java/com/example/library/model/Book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../module4/09_aop_exception/exercices/library/src/main/java/com/example/library/service/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/09_aop_exception/exercices/library/src/main/java/com/example/library/service/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/common/JwtRequestFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/common/JwtUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/common/SpringSecurityAuditorAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/configuration/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/controller/AuthController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/Permission.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/Token.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/model/UserPrincipal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/repository/TokenRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/repository/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/service/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/service/TokenServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/exercises/my_security/src/main/java/com/example/my_security/service/UserServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/practices/src/main/java/com/example/springsecurity/Configuration/SecurityWebApplicationInitializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/practices/src/main/java/com/example/springsecurity/Configuration/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/practices/src/main/java/com/example/springsecurity/Controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/practices/src/main/resources/templates/admin.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/practices/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/practices/src/main/resources/templates/test.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/14_security/practices/src/main/resources/templates/user.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../module4/case_study_james/src/main/java/com/example/inote/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/07_data_repository/exercises/blog/src/main/java/com/example/blog/common/PhoneNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/07_data_repository/exercises/blog/src/main/java/com/example/blog/common/PhoneNumberValidator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/08_validation/exercices/user_validate/src/main/java/com/example/user_validate/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/08_validation/exercices/user_validate/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/08_validation/exercices/user_validate/src/main/resources/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../module4/08_validation/practices/form_basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../module4/08_validation/practices/form_basic/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,12 +43,40 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/inote/src/main/java/controller/HomeServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+            <state relative-caret-position="615">
+              <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inote/src/main/java/model/Note.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inote/src/main/java/service/bussiness/NoteTypeManager.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inote/src/main/java/service/bussiness/NoteTypeManagerImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="420">
+              <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/inote/src/main/java/service/dao/NoteTypeDAOImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="508">
+              <caret line="117" column="51" selection-start-line="117" selection-start-column="37" selection-end-line="117" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -133,20 +86,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="170" />
-    <option name="y" value="91" />
-    <option name="width" value="346" />
-    <option name="height" value="546" />
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -154,8 +96,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -196,15 +136,38 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case_study_on_james" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case_study_on_james" type="462c0819:PsiDirectoryNode" />
+              <item name="inote" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="bussiness" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="case_study_on_james" type="b2602c69:ProjectViewProjectNode" />
+              <item name="case_study_on_james" type="462c0819:PsiDirectoryNode" />
+              <item name="inote" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -234,17 +197,19 @@
       <option name="presentableId" value="Default" />
       <updated>1599045180120</updated>
       <workItem from="1599045181414" duration="764000" />
+      <workItem from="1600228768686" duration="948000" />
+      <workItem from="1600238928590" duration="99000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="764000" />
+    <option name="totallyTimeSpent" value="1811000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3018598" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3104435" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -284,8 +249,28 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/inote/src/main/java/controller/HomeServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="50" column="58" lean-forward="true" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+        <state relative-caret-position="615">
+          <caret line="50" column="58" selection-start-line="50" selection-start-column="58" selection-end-line="50" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inote/src/main/java/model/Note.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inote/src/main/java/service/bussiness/NoteTypeManager.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inote/src/main/java/service/bussiness/NoteTypeManagerImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="47" column="28" selection-start-line="47" selection-start-column="28" selection-end-line="47" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inote/src/main/java/service/dao/NoteTypeDAOImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="508">
+          <caret line="117" column="51" selection-start-line="117" selection-start-column="37" selection-end-line="117" selection-end-column="51" />
         </state>
       </provider>
     </entry>

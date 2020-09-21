@@ -18,6 +18,12 @@ public class UserController {
 
     @PostMapping("/add")
     public String addUser(Model model, @Validated User user, BindingResult bindingResult){
+//        String s= "500000000000";
+//        double d= Double.parseDouble(s);
+//        Formatter formatter = new Formatter();
+//        formatter.format("%, .1f", d);
+//        System.out.println(formatter);
+//        String quoc= formatter.toString();
         if(bindingResult.hasErrors()){
             return "index";
         }

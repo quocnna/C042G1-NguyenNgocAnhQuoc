@@ -1,5 +1,6 @@
 package controller;
 
+import common.BaseCRUD;
 import common.Paging;
 import common.StringUtils;
 import common.Toastr;
@@ -10,6 +11,10 @@ import service.bussiness.NoteManager;
 import service.bussiness.NoteManagerImpl;
 import service.bussiness.NoteTypeManager;
 import service.bussiness.NoteTypeManagerImpl;
+import service.dao.NoteDAO;
+import service.dao.NoteDAOImpl;
+import service.file.NoteFileImpl;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,7 +26,14 @@ import java.util.Optional;
 
 @WebServlet(name = "NoteServlet", urlPatterns = "/note")
 public class NoteServlet extends HttpServlet {
-    NoteManager notes = new NoteManagerImpl();
+
+    NoteManager noteDB= new NoteManagerImpl(new NoteDAOImpl());
+    NoteManager noteFile= new NoteManagerImpl(new NoteFileImpl());
+
+
+
+
+
     NoteTypeManager notetypes = new NoteTypeManagerImpl();
 
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
