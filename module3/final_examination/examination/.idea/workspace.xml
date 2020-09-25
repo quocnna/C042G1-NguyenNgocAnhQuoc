@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d42193e4-af5b-4071-91d4-cf18ca8dc840" name="Default Changelist" comment="" />
+    <list default="true" id="d42193e4-af5b-4071-91d4-cf18ca8dc840" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/common/AppCofig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/common/CategoryFormater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/model/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/css/crud.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/css/toastr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/js/crud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/js/toastr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/templates/book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/templates/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../10_jsp_jstl/exercises/customer_list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_jsp_jstl/exercises/customer_list/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../11_mvc_model/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_mvc_model/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/02_spring_controller/practices/time_zone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/02_spring_controller/practices/time_zone/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/08_validation/practices/form_basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/08_validation/practices/form_basic/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -26,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/product.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="257" selection-start-line="257" selection-end-line="257" />
+            <state relative-caret-position="1056">
+              <caret line="335" column="9" selection-start-line="281" selection-end-line="335" selection-end-column="9" />
               <folding>
                 <element signature="n#c:choose#0;n#jsp:root#0;n#!!top" />
               </folding>
@@ -129,7 +156,7 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -141,6 +168,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -201,8 +230,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -335,17 +362,17 @@
       <workItem from="1598677541724" duration="8282000" />
       <workItem from="1598760412739" duration="933000" />
       <workItem from="1598849252350" duration="167000" />
+      <workItem from="1600917416461" duration="704000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49188000" />
+    <option name="totallyTimeSpent" value="49892000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49598393" visible="true" weight="0.32188842" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49598393" visible="true" weight="0.32618025" />
       <window_info id="Structure" order="1" sideWeight="0.50401604" side_tool="true" weight="0.26967096" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -686,8 +713,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/product.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="257" selection-start-line="257" selection-end-line="257" />
+        <state relative-caret-position="1056">
+          <caret line="335" column="9" selection-start-line="281" selection-end-line="335" selection-end-column="9" />
           <folding>
             <element signature="n#c:choose#0;n#jsp:root#0;n#!!top" />
           </folding>

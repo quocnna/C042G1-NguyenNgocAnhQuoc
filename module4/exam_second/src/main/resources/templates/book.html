@@ -1,33 +1,33 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Admin</title>
+    <title>Book Manager</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/admin/css/toastr.css">
-    <link rel="stylesheet" href="/admin/css/crud.css">
+    <link rel="stylesheet" href="/css/toastr.css">
+    <link rel="stylesheet" href="/css/crud.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/admin/js/toastr.min.js"></script>
-    <script src="/admin/js/crud.js"></script>
+    <script src="/js/toastr.min.js"></script>
+    <script src="/js/crud.js"></script>
 </head>
-
 <body>
 <th:block th:if="${message!=null}">
     <script th:inline="javascript">
         $.fn.toastr("success", [[${message}]]);
     </script>
 </th:block>
+
 <div class="container">
     <div class="table-wrapper">
         <div class="table-title">
             <div class="row">
                 <div class="col-sm-3">
-                    <h2>Manage <b>Blogs</b></h2>
+                    <h2>Manage <b>Books</b></h2>
                 </div>
                 <div class="col-md-5">
-                    <form action="/admin">
+                    <form action="/">
                         <div class="input-group">
                             <div class="input-group-btn search-panel">
                                 <button type="button" class="tmp btn btn-default dropdown-toggle"
@@ -36,9 +36,9 @@
                                 </button>
                                 <ul class="dropdown-menu scrollable-dropdown" role="menu">
                                     <li><a href="#" th:text="${by=='Title'?'All':'Title'}"></a></li>
-                                    <li><a href="#" th:text="${by=='Content'?'All':'Content'}"></a></li>
-                                    <li><a href="#" th:text="${by=='Likes'?'All':'Likes'}"></a></li>
-                                    <li><a href="#" th:text="${by=='Category'?'All':'Category'}"></a></li>
+                                    <li><a href="#" th:text="${by=='Author'?'All':'Author'}"></a></li>
+                                    <li><a href="#" th:text="${by=='Price'?'All':'Price'}"></a></li>
+                                    <li><a href="#" th:text="${by=='Publishing Date'?'All':'Publishing Date'}"></a></li>
                                 </ul>
                             </div>
                             <input type="hidden" name="by" th:value="${by==''?'All':by}" id="search_param">
@@ -54,7 +54,7 @@
                 <div class="col-sm-4">
                     <a href="#addEditModal" class="btn btn-success add" data-toggle="modal"><i
                             class="material-icons">&#xE147;</i>
-                        <span>Add New Blog</span></a>
+                        <span>Add New Book</span></a>
                     <a href="#deleteModal" class="btn btn-danger delAll" data-toggle="modal"><i
                             class="material-icons">&#xE15C;</i>
                         <span>Delete</span></a>
@@ -72,19 +72,19 @@
 							</span>
                 </th>
                 <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=title&sortDir='+${reverseSortDir}}">Title</a>
+                    <a th:href="@{'/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=title&sortDir='+${reverseSortDir}}">Title</a>
                 </th>
                 <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=content&sortDir='+${reverseSortDir}}">Content</a>
+                    <a th:href="@{'/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=content&sortDir='+${reverseSortDir}}">Author</a>
                 </th>
                 <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=likes&sortDir='+${reverseSortDir}}">Likes</a>
+                    <a th:href="@{'/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=category.name&sortDir='+${reverseSortDir}}">Price</a>
                 </th>
                 <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=imageUrl&sortDir='+${reverseSortDir}}">Image</a>
+                    <a th:href="@{'/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=category.name&sortDir='+${reverseSortDir}}">Publishing Date</a>
                 </th>
                 <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=category.name&sortDir='+${reverseSortDir}}">Category</a>
+                    <a th:href="@{'/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=category.name&sortDir='+${reverseSortDir}}">Description</a>
                 </th>
                 <th><a href="#">Actions</a></th>
             </tr>
@@ -100,22 +100,19 @@
                 							</span>
                 </td>
                 <td th:text="${item.title}"></td>
-                <td th:text="${item.content}"></td>
-                <td th:text="${item.likes}"></td>
-                <td th:text="${item.imageUrl}"></td>
-                <td th:text="${item.category.name}" }></td>
+                <td th:text="${item.author}"></td>
+                <td th:text="${item.price}"></td>
+                <td th:text="${item.publishingDate}" }></td>
+                <td th:text="${item.description}" }></td>
                 <td>
                     <a href="#viewModal" class="view" data-toggle="modal" th:data-title="${item.title}"
-                       th:data-content="${item.content}" th:data-likes="${item.likes}"
-                       th:data-image_url="${item.imageUrl}"
-                       th:data-category_name="${item.category.name}"><i class="material-icons">&#xE417;</i></a>
+                       th:data-author="${item.author}" th:data-price="${item.price}"
+                       th:data-publishing="${item.publishingDate}" th:data-description="${item.description}"><i class="material-icons">&#xE417;</i></a>
 
                     <a href="#addEditModal" class="edit" data-toggle="modal" th:data-id="${item.id}"
-                       th:data-title="${item.title}" th:data-content="${item.content}" th:data-likes="${item.likes}"
-                       th:data-image_url="${item.imageUrl}"
-                       th:data-category_id="${item.category.id}"
-                       th:data-category_name="${item.category.name}"><i class="material-icons" data-toggle="tooltip"
-                                                                        title="Edit">&#xE254;</i></a>
+                       th:data-title="${item.title}" th:data-author="${item.author}" th:data-price="${item.price}"
+                       th:data-publishing="${item.publishingDate}" th:data-description="${item.description}"><i class="material-icons" data-toggle="tooltip"
+                                                                                                        title="Edit">&#xE254;</i></a>
                     <a th:data-id="${item.id}" href="#deleteModal" class="delete" data-toggle="modal"><i
                             class="material-icons"
                             data-toggle="tooltip"
@@ -133,7 +130,7 @@
             <ul class="pagination" th:if="${res.getContent().size()>0}">
                 <li th:if="${res.hasPrevious()}" class="page-item">
                     <a class="page-link"
-                       th:href="@{'/admin/page/' + ${res.getNumber()}+ '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">Previous</a>
+                       th:href="@{'/page/' + ${res.getNumber()}+ '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">Previous</a>
                 </li>
                 <li th:unless="${res.hasPrevious()}" class="page-item disabled">
                     <a href="#">Previous</a>
@@ -142,12 +139,12 @@
                 <li class="page-item" th:each="i: ${#numbers.sequence(1, res.getTotalPages())}"
                     th:classappend="${i == res.getNumber()+1? 'active':''}">
                     <a class="page-link"
-                       th:href="@{'/admin/page/' + ${i}+ '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">[[${i}]]</a>
+                       th:href="@{'/page/' + ${i}+ '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">[[${i}]]</a>
                 </li>
 
                 <li th:if="${res.hasNext()}" class="page-item">
                     <a class="page-link"
-                       th:href="@{'/admin/page/' + ${res.getNumber() + 2}+  '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">Next</a>
+                       th:href="@{'/page/' + ${res.getNumber() + 2}+  '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">Next</a>
                 </li>
                 <li th:unless="${res.hasNext()}" class="page-item disabled">
                     <a href="#">Next</a>
@@ -162,7 +159,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">View Blog</h5>
+                <h5 class="modal-title">View Book</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body">
@@ -171,20 +168,20 @@
                     <label style="color: blue;padding-left: 5px" class="viewTitle"></label>
                 </div>
                 <div class="form-group">
-                    <label>Content</label>
-                    <label style="color: blue;padding-left: 5px" class="viewContent"></label>
+                    <label>Author:</label>
+                    <label style="color: blue;padding-left: 5px" class="viewAuthor"></label>
                 </div>
                 <div class="form-group">
-                    <label>Likes:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewLikes"></label>
+                    <label>Price:</label>
+                    <label style="color: blue;padding-left: 5px" class="viewPrice"></label>
                 </div>
                 <div class="form-group">
-                    <label>ImageUrl:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewImageUrl"></label>
+                    <label>Publishing Date:</label>
+                    <label style="color: blue;padding-left: 5px" class="viewPublishing"></label>
                 </div>
                 <div class="form-group">
-                    <label>Category:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewCategory"></label>
+                    <label>Desciption:</label>
+                    <label style="color: blue;padding-left: 5px" class="viewDescription"></label>
                 </div>
             </div>
             <div class="modal-footer">
@@ -196,37 +193,38 @@
 
 <div id="addEditModal" class="modal fade">
     <div class="modal-dialog">
-        <form th:object="${blog}" id="fAddEdit" method="post" action="/admin/blog/addEdit">
+        <form th:object="${book}" id="fAddEdit" method="post" action="/addEdit">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <input id="myerror" type="hidden" th:value="${#fields.hasErrors()?'er':''}">
-                    <input name="id" type="hidden" th:value="${blog.id}">
+                    <input name="id" type="hidden" th:value="${book.id}">
                     <div class="form-group">
                         <label>Title</label>
                         <input name="title" type="text" class="form-control">
                         <label style="font-style: italic;color: red" id="lbErrorTitle" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></label>
                     </div>
                     <div class="form-group">
-                        <label>Content</label>
-                        <input name="content" type="text" class="form-control">
+                        <label>Author:</label>
+                        <input name="author" type="text" class="form-control">
+                        <label style="font-style: italic;color: red" d="lbErrorAuthor" th:if="${#fields.hasErrors('author')}" th:errors="*{author}"></label>
                     </div>
                     <div class="form-group">
-                        <label>Likes</label>
-                        <input name="likes" type="text" class="form-control">
+                        <label>Price:</label>
+                        <input name="price" type="text" class="form-control">
+                        <label style="font-style: italic;color: red" d="lbErrorPrice" th:if="${#fields.hasErrors('price')}" th:errors="*{price}"></label>
                     </div>
                     <div class="form-group">
-                        <label>Image</label>
-                        <input name="imageUrl" type="text" class="form-control">
+                        <label>Publishing Date:</label>
+                        <input name="publishingDate" type="date" class="form-control">
+                        <label style="font-style: italic;color: red" d="lbErrorPublishing" th:if="${#fields.hasErrors('publishingDate')}" th:errors="*{publishingDate}"></label>
                     </div>
                     <div class="form-group">
-                        <label>Category:</label>
-                        <select name="category" class="form-control">
-                            <option th:each="item:${cate}" th:value="${item.id}" th:text="${item.name}"></option>
-                        </select>
+                        <label>Description:</label>
+                        <input name="description" type="text" class="form-control">
+                        <label style="font-style: italic;color: red" d="lbErrorDescription" th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></label>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -240,10 +238,10 @@
 
 <div id="deleteModal" class="modal fade">
     <div class="modal-dialog">
-        <form method="post" action="/admin/blog/delete">
+        <form method="post" action="/delete">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Delete Blog</h4>
+                    <h4 class="modal-title">Delete Book</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -261,51 +259,52 @@
         </form>
     </div>
 </div>
-
-<script th:inline="javascript">
-    alert($("#myerror").val());
-    if($("#myerror").val()!=''){
-        $(".modal-title").text([[${blog.id}]]=="0"?"Add Blog":"Edit Blog");
-        $("input[name='title']").val([[${blog.title}]]);
-        $("input[name='content']").val([[${blog.content}]]);
-        $("input[name='likes']").val([[${blog.likes}]]);
-        $("input[name='imageUrl']").val([[${blog.imageUrl}]]);
-        $("#addEditModal").modal('show');
-    }
-</script>
 <script>
     $(".view").click(function () {
         $("label[class='viewTitle']").text($(this).data("title"));
-        $("label[class='viewContent']").text($(this).data("content"));
-        $("label[class='viewLikes']").text($(this).data("likes"));
-        $("label[class='viewImageUrl']").text($(this).data("image_url"));
-        $("label[class='viewCategory']").text($(this).data("category_name"));
+        $("label[class='viewAuthor']").text($(this).data("author"));
+        $("label[class='viewPrice']").text($(this).data("price"));
+        $("label[class='viewPublishing']").text($(this).data("publishing"));
+        $("label[class='viewDescription']").text($(this).data("description"));
     });
 
     $(".edit").click(function () {
-        $(".modal-title").text("Edit Blog");
+        $(".modal-title").text("Edit Book");
         $("input[name='id']").val($(this).data("id"));
         $("input[name='title']").val($(this).data("title"));
+        $("input[name='author']").val($(this).data("author"));
+        $("input[name='price']").val($(this).data("price"));
+        $("input[name='publishingDate']").val($(this).data("publishing"));
+        $("input[name='description']").val($(this).data("description"));
         $("#lbErrorTitle").hide();
-        $("input[name='content']").val($(this).data("content"));
-        $("input[name='likes']").val($(this).data("likes"));
-        $("input[name='imageUrl']").val($(this).data("image_url"));
-        var nti = $(this).data("category_id");
-        $("select[name='category'] option").each(function () {
-            if (this.value == nti) {
-                $(this).prop("selected", true)
-                return;
-            }
-        });
+        $("#lbErrorAuthor").hide();
+        $("#lbErrorPrice").hide();
+        $("#lbErrorPublishing").hide();
+        $("#lbErrorDescription").hide();
     });
 
     $(".add").click(function () {
-        $(".modal-title").text("Add Blog");
+        $(".modal-title").text("Add Book");
         $("input[name='id']").val("0");
-        $("input[name='title'],input[name='content'],input[name='likes'],input[name='imageUrl']").val("");
+        $("input[name='title'],input[name='author'],input[name='price'],input[name='publishingDate'],input[name='description']").val("");
         $("#lbErrorTitle").hide();
+        $("#lbErrorAuthor").hide();
+        $("#lbErrorPrice").hide();
+        $("#lbErrorPublishing").hide();
+        $("#lbErrorDescription").hide();
     });
 </script>
-</body>
 
+<script th:inline="javascript">
+    if([[${isError}]]){
+        $(".modal-title").text([[${book.id}]]==0?"Add Book":"Edit Book");
+        $("input[name='title']").val([[${book.title}]]);
+        $("input[name='author']").val([[${book.author}]]);
+        $("input[name='price']").val([[${book.price}]]);
+        $("input[name='publishingDate']").val([[${book.publishingDate}]]);
+        $("input[name='description']").val([[${book.description}]]);
+        $("#addEditModal").modal('show');
+    }
+</script>
+</body>
 </html>

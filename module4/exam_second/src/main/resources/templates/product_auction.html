@@ -1,33 +1,33 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Admin</title>
+    <title>Book Manager</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/admin/css/toastr.css">
-    <link rel="stylesheet" href="/admin/css/crud.css">
+    <link rel="stylesheet" href="/css/toastr.css">
+    <link rel="stylesheet" href="/css/crud.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="/admin/js/toastr.min.js"></script>
-    <script src="/admin/js/crud.js"></script>
+    <script src="/js/toastr.min.js"></script>
+    <script src="/js/crud.js"></script>
 </head>
-
 <body>
 <th:block th:if="${message!=null}">
     <script th:inline="javascript">
         $.fn.toastr("success", [[${message}]]);
     </script>
 </th:block>
+
 <div class="container">
     <div class="table-wrapper">
         <div class="table-title">
             <div class="row">
                 <div class="col-sm-3">
-                    <h2>Manage <b>Blogs</b></h2>
+                    <h2>Product <b>Auction</b></h2>
                 </div>
                 <div class="col-md-5">
-                    <form action="/admin">
+                    <form action="/">
                         <div class="input-group">
                             <div class="input-group-btn search-panel">
                                 <button type="button" class="tmp btn btn-default dropdown-toggle"
@@ -35,9 +35,8 @@
                                     <span id="search_concept" class="tmp" th:text="${by==''?'All':by}"></span> <span class="tmp caret"></span>
                                 </button>
                                 <ul class="dropdown-menu scrollable-dropdown" role="menu">
-                                    <li><a href="#" th:text="${by=='Title'?'All':'Title'}"></a></li>
-                                    <li><a href="#" th:text="${by=='Content'?'All':'Content'}"></a></li>
-                                    <li><a href="#" th:text="${by=='Likes'?'All':'Likes'}"></a></li>
+                                    <li><a href="#" th:text="${by=='Name'?'All':'Name'}"></a></li>
+                                    <li><a href="#" th:text="${by=='Start Price'?'All':'Start Price'}"></a></li>
                                     <li><a href="#" th:text="${by=='Category'?'All':'Category'}"></a></li>
                                 </ul>
                             </div>
@@ -54,7 +53,7 @@
                 <div class="col-sm-4">
                     <a href="#addEditModal" class="btn btn-success add" data-toggle="modal"><i
                             class="material-icons">&#xE147;</i>
-                        <span>Add New Blog</span></a>
+                        <span>Add Product Auction</span></a>
                     <a href="#deleteModal" class="btn btn-danger delAll" data-toggle="modal"><i
                             class="material-icons">&#xE15C;</i>
                         <span>Delete</span></a>
@@ -66,56 +65,55 @@
             <thead>
             <tr>
                 <th>
+                    STT
+                </th>
+                <th>
 							<span class="custom-checkbox">
 								<input type="checkbox" id="selectAll">
 								<label for="selectAll"></label>
 							</span>
                 </th>
                 <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=title&sortDir='+${reverseSortDir}}">Title</a>
+                    <a th:href="@{'/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=title&sortDir='+${reverseSortDir}}">Name</a>
                 </th>
                 <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=content&sortDir='+${reverseSortDir}}">Content</a>
+                    <a th:href="@{'/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=category.name&sortDir='+${reverseSortDir}}">Start Price</a>
                 </th>
                 <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=likes&sortDir='+${reverseSortDir}}">Likes</a>
+                    <a th:href="@{'/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=category.name&sortDir='+${reverseSortDir}}">Category</a>
                 </th>
                 <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=imageUrl&sortDir='+${reverseSortDir}}">Image</a>
-                </th>
-                <th>
-                    <a th:href="@{'/admin/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=category.name&sortDir='+${reverseSortDir}}">Category</a>
+                    <a th:href="@{'/page/' + ${res.getNumber()+1}+  '?by='+${by}+'&val='+${val}+ '&sortField=category.name&sortDir='+${reverseSortDir}}">Status</a>
                 </th>
                 <th><a href="#">Actions</a></th>
             </tr>
             </thead>
             <tbody>
-
-
-            <tr th:each="item:${res}">
+            <tr th:each="item,iStat:${res}">
+                <td>
+                    <label>[[${iStat.count}]]</label>
+                </td>
                 <td>
                 							<span class="custom-checkbox">
                 								<input type="checkbox" id="cb" th:value="${item.id}">
                 								<label for="cb"></label>
                 							</span>
                 </td>
-                <td th:text="${item.title}"></td>
-                <td th:text="${item.content}"></td>
-                <td th:text="${item.likes}"></td>
-                <td th:text="${item.imageUrl}"></td>
+                <td th:text="${item.name}"></td>
+                <td th:text="${item.startPrice}"></td>
                 <td th:text="${item.category.name}" }></td>
+                <td th:text="${item.status}" }></td>
                 <td>
-                    <a href="#viewModal" class="view" data-toggle="modal" th:data-title="${item.title}"
-                       th:data-content="${item.content}" th:data-likes="${item.likes}"
-                       th:data-image_url="${item.imageUrl}"
-                       th:data-category_name="${item.category.name}"><i class="material-icons">&#xE417;</i></a>
+                    <a href="#viewModal" class="view" data-toggle="modal" th:data-name="${item.name}"
+                       th:data-start="${item.startPrice}" th:data-category="${item.category.name}"
+                       th:data-status="${item.status}"><i class="material-icons">&#xE417;</i></a>
 
                     <a href="#addEditModal" class="edit" data-toggle="modal" th:data-id="${item.id}"
-                       th:data-title="${item.title}" th:data-content="${item.content}" th:data-likes="${item.likes}"
-                       th:data-image_url="${item.imageUrl}"
-                       th:data-category_id="${item.category.id}"
-                       th:data-category_name="${item.category.name}"><i class="material-icons" data-toggle="tooltip"
-                                                                        title="Edit">&#xE254;</i></a>
+                       th:data-name="${item.name}"
+                       th:data-start="${item.startPrice}" th:data-category_id="${item.category.id}"
+                       th:data-category_name="${item.category.name}"
+                       th:data-status="${item.status}"><i class="material-icons" data-toggle="tooltip"
+                                                                                                                title="Edit">&#xE254;</i></a>
                     <a th:data-id="${item.id}" href="#deleteModal" class="delete" data-toggle="modal"><i
                             class="material-icons"
                             data-toggle="tooltip"
@@ -133,7 +131,7 @@
             <ul class="pagination" th:if="${res.getContent().size()>0}">
                 <li th:if="${res.hasPrevious()}" class="page-item">
                     <a class="page-link"
-                       th:href="@{'/admin/page/' + ${res.getNumber()}+ '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">Previous</a>
+                       th:href="@{'/page/' + ${res.getNumber()}+ '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">Previous</a>
                 </li>
                 <li th:unless="${res.hasPrevious()}" class="page-item disabled">
                     <a href="#">Previous</a>
@@ -142,12 +140,12 @@
                 <li class="page-item" th:each="i: ${#numbers.sequence(1, res.getTotalPages())}"
                     th:classappend="${i == res.getNumber()+1? 'active':''}">
                     <a class="page-link"
-                       th:href="@{'/admin/page/' + ${i}+ '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">[[${i}]]</a>
+                       th:href="@{'/page/' + ${i}+ '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">[[${i}]]</a>
                 </li>
 
                 <li th:if="${res.hasNext()}" class="page-item">
                     <a class="page-link"
-                       th:href="@{'/admin/page/' + ${res.getNumber() + 2}+  '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">Next</a>
+                       th:href="@{'/page/' + ${res.getNumber() + 2}+  '?by='+${by}+'&val='+${val}+ '&sortField=' +${so.getProperty()}+'&sortDir='+${so.getDirection().name()}}">Next</a>
                 </li>
                 <li th:unless="${res.hasNext()}" class="page-item disabled">
                     <a href="#">Next</a>
@@ -162,7 +160,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">View Blog</h5>
+                <h5 class="modal-title">View Product Auction</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
             </div>
             <div class="modal-body">
@@ -171,20 +169,20 @@
                     <label style="color: blue;padding-left: 5px" class="viewTitle"></label>
                 </div>
                 <div class="form-group">
-                    <label>Content</label>
-                    <label style="color: blue;padding-left: 5px" class="viewContent"></label>
+                    <label>Author:</label>
+                    <label style="color: blue;padding-left: 5px" class="viewAuthor"></label>
                 </div>
                 <div class="form-group">
-                    <label>Likes:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewLikes"></label>
+                    <label>Price:</label>
+                    <label style="color: blue;padding-left: 5px" class="viewPrice"></label>
                 </div>
                 <div class="form-group">
-                    <label>ImageUrl:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewImageUrl"></label>
+                    <label>Publishing Date:</label>
+                    <label style="color: blue;padding-left: 5px" class="viewPublishing"></label>
                 </div>
                 <div class="form-group">
-                    <label>Category:</label>
-                    <label style="color: blue;padding-left: 5px" class="viewCategory"></label>
+                    <label>Desciption:</label>
+                    <label style="color: blue;padding-left: 5px" class="viewDescription"></label>
                 </div>
             </div>
             <div class="modal-footer">
@@ -196,37 +194,33 @@
 
 <div id="addEditModal" class="modal fade">
     <div class="modal-dialog">
-        <form th:object="${blog}" id="fAddEdit" method="post" action="/admin/blog/addEdit">
+        <form th:object="${product}" id="fAddEdit" method="post" action="/addEdit">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title"></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
-                    <input id="myerror" type="hidden" th:value="${#fields.hasErrors()?'er':''}">
-                    <input name="id" type="hidden" th:value="${blog.id}">
+                    <input name="id" type="hidden" th:value="${product.id}">
                     <div class="form-group">
-                        <label>Title</label>
-                        <input name="title" type="text" class="form-control">
-                        <label style="font-style: italic;color: red" id="lbErrorTitle" th:if="${#fields.hasErrors('title')}" th:errors="*{title}"></label>
+                        <label>Name</label>
+                        <input name="name" type="text" class="form-control">
+                        <label style="font-style: italic;color: red" id="lbErrorName" th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></label>
                     </div>
                     <div class="form-group">
-                        <label>Content</label>
-                        <input name="content" type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Likes</label>
-                        <input name="likes" type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label>Image</label>
-                        <input name="imageUrl" type="text" class="form-control">
+                        <label>Start Price:</label>
+                        <input name="startPrice" type="text" class="form-control">
+                        <label style="font-style: italic;color: red" id="lbErrorStartPrice" th:if="${#fields.hasErrors('startPrice')}" th:errors="*{startPrice}"></label>
                     </div>
                     <div class="form-group">
                         <label>Category:</label>
                         <select name="category" class="form-control">
                             <option th:each="item:${cate}" th:value="${item.id}" th:text="${item.name}"></option>
                         </select>
+                    </div>
+                    <div class="form-group">
+                        <label>Status:</label>
+                        <input type="checkbox" name="status" checked>
                     </div>
                 </div>
                 <div class="modal-footer">
@@ -240,10 +234,10 @@
 
 <div id="deleteModal" class="modal fade">
     <div class="modal-dialog">
-        <form method="post" action="/admin/blog/delete">
+        <form method="post" action="/delete">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h4 class="modal-title">Delete Blog</h4>
+                    <h4 class="modal-title">Delete Book</h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                 </div>
                 <div class="modal-body">
@@ -262,34 +256,19 @@
     </div>
 </div>
 
-<script th:inline="javascript">
-    alert($("#myerror").val());
-    if($("#myerror").val()!=''){
-        $(".modal-title").text([[${blog.id}]]=="0"?"Add Blog":"Edit Blog");
-        $("input[name='title']").val([[${blog.title}]]);
-        $("input[name='content']").val([[${blog.content}]]);
-        $("input[name='likes']").val([[${blog.likes}]]);
-        $("input[name='imageUrl']").val([[${blog.imageUrl}]]);
-        $("#addEditModal").modal('show');
-    }
-</script>
 <script>
     $(".view").click(function () {
-        $("label[class='viewTitle']").text($(this).data("title"));
-        $("label[class='viewContent']").text($(this).data("content"));
-        $("label[class='viewLikes']").text($(this).data("likes"));
-        $("label[class='viewImageUrl']").text($(this).data("image_url"));
+        $("label[class='viewName']").text($(this).data("title"));
+        $("label[class='viewStartPrice']").text($(this).data("start"));
         $("label[class='viewCategory']").text($(this).data("category_name"));
+        $("label[class='viewStatus']").text($(this).data("status"));
     });
 
     $(".edit").click(function () {
-        $(".modal-title").text("Edit Blog");
+        $(".modal-title").text("Edit Product Auction");
         $("input[name='id']").val($(this).data("id"));
-        $("input[name='title']").val($(this).data("title"));
-        $("#lbErrorTitle").hide();
-        $("input[name='content']").val($(this).data("content"));
-        $("input[name='likes']").val($(this).data("likes"));
-        $("input[name='imageUrl']").val($(this).data("image_url"));
+        $("input[name='name']").val($(this).data("name"));
+        $("input[name='startPrice']").val($(this).data("start"));
         var nti = $(this).data("category_id");
         $("select[name='category'] option").each(function () {
             if (this.value == nti) {
@@ -297,15 +276,31 @@
                 return;
             }
         });
+
+
+        $("input[name='status']").val($(this).data("status"));
+        $("#lbErrorName").hide();
+        $("#lbErrorStartPrice").hide();
     });
 
     $(".add").click(function () {
-        $(".modal-title").text("Add Blog");
+        $(".modal-title").text("Add Book");
         $("input[name='id']").val("0");
-        $("input[name='title'],input[name='content'],input[name='likes'],input[name='imageUrl']").val("");
-        $("#lbErrorTitle").hide();
+        $("input[name='title'],input[name='author'],input[name='price'],input[name='publishingDate'],input[name='description']").val("");
+        $("#lbErrorName").hide();
+        $("#lbErrorStartPrice").hide();
     });
 </script>
-</body>
 
+<script th:inline="javascript">
+    if([[${isError}]]){
+        $(".modal-title").text([[${product.id}]]==0?"Add Product Auction":"Edit Product Auction");
+        $("input[name='name']").val([[${product.name}]]);
+        $("input[name='startPrice']").val([[${product.startPrice}]]);
+        $("input[name='category']").val([[${product.category.name}]]);
+        $("input[name='status']").val([[${product.status}]]);
+        $("#addEditModal").modal('show');
+    }
+</script>
+</body>
 </html>

@@ -7,17 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="567e0c47-85f4-4a84-8b9e-fbf41547d2a8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../../module4/09_aop_exception/exercices/library/src/main/java/com/example/library/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../module4/09_aop_exception/exercices/library/src/main/java/com/example/library/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../module4/09_aop_exception/exercices/library/src/main/java/com/example/library/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../module4/09_aop_exception/exercices/library/src/main/java/com/example/library/service/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../module4/09_aop_exception/exercices/library/src/main/resources/templates/giveBack.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../module4/09_aop_exception/exercices/library/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../module4/09_aop_exception/exercices/library/src/main/resources/templates/rent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../module4/09_aop_exception/practices/aop/src/main/java/cg/wbd/grandemonstration/exception/MyException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../10_jsp_jstl/exercises/customer_list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../10_jsp_jstl/exercises/customer_list/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module4/02_spring_controller/exercises/sandwich/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/02_spring_controller/exercises/sandwich/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/Buc_anh_cua_ngay/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module4/05_orm_hibernate/exercises/Buc_anh_cua_ngay/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,7 +25,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/controller/ProductServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
+            <state relative-caret-position="435">
               <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
             </state>
           </provider>
@@ -55,7 +46,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/model/Product.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
+            <state relative-caret-position="270">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#530#531#0" expanded="true" />
@@ -121,7 +112,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/dao/ProductDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="90">
               <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -133,8 +124,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/dao/ProductDAOImpl.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="23" column="56" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="23" selection-end-column="56" />
+            <state relative-caret-position="150">
+              <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -183,10 +174,10 @@
         <option value="$PROJECT_DIR$/web/main.css" />
         <option value="$PROJECT_DIR$/src/bussiness/ProductService.java" />
         <option value="$PROJECT_DIR$/src/bussiness/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/dao/ProductDAOImpl.java" />
         <option value="$PROJECT_DIR$/web/product/list.jsp" />
         <option value="$PROJECT_DIR$/src/dao/ProductDAO.java" />
         <option value="$PROJECT_DIR$/src/controller/ProductServlet.java" />
+        <option value="$PROJECT_DIR$/src/dao/ProductDAOImpl.java" />
       </list>
     </option>
   </component>
@@ -211,8 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -234,18 +223,14 @@
             <path>
               <item name="product_manager" type="b2602c69:ProjectViewProjectNode" />
               <item name="product_manager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="product_manager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="product_manager" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -369,17 +354,18 @@
       <workItem from="1597973170605" duration="601000" />
       <workItem from="1598239430611" duration="4133000" />
       <workItem from="1598961942257" duration="1217000" />
+      <workItem from="1600685229051" duration="218000" />
+      <workItem from="1600763826337" duration="2000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51804000" />
+    <option name="totallyTimeSpent" value="52024000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.28540772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49799198" visible="true" weight="0.2932761" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -480,7 +466,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/ProductServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
+        <state relative-caret-position="435">
           <caret line="43" column="17" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
         </state>
       </provider>
@@ -491,6 +477,17 @@
           <caret line="11" column="81" selection-start-line="11" selection-start-column="81" selection-end-line="11" selection-end-column="81" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/Product.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#574#575#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -540,16 +537,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Predicate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ProductDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="90">
           <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -557,21 +547,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/model/Product.java">
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/lib/src.zip!/java.base/java/util/function/Predicate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#574#575#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="375">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/dao/ProductDAOImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="23" column="56" lean-forward="true" selection-start-line="22" selection-start-column="7" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="150">
+          <caret line="10" column="55" lean-forward="true" selection-start-line="10" selection-start-column="55" selection-end-line="10" selection-end-column="55" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

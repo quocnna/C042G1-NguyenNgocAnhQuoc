@@ -2,36 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d954146-52aa-4293-a4d4-db3a0b6fa87a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/common/JwtRequestFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/common/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/common/SpringSecurityAuditorAware.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/configuration/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/Token.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/model/UserPrincipal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/repository/TokenRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/service/TokenService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/service/TokenServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/exercises/my_security/src/main/java/com/example/my_security/service/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/java/com/example/springsecurity/Configuration/SecurityWebApplicationInitializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/java/com/example/springsecurity/Configuration/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/java/com/example/springsecurity/Controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/resources/templates/admin.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/resources/templates/test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../14_security/practices/src/main/resources/templates/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../case_study_james/src/main/java/com/example/inote/model/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../module3/case_study_on_james/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/case_study_on_james/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../07_data_repository/exercises/blog/src/main/java/com/example/blog/common/PhoneNumberValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../07_data_repository/exercises/blog/src/main/java/com/example/blog/common/PhoneNumberValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/java/com/example/user_validate/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../exercices/user_validate/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../exercices/user_validate/src/main/resources/templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/common/AppCofig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/common/CategoryFormater.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/controller/BookController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/model/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/model/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/repository/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/repository/CategoryRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/service/BookServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/service/CategoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/java/com/example/examination/service/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/resources/static/css/crud.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/resources/static/css/toastr.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/resources/static/js/crud.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/resources/static/js/toastr.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/resources/static/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/resources/templates/book.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/resources/templates/category.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../examination/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/10_jsp_jstl/exercises/customer_list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/10_jsp_jstl/exercises/customer_list/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/11_mvc_model/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../module3/final_examination/examination/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../module3/final_examination/examination/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../02_spring_controller/practices/time_zone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../02_spring_controller/practices/time_zone/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -66,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/ApplicationConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
+            <state relative-caret-position="60">
               <caret line="16" column="14" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -92,7 +88,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/model/User.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="450">
@@ -112,7 +108,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -185,8 +181,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,6 +243,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -362,17 +358,18 @@
       <workItem from="1598865876011" duration="1718000" />
       <workItem from="1600233357970" duration="57000" />
       <workItem from="1600236684336" duration="9000" />
+      <workItem from="1600918034255" duration="11000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2739000" />
+    <option name="totallyTimeSpent" value="2750000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3104435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31473532" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -421,6 +418,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/ApplicationConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="16" column="14" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/ApplicationInitializer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -450,10 +457,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/ApplicationConfig.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="16" column="14" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="14" />
+        <state relative-caret-position="195">
+          <caret line="13" column="22" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -474,16 +481,6 @@
             <element signature="e#465#466#0" expanded="true" />
             <element signature="e#496#497#0" expanded="true" />
             <element signature="e#523#524#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/qg/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="22" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
