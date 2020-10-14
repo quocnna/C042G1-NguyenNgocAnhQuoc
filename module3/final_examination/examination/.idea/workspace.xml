@@ -2,32 +2,78 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d42193e4-af5b-4071-91d4-cf18ca8dc840" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/common/AppCofig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/common/CategoryFormater.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/controller/BookController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/model/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/model/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/model/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/repository/BookRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/BookService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/BookServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/CategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/css/crud.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/css/toastr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/js/crud.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/js/toastr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/templates/book.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/templates/category.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/templates/home.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../10_jsp_jstl/exercises/customer_list/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../10_jsp_jstl/exercises/customer_list/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../11_mvc_model/exercises/product_manager/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../11_mvc_model/exercises/product_manager/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4/02_spring_controller/practices/time_zone/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/02_spring_controller/practices/time_zone/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../module4/08_validation/practices/form_basic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../module4/08_validation/practices/form_basic/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/product.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/product.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/ExamSecondApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/common/DateValid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/common/DateValidImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/common/LocalDateConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/common/NumberConverter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/common/NumberValid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/common/NumberValidImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/common/StringUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/common/StringValid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/common/StringValidImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/controller/ProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/repository/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/repository/ProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/service/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/service/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/service/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/service/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/java/com/example/exam_second/service/ProductServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/resources/static/css/crud.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/resources/static/css/toastr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/resources/static/js/crud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/resources/static/js/toastr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/resources/templates/book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/main/resources/templates/product_auction.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/exam_second/src/test/java/com/example/exam_second/ExamSecondApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/ExaminationApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/common/AppCofig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/common/CategoryFormater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/controller/BookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/controller/HomeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/model/BaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/model/Book.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/model/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/repository/BookRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/repository/CategoryRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/BaseService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/BookService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/BookServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/CategoryService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/java/com/example/examination/service/CategoryServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/css/crud.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/css/toastr.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/js/crud.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/js/toastr.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/static/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/templates/book.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/templates/category.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/main/resources/templates/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../module4/examination/src/test/java/com/example/examination/ExaminationApplicationTests.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,18 +97,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/product.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1056">
-              <caret line="335" column="9" selection-start-line="281" selection-end-line="335" selection-end-column="9" />
-              <folding>
-                <element signature="n#c:choose#0;n#jsp:root#0;n#!!top" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/controller/ProductServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1020">
@@ -168,7 +202,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -201,14 +234,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="m3exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examination" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -218,18 +243,11 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="m3exam" type="b2602c69:ProjectViewProjectNode" />
-              <item name="examination" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -363,16 +381,18 @@
       <workItem from="1598760412739" duration="933000" />
       <workItem from="1598849252350" duration="167000" />
       <workItem from="1600917416461" duration="704000" />
+      <workItem from="1602044081752" duration="866000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49892000" />
+    <option name="totallyTimeSpent" value="50758000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49598393" visible="true" weight="0.32618025" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49598393" visible="true" weight="0.3304721" />
       <window_info id="Structure" order="1" sideWeight="0.50401604" side_tool="true" weight="0.26967096" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -711,12 +731,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/product.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1056">
-          <caret line="335" column="9" selection-start-line="281" selection-end-line="335" selection-end-column="9" />
+        <state relative-caret-position="282">
+          <caret line="135" column="48" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="48" />
           <folding>
-            <element signature="n#c:choose#0;n#jsp:root#0;n#!!top" />
+            <element signature="n#c:forEach#1;n#jsp:root#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -725,13 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="85" selection-start-line="85" selection-end-line="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="29" selection-start-line="7" selection-start-column="29" selection-end-line="7" selection-end-column="29" />
         </state>
       </provider>
     </entry>

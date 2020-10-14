@@ -140,6 +140,7 @@
                 <% Paging p = (Paging) request.getAttribute("paging");%>
                 <c:set var="t"
                        value="<%= IntStream.rangeClosed(1, p.getTotalPages()).boxed().collect(Collectors.toList()) %>"></c:set>
+
                 <c:forEach var="i" items="${t}">
                     <c:choose>
                         <c:when test="${i==paging.currentPage}">
